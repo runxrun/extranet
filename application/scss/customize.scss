@@ -1,0 +1,144 @@
+$font-title: 'Roboto Serif', 'Sarabun', Arial, sans-serif; 
+$font-normal: 'Roboto', 'Sarabun', Arial, sans-serif;
+$font-specific: 'Roboto Serif', Arial, sans-serif;
+
+$primary-color: #125296;
+$light-color: #f2f3f4;
+$dark-color: #202020;
+$warning-color: #f09207;
+$danger-color: #dd2c32;
+
+body {
+	font-family: $font-normal;
+}
+
+
+.rn-title {
+	font-family: $font-title;
+}
+
+.fs-7 {font-size: 0.90rem;}
+.fs-8 {font-size: 0.85rem;}
+.fs-9 {font-size: 0.80rem;}
+
+
+
+.bg-header {
+	background-color: $primary-color;
+}
+
+.bg-login {
+	background-color: $primary-color;
+}
+
+.bg-primary {
+	background-color: $primary-color !important;
+}
+
+.bg-light {
+	background-color: $light-color !important;
+}
+
+.text-primary {
+	color: $primary-color !important;
+}
+
+.btn-primary {
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+    box-shadow: $primary-color !important;
+}
+
+.border-primary {
+	border-color: $primary-color !important;
+}
+
+
+
+
+
+
+
+
+
+
+.rn-container-scroll {
+	overflow-x: auto;
+	padding-bottom: 5rem;
+}
+.rn-container-maxwidth{
+	min-width: 1280px;
+}
+.rn-table-dates {
+	border-top: 1px solid #d7d7d7;
+	border-left: 1px solid #d7d7d7;
+	border-right: 1px solid #d7d7d7;
+	background-color: #ffffff;
+	margin-bottom: 15px;
+}
+.rn-table-rate {
+	border-top: 1px solid #d7d7d7;
+	border-left: 1px solid #d7d7d7;
+	border-right: 1px solid #d7d7d7;
+	background-color: #ffffff;
+	margin-bottom: 1.5rem;
+}
+.rn-table-row {
+	display: flex;
+	flex-wrap: nowrap;
+	border-bottom: 1px solid #d7d7d7;
+}
+.rn-table-rate-dateoption {
+	width: 37%;
+}
+.rn-table-rate-name {
+	width: 25%;
+}
+.rn-table-rate-status {
+	width: 12%;
+}
+.rn-table-rate-action {
+	width: 4.5%;
+
+}
+.rn-table-th {
+	background-color: rgba(100, 100, 100, 0.1);
+}
+.rn-table-roomtype {
+	/*background-color: rgba(13, 202, 204, 0.1);*/
+}
+.rn-table-border-start {
+	border-left: 1px solid #d7d7d7;
+}
+.rn-cursor-pointer {
+	cursor: pointer;
+}
+.rn-rate-input:focus {
+	box-shadow: #ffcc00 0px 0px 0px 2px inset !important;
+}
+
+.rn-calr {
+	line-height: 18px;
+}
+.rn-calr .day,
+.rn-calr .date,
+.rn-calr .month {
+	display: block;
+	text-align: center;
+}
+.rn-calr .day{
+	font-size: 0.7rem;
+}
+.rn-calr .date{
+	font-size: 1.0rem;
+}
+.rn-calr .month{
+	font-size: 0.7rem;
+}
+.rn-day-flag {
+	background-color: #fff4e5;
+}
+
+.rn-blackout {
+	background-color: #b62b38;
+}
