@@ -7,6 +7,7 @@ $light-color: #f2f3f4;
 $dark-color: #202020;
 $warning-color: #f09207;
 $danger-color: #dd2c32;
+$normal-color: #6c757d;
 
 body {
 	font-family: $font-normal;
@@ -142,3 +143,39 @@ body {
 .rn-blackout {
 	background-color: #b62b38;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dropdown-item {
+    color: $normal-color !important;
+}
+
+.dropdown-item:active {
+    color: #ffffff !important;
+}
+
+.rn-overflew-y {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.h-300px {
+    height: 300px;
+}
+
+

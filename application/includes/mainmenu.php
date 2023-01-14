@@ -79,16 +79,74 @@ switch (strtoupper($current_page))
 					</button>
 				</div>
 				<div class="col-auto">
-					<button
-						class="btn shadow-none border-0 <?php echo $p_dynamic; ?>"
-						onclick="window.open('/dynamic-rate/','_self');">
-						<div class="fs-4">
-							<i class="fas fa-calendar-alt"></i>
+					<div class="dropdown">
+						<button
+							type="button"
+							id="btnDynamicRates"
+							class="btn shadow-none border-0 <?php echo $p_dynamic; ?>"
+							data-bs-toggle="dropdown"
+							aria-expanded="false">
+							<div class="fs-4">
+								<i class="fas fa-calendar-alt"></i>
+							</div>
+							<div class="fs-9">
+								Dynamic Rates
+							</div>
+						</button>
+						<div
+							class="dropdown-menu rounded-0 p-0 mt-1"
+							aria-labelledby="btnDynamicRates">
+							<div class="border-top border-primary border-3">
+								<div>
+									<a 
+										href="javascript: void(0);" 
+										class="dropdown-item py-2 fs-7 text-decoration-none"
+										onclick="window.open('/dynamic-rate/','_self');">
+										Dynamic Rates
+									</a>
+								</div>
+								<div>
+									<a
+										href="javascript: void(0);"										
+										class="dropdown-item py-2 fs-7 text-decoration-none"
+										onclick="window.open('/promotion/','_self');">
+										Promotion
+									</a>
+								</div>
+								<div>
+									<a
+										href="javascript: void(0);"
+										class="dropdown-item py-2 fs-7 text-decoration-none"
+										onclick="window.open('/enhancement/','_self');">
+										Enhancement
+									</a>
+								</div>
+							</div>
 						</div>
-						<div class="fs-9">
-							Dynamic Rates
+					</div>
+					<!-- 
+					<div class="position-relative">
+						<div>
+							<button
+								class="btn shadow-none border-0 <?php echo $p_dynamic; ?>"
+								onclick="window.open('/dynamic-rate/','_self');">
+								<div class="fs-4">
+									<i class="fas fa-calendar-alt"></i>
+								</div>
+								<div class="fs-9">
+									Dynamic Rates
+								</div>
+							</button>
 						</div>
-					</button>
+						<div class="position-absolute top-100 pt-2" style="width: 180px; left: calc(50% - 90px);">
+							<div class="bg-white border-top border-primary border-2">
+								<button class="btn w-100 fs-8">
+									Promotion
+								</button>
+							</div>
+						</div>
+					</div>
+					 -->
 				</div>
 				<div class="col-auto">
 					<button class="btn shadow-none border-0 <?php echo $p_manual; ?>">
