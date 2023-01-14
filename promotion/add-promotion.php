@@ -176,7 +176,8 @@
 				<div class="pb-3 pb-lg-0 col-auto order-0 order-lg-1">
 					<button
 						class="btn btn-success rounded-0 py-2 fs-8 text-white"
-						onclick="window.open('/promotion/?page=add-promotion','_self');">
+						data-bs-toggle="modal"
+						data-bs-target="#addeditPromotion">
 						<span class="pe-2"><i class="fas fa-plus-circle"></i></span>
 						<span class="pe-2">Add new</span>
 					</button>
@@ -262,7 +263,14 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="addeditPromotion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div 
+    	class="modal fade"
+    	id="addeditPromotion"
+    	tabindex="-1"
+    	aria-labelledby="exampleModalLabel"    	
+ 		data-bs-backdrop="static"
+ 		data-bs-keyboard="false"
+ 		aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -334,9 +342,87 @@
 							</div>
 						</div>
 					</div>
+					<div class="border-top py-3">
+					    <div class="row g-3">
+					        <div class="col-12 col-lg-3">
+					            <div class="d-flex ">
+					                <span class="fs-6 fw-bold text-dark pe-2">
+					                    <i class="far fa-window-maximize"></i>
+					                </span>
+					                <span class="fs-6 fw-bold text-dark">
+					                    Applicable for
+					                </span>
+					            </div>
+					        </div>
+					        <div class="col-12 col-lg-9">
+							    <div class="row g-3">
+							        <div class="col-12 col-lg-4">
+							            <div class="form-check fs-7 text-secondary">
+							                <input class="form-check-input" type="checkbox" value="" id="sgtwdb">
+							                <label class="form-check-label" for="sgtwdb">Single / Twin / Double</label>
+							            </div>
+							            <div class="form-check fs-7 text-secondary">
+							                <input class="form-check-input" type="checkbox" value="" id="quad">
+							                <label class="form-check-label" for="quad">Quad</label>
+							            </div>
+							            <div class="form-check fs-7 text-secondary">
+							                <input class="form-check-input" type="checkbox" value="" id="extrabed">
+							                <label class="form-check-label" for="extrabed">Extra bed</label>
+							            </div>
+							            <div class="form-check fs-7 text-secondary">
+							                <input class="form-check-input" type="checkbox" value="" id="extrabedchild">
+							                <label class="form-check-label" for="extrabedchild">Extra bed - child</label>
+							            </div>
+							        </div>
+							        <div class="col-12 col-lg-4">
+							            <div class="form-check fs-7 text-secondary">
+							                <input class="form-check-input" type="checkbox" value="" id="bfad">
+							                <label class="form-check-label" for="bfad">Breakfast adult</label>
+							            </div>
+							            <div class="form-check fs-7 text-secondary">
+							                <input class="form-check-input" type="checkbox" value="" id="bfch">
+							                <label class="form-check-label" for="bfch">Breakfast child</label>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="mt-3 row g-3">
+							        <div class="col-12 col-lg-4">
+										<div class="pb-1 fs-8 text-secondary">
+											Promotion code
+										</div>
+										<div>
+											<input type="text" class="form-control rounded-0 fs-7 text-center" value="EB11">
+										</div>
+							        </div>
+							        <div class="col-12 col-lg-4">
+										<div class="pb-1 fs-8 text-secondary">
+											Discount
+										</div>
+										<div>
+											<select class="form-select rounded-0 fs-7">
+												<option>Please select</option>
+												<option>Amount</option>
+												<option selected>Percent</option>
+											</select>
+										</div>
+							        </div>
+							        <div class="col-12 col-lg-4">
+										<div class="pb-1 fs-8 text-secondary">
+											Discount Rate
+										</div>
+										<div>
+											<input type="number" class="form-control rounded-0 fs-7 text-center" value="10">
+										</div>
+							        </div>
+							    </div>
+					    	</div>
+					    </div>
+					</div>
 
 
 
+
+<!-- 
 
 					<div class="row gx-3">
 
@@ -383,6 +469,7 @@
 							</div>
 						</div>
 					</div>
+					 -->
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary rounded-1 fs-7" data-bs-dismiss="modal">
