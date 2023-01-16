@@ -187,12 +187,13 @@ $set_data_c = array(
 		'form_name'=>'commissionValue',
 		'title'=>'Commission value',
 		'mandatory'=>'Y',
-		'input_type'=>'text',
+		'input_type'=>'number',
 		'input_value'=>'0',
 		'column'=>'col-12 col-md-6 col-lg-3',
 		'readonly'=>'',
 		'disabled'=>'',
 	),
+	/*
 	array(
 		'form_name'=>'commissionSpecial',
 		'title'=>'Special',
@@ -207,7 +208,7 @@ $set_data_c = array(
 		'readonly'=>'',
 		'disabled'=>'',
 	),
-
+	*/
 );
 
 $set_data_d = array(
@@ -331,13 +332,7 @@ $set_data_e = array(
 		'form_name'=>'minimumChildage',
 		'title'=>'Minimum child age',
 		'input_type'=>'number',
-		'input_value'=>'3',
-		'selection'=>array(
-			array('data'=>'Select'),
-			array('data'=>'Amount'),
-			array('data'=>'Percent'),
-			array('data'=>'None'),
-		),
+		'input_value'=>'5',
 		'column'=>'col-12 col-md-6 col-lg-3',
 		'readonly'=>'',
 		'disabled'=>'',
@@ -346,13 +341,7 @@ $set_data_e = array(
 		'form_name'=>'maximumChildage',
 		'title'=>'Maximum child age',
 		'input_type'=>'number',
-		'input_value'=>'10',
-		'selection'=>array(
-			array('data'=>'Select'),
-			array('data'=>'Amount'),
-			array('data'=>'Percent'),
-			array('data'=>'None'),
-		),
+		'input_value'=>'15',
 		'column'=>'col-12 col-md-6 col-lg-3',
 		'readonly'=>'',
 		'disabled'=>'',
