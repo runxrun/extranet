@@ -140,7 +140,8 @@ $set_data_b = array(
 		'title'=>'Email',
 		'mandatory'=>'Y',
 		'input_type'=>'text',
-		'column'=>'col-12 col-lg-6',
+		'input_value'=>'sonahouse@gmail.com',
+		'column'=>'col-12 col-md-6 col-lg-3',
 		'readonly'=>'',
 		'disabled'=>'',
 	),
@@ -149,6 +150,7 @@ $set_data_b = array(
 		'title'=>'Telephone number',
 		'mandatory'=>'Y',
 		'input_type'=>'text',
+		'input_value'=>'054 771 254',		
 		'column'=>'col-12 col-md-6 col-lg-3',
 		'readonly'=>'',
 		'disabled'=>'',
@@ -158,6 +160,7 @@ $set_data_b = array(
 		'title'=>'Website',
 		'mandatory'=>'Y',
 		'input_type'=>'text',
+		'input_value'=>'https://www.facebook.com/SonahouseHotel/',	
 		'column'=>'col-12 col-md-6 col-lg-3',
 		'readonly'=>'',
 		'disabled'=>'',
@@ -178,7 +181,7 @@ $set_data_c = array(
 		),
 		'column'=>'col-12 col-md-6 col-lg-3',
 		'readonly'=>'',
-		'disabled'=>'Y',
+		'disabled'=>'',
 	),
 	array(
 		'form_name'=>'commissionValue',
@@ -188,8 +191,23 @@ $set_data_c = array(
 		'input_value'=>'0',
 		'column'=>'col-12 col-md-6 col-lg-3',
 		'readonly'=>'',
-		'disabled'=>'Y',
+		'disabled'=>'',
 	),
+	array(
+		'form_name'=>'commissionSpecial',
+		'title'=>'Special',
+		'mandatory'=>'Y',
+		'input_type'=>'select',
+		'selection'=>array(
+			array('data'=>'Select'),
+			array('data'=>'Amount'),
+			array('data'=>'Percent'),
+		),
+		'column'=>'col-12 col-md-6 col-lg-3',
+		'readonly'=>'',
+		'disabled'=>'',
+	),
+
 );
 
 $set_data_d = array(

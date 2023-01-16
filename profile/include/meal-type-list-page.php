@@ -111,7 +111,7 @@ $room_info = array(
 					<td class="p-0">
 						<button
 							class="btn btn-outline-primary w-100 border-0 shadow-none rounded-0"
-							onclick="window.open('/profile/hotel-profile.php?page=contact-detail','_self');">
+							onclick="window.open('/profile/hotel-profile.php?page=meal-type-detail','_self');">
 							<span class="fs-8">
 								<i class="fas fa-search"></i>
 							</span>

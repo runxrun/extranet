@@ -197,15 +197,15 @@
 					<?php 
 					$array_image = array(
 						array(
-						'image_name' => 'https://scontent.fbkk2-3.fna.fbcdn.net/v/t1.6435-9/46714324_2233087766755023_5659972503271899136_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=PmuDOqbFfukAX8B9UKY&_nc_oc=AQlqDsEH9CINLZTXoeKIo2toFmw9TpszAp8HHl7E4q9FVqQwyoncGMrMY44xI2_XPHc&_nc_ht=scontent.fbkk2-3.fna&oh=00_AT8Qz9hoz7f_68i8dURFzOHqgL_NmnhQjCzhMhA5cl0B0w&oe=6313063E'),
+						'image_name' => 'https://d23e6w66rgwdf8.cloudfront.net/images/hotels/id/553780/hotel_553780_1581924496_975682311.JPG'),
 						array(
-						'image_name' => 'https://scontent.fbkk2-8.fna.fbcdn.net/v/t1.6435-9/46721359_2233087843421682_1609898508708478976_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=tSTafV-hNZQAX8V5CfU&_nc_ht=scontent.fbkk2-8.fna&oh=00_AT-Sbctalt4Qm7MaDUBR0vPPFWtdpf9tSDKzJgoFGh02Nw&oe=6311D890'),
+						'image_name' => 'https://lh3.googleusercontent.com/p/AF1QipN2KqbnTQ-LVYVn0CWnd0rfx6Ht4WlcJF1SvxbQ=w600-k'),
 						array(
-						'image_name' => 'https://scontent.fbkk2-5.fna.fbcdn.net/v/t1.6435-9/47065001_2233087876755012_4499118005090779136_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=60IT22SibhsAX-fUyuJ&tn=cPQsJ6pJ67QpmDui&_nc_ht=scontent.fbkk2-5.fna&oh=00_AT8ey3KQEgMa65ISANPC7IBpn5KEks4SN8AY2UbfCGJpQA&oe=63140AAE'),
+						'image_name' => 'https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_360,q_auto,w_360/itemimages/87/49/8749882.jpeg'),
 						array(
-						'image_name' => 'https://scontent.fbkk2-7.fna.fbcdn.net/v/t1.6435-9/46779879_2233087886755011_489236791224696832_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=rO-b97dSvaQAX_Pvkpd&_nc_ht=scontent.fbkk2-7.fna&oh=00_AT8s8lM8fgk4pz6RXsp1mpbE-HC3vsFRRGTFchvBaDxjHA&oe=631371DC'),
+						'image_name' => 'https://thailandtourismdirectory.go.th/assets/upload/2020/08/03/2020080306b21e2035fe3b2f1c1561b86ca39df0112239.jpg'),
 						array(
-						'image_name' => 'https://scontent.fbkk2-4.fna.fbcdn.net/v/t1.6435-9/46821430_2233087800088353_9131645485465993216_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=OZYNElnNzqcAX8O-0YJ&_nc_ht=scontent.fbkk2-4.fna&oh=00_AT-v_ei0xy5ewls6dOc0M-KNzFS1uqLeuUHkjRHp4ajXLQ&oe=631226B8'),
+						'image_name' => 'https://d23e6w66rgwdf8.cloudfront.net/images/hotels/id/553780/hotel_553780_1581924496_1426886593.JPG'),
 					);
 					?>
 					<div class="row g-2">

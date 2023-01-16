@@ -13,6 +13,24 @@ switch (strtoupper($current_page))
 		$p_manual = "text-secondary";
 		break;
 
+	case 'PROMOTION':
+		$p_icon = "fas fa-calendar-alt";
+		$p_title = "Promotion";
+		$p_dashboard = "text-secondary";
+		$p_profile = "text-secondary";
+		$p_dynamic = "text-primary";
+		$p_manual = "text-secondary";
+		break;
+
+	case 'ENHANCEMENT':
+		$p_icon = "fas fa-calendar-alt";
+		$p_title = "Enhancement";
+		$p_dashboard = "text-secondary";
+		$p_profile = "text-secondary";
+		$p_dynamic = "text-primary";
+		$p_manual = "text-secondary";
+		break;
+
 	case 'PROFILE':
 		$p_icon = "fas fa-h-square";
 		$p_title = "Profile";
@@ -30,6 +48,7 @@ switch (strtoupper($current_page))
 		$p_dynamic = "text-secondary";
 		$p_manual = "text-secondary";
 		break;
+
 
 	/*
 	default:
