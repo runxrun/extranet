@@ -42,7 +42,7 @@
 			<div class="row gx-3">				
 				<div class="pb-3 col-12 col-lg-8">
 					<div class="row gx-3">
-						<div class="pb-3 col-12 col-md-6 col-lg-4">
+						<div class="pb-3 col-6 col-md-6 col-lg-4">
 							<div class="bg-white border-bottom rounded-1 h-100 p-3">
 								<div class="fs-9 text-secondary">
 									Booking today
@@ -52,7 +52,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="pb-3 col-12 col-md-6 col-lg-4">
+						<div class="pb-3 col-6 col-md-6 col-lg-4">
 							<div class="bg-white border-bottom rounded-1 h-100 p-3">
 								<div class="fs-9 text-secondary">
 									Total nights

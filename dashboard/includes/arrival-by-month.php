@@ -66,8 +66,8 @@
 					'booking'=>'2',
 					'night'=>'3',
 					'revenue'=>'4,000.00',
-					'compare'=>'fas fa-equals',
-					'compare_class'=>'text-dark',
+					'compare'=>'fas fa-ellipsis-h',
+					'compare_class'=>'text-secondary',
 				),
 				array(
 					'year'=>'2022',
@@ -93,8 +93,8 @@
 					'booking'=>'0',
 					'night'=>'0',
 					'revenue'=>'0.00',
-					'compare'=>'fas fa-equals',
-					'compare_class'=>'text-dark',
+					'compare'=>'fas fa-ellipsis-h',
+					'compare_class'=>'text-secondary',
 				),
 				array(
 					'year'=>'2022',
@@ -102,8 +102,8 @@
 					'booking'=>'0',
 					'night'=>'0',
 					'revenue'=>'0.00',
-					'compare'=>'fas fa-equals',
-					'compare_class'=>'text-dark',
+					'compare'=>'fas fa-ellipsis-h',
+					'compare_class'=>'text-secondary',
 				),
 				array(
 					'year'=>'2022',
@@ -111,8 +111,8 @@
 					'booking'=>'0',
 					'night'=>'0',
 					'revenue'=>'0.00',
-					'compare'=>'fas fa-equals',
-					'compare_class'=>'text-dark',
+					'compare'=>'fas fa-ellipsis-h',
+					'compare_class'=>'text-secondary',
 				),
 				array(
 					'year'=>'2022',
@@ -120,8 +120,8 @@
 					'booking'=>'0',
 					'night'=>'0',
 					'revenue'=>'0.00',
-					'compare'=>'fas fa-equals',
-					'compare_class'=>'text-dark',
+					'compare'=>'fas fa-ellipsis-h',
+					'compare_class'=>'text-secondary',
 				),
 				array(
 					'year'=>'2022',
@@ -129,8 +129,8 @@
 					'booking'=>'0',
 					'night'=>'0',
 					'revenue'=>'0.00',
-					'compare'=>'fas fa-equals',
-					'compare_class'=>'text-dark',
+					'compare'=>'fas fa-ellipsis-h',
+					'compare_class'=>'text-secondary',
 				),
 			);
 			?>

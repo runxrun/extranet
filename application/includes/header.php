@@ -58,14 +58,20 @@
 				<div class="col-3 d-block d-md-none">
 					<div class="row justify-content-end">
 						<div class="col-auto">
-							<button class="btn fs-7 text-white border-0 shadow-none">
+							<button
+								class="btn fs-7 text-white border-0 shadow-none"
+								data-bs-toggle="offcanvas"
+								data-bs-target="#mainmenu"
+								aria-controls="mainmenu">
 								<i class="fas fa-bars"></i>
 							</button>
 						</div>
 					</div>
 				</div>
-			</div>
-			
+			</div>			
 		</div>
 	</div>
 </header>
+<?php 
+include('offcanvas-mainmenu.php');
+?>
