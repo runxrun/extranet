@@ -87,6 +87,7 @@ $room_info = array(
 					<th scope="col" class="text-nowrap">Username</th>
 					<th scope="col" class="text-nowrap">Activate</th>
 					<th>&nbsp;</th>
+					<th>&nbsp;</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -115,13 +116,22 @@ $room_info = array(
 							</span>
 						</button>
 					</td>
+					<td class="p-0">
+						<button
+							class="btn btn-outline-danger w-100 border-0 shadow-none rounded-0"
+							data-bs-toggle="modal"
+							data-bs-target="#deleteModal">
+							<span class="fs-8">
+								<i class="fas fa-trash"></i>
+							</span>
+						</button>
+					</td>
 				</tr>		
 				<?php
 				}
 				?>
 			</tbody>
 		</table>
-
 	</div>
 
 	<div class="d-flex justify-content-center py-4">
@@ -148,12 +158,28 @@ $room_info = array(
 
 </div>
 
-<!-- 
-<div class="pt-3 pb-4">
-	<div class="bg-white border-bottom rounded-1">
-		<div class="p-4">
-			
-		</div>
-	</div>
+
+<div 
+	class="modal fade"
+	id="deleteModal"
+	tabindex="-1"
+	aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="fs-6 fw-bold text-dark">Delete contact</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            	<div class="fs-6 text-secondary">
+            		Can you confirm that you wish to delete the contact named 
+            		<span class="text-nowrap">"Mr. Thitikorn Sriruya"?</span>
+            	</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary fs-8 rounded-0" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger fs-8 rounded-0 px-4">Delete</button>
+            </div>
+        </div>
+    </div>
 </div>
- -->

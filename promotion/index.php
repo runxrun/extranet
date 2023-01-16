@@ -16,12 +16,9 @@ include_once('../application/includes/mainmenu.php');
 				include('includes/promotion-title.php'); 
 				switch($promo_page)
 				{
-					case "ADD-PROMOTION" :
-						include('add-promotion.php'); 
-						break;
-					default : 
-						include('empty-promotion.php'); 
-						break;
+					case "ADD-PROMOTION" : include('add-promotion.php'); break;
+					default : include('list-promotion.php'); break;
+					//default : include('empty.php'); break;
 				}
 			?>
 		</div>

@@ -26,7 +26,7 @@
 					<?php 
 					$array_image = array(
 						array(
-						'image_name' => 'https://lh3.googleusercontent.com/p/AF1QipP0N_A0j31EeolaWtGtX7tjUj_qensD0r7FuRmT=w600-k'),
+						'image_name' => 'https://train.travflex.com/ImageData/Hotel/sonahouse_hotel-logo.jpg'),
 						array(
 						'image_name' => 'https://secure-img.traveligo.com/images/hotels/id/553780/hotel_553780_1581924496_1568839097.JPG'),
 						array(

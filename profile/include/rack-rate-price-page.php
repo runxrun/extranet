@@ -74,6 +74,7 @@ $room_info = array(
 					<th scope="col" class="text-nowrap">Quad price</th>
 					<th scope="col" class="text-nowrap">Unit price</th>
 					<th>&nbsp;</th>
+					<th>&nbsp;</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -96,6 +97,16 @@ $room_info = array(
 							onclick="window.open('/profile/hotel-profile.php?page=rack-rate-price-detail','_self');">
 							<span class="fs-8">
 								<i class="fas fa-search"></i>
+							</span>
+						</button>
+					</td>
+					<td class="p-0">
+						<button
+							class="btn btn-outline-danger w-100 border-0 shadow-none rounded-0"
+							data-bs-toggle="modal"
+							data-bs-target="#deleteModal">
+							<span class="fs-8">
+								<i class="fas fa-trash"></i>
 							</span>
 						</button>
 					</td>
@@ -130,4 +141,30 @@ $room_info = array(
 		</nav>
 	</div>
 
+</div>
+
+<div 
+	class="modal fade"
+	id="deleteModal"
+	tabindex="-1"
+	aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="fs-6 fw-bold text-dark">Delete contact</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            	<div class="fs-6 text-secondary">
+            		Can you confirm that you wish to delete?
+            		<br>
+            		<br>
+            	</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary fs-8 rounded-0" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger fs-8 rounded-0 px-4">Delete</button>
+            </div>
+        </div>
+    </div>
 </div>
