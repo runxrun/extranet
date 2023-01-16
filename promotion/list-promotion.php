@@ -1,7 +1,6 @@
 <div class="bg-white border-bottom rounded-1 mt-3">
 	<div class="p-2">
 		<div class="bg-light py-2 px-3 d-flex fs-7">
-			<span class="pe-2 text-dark"><i class="fas fa-briefcase"></i></span>
 			<span class="fw-bold text-dark">Promotions</span>
 		</div>
 	</div>
@@ -138,8 +137,7 @@
 								echo '<div>Count : '.$item['count'].'</div>';
 								echo '<div>Free : '.$item['free'].'</div>';
 							}
-							?>						
-
+							?>
 						</div>
 					</div>
 					<?php
@@ -168,122 +166,39 @@
 							</button>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
 		<?php 
 		}
 		?>
-	</div>	
-
-
-
-
-
-
-
-	<div 
-		class="modal fade"
-		id="deleteModal"
-		tabindex="-1"
-		aria-hidden="true">
-	    <div class="modal-dialog modal-dialog-centered">
-	        <div class="modal-content">
-	            <div class="modal-header">
-	                <div class="fs-6 fw-bold text-dark">Delete contact</div>
-	                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-	            </div>
-	            <div class="modal-body">
-	            	<div class="fs-6 text-secondary">
-	            		Can you confirm that you wish to delete this promotion 
-	            	</div>
-	            </div>
-	            <div class="modal-footer">
-	                <button type="button" class="btn btn-secondary fs-8 rounded-0" data-bs-dismiss="modal">Close</button>
-	                <button type="button" class="btn btn-danger fs-8 rounded-0 px-4">Delete</button>
-	            </div>
-	        </div>
-	    </div>
 	</div>
-
-
-
-<!-- 
-<div class="border-bottom">
-	<div class="row g-0">
-		<div class="col-4">
-			<div class="row g-0">		
-				<div class="col-auto">
-					<input type="checkbox">
-				</div>
-				<div class="col-auto">
-					<div>
-						Room Category
-					</div>
-					<div>
-						Meal Type
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-8">
-			<div class="row g-0 h-100">
-				<div class="border-start col-3">
-					<div>
-						<div>Advance Purchase</div>
-						<div>(by Period)</div>
-					</div>
-				</div>
-				<div class="border-start col-3">
-					<div>
-						<div>Advance Purchase</div>
-						<div>(by Notice Day)</div>
-					</div>
-				</div>
-				<div class="border-start col-3">
-					<div>
-						Long Stay / Pay Less
-					</div>
-				</div>
-				<div class="border-start col-3">
-					<div>
-						<div>Bonus Night </div>
-						<div>(Free Nights Earned)</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
- -->
-
-
-
-
-
-
-<!-- 
-					<div>
-						<div>Advance Purchase</div>
-						<div>(by Notice Day)</div>
-					</div>
-
-					<div>
-						<div>Long Stay / Pay Less</div>
-					</div>
-
-					<div>
-						<div>Bonus Night </div>
-						<div>(Free Nights Earned)</div>
-					</div>
- -->
-
-
-
-
-
 	<div class="p-4">
 		<br>
 	</div>
+</div>
+
+
+<div 
+	class="modal fade"
+	id="deleteModal"
+	tabindex="-1"
+	aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="fs-6 fw-bold text-dark">Delete contact</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            	<div class="fs-6 text-secondary">
+            		Can you confirm that you wish to delete this promotion 
+            	</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary fs-8 rounded-0" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger fs-8 rounded-0 px-4">Delete</button>
+            </div>
+        </div>
+    </div>
 </div>

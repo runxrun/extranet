@@ -19,7 +19,8 @@ include_once('../application/includes/header.php');
 				switch($enhancement_page)
 				{
 					case "ADD-ENHANCEMENT" : include('add-enhancement.php'); break;
-					default : include('empty.php'); break;
+					default : include('list-enhancement.php'); break;
+					//default : include('empty.php'); break;
 				}
 			?>
 		</div>
