@@ -18,7 +18,8 @@ include_once('../application/includes/header.php');
 				include('includes/enhancement-title.php'); 
 				switch($enhancement_page)
 				{
-					case "ADD-ENHANCEMENT" : include('add-enhancement.php'); break;
+					case "ADD-ENHANCEMENT" : 
+					case "EDIT-ENHANCEMENT" : include('add-enhancement.php'); break;
 					default : include('list-enhancement.php'); break;
 					//default : include('empty.php'); break;
 				}
