@@ -149,7 +149,7 @@
 						<div class="col-auto">
 							<button 
 								class="btn btn-outline-primary w-100 border-0 shadow-none rounded-0" 
-								onclick="window.open('/profile/hotel-profile.php?page=contact-detail','_self');">
+								onclick="window.open('/promotion/?page=edit-promotion','_self');">
 								<span class="fs-8">
 									<i class="fas fa-search"></i>
 								</span>

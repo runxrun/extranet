@@ -54,14 +54,24 @@ body {
 	border-color: $primary-color !important;
 }
 
+.rn-bgcover-center {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
 
-
-
-
-
-
-
-
+.rn-edit-img .rn-edit-img-hover {
+	opacity: 0;
+	transition: all 0.3s;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	color: #ffffff;
+}
+.rn-edit-img:hover .rn-edit-img-hover {
+	opacity: 1;
+}
 
 .rn-container-scroll {
 	overflow-x: auto;

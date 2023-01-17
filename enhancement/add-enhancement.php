@@ -80,8 +80,59 @@
 					</div>
 				</div>
 			</div>
-			<div>
+			<div class="pb-4">
 				<textarea class="form-control rounded-0 w-100 fs-7 p-3" cols="30" rows="10" placeholder="Enhancement description"></textarea>
+			</div>
+			<div class="pb-0">
+				<div class="row">
+					<div class="col-12 col-md-2">
+						<div class="bg-light border d-flex h-100 position-relative rn-edit-img">
+							<div class="position-absolute top-0 start-0 w-100 h-100">
+								<div class="d-flex w-100 h-100 justify-content-center align-items-center">
+									<div class="fs-7 text-secondary">
+										Upload image
+									</div>
+								</div>
+							</div>
+							<div 
+								class="position-absolute top-0 start-0 w-100 h-100 rn-bgcover-center" 
+								style="background-image: url('https://images.thaiza.com/content/b/455199.jpg');">
+							</div>
+							<div class="position-absolute top-0 start-0 w-100 h-100">
+								<div class="d-flex justify-content-center align-items-center rn-edit-img-hover">
+									Edit image
+								</div>
+							</div>
+
+							<div class="position-absolute top-0 start-0 w-100 h-100">
+								<input type="file" class="form-control w-100 h-100 border-0 rounded-0 opacity-0">
+							</div>
+							<div>
+								<img src="/application/images/image-ratio-4-3.gif" class="w-100">
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-10">
+						<div class="pb-1 fs-6 fw-bold text-dark">
+							Image enhancement
+						</div>
+						<div class="pt-1 fs-7 text-secondary">
+							Image name : the-cartoon-museum-01.jpg
+						</div>
+						<div class="pt-1 fs-7 text-secondary">
+							Dimention : 684 x 384 pixel
+						</div>
+						<div class="pt-1 fs-7 text-secondary">
+							Image size : 804kb
+						</div>
+						<div class="pt-3 d-flex">
+							<div class="form-check fs-7 fw-bold text-dark">
+								<input class="form-check-input" type="checkbox" value="1" id="imgEnhanceActivie" checked>
+								<label class="form-check-label" for="imgEnhanceActivie">Image active</label>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -97,13 +148,40 @@
 		</div>
 	</div>
 	<div class="p-4">
-			From date
+		<div class="row">
+			<div class="col-12 col-md-6 col-lg-3">
+				<div class="fs-7 text-secondary">
+					From date
+				</div>	
+				<div class="pt-1">
+					<div class="input-group">
+						<input type="text" class="form-control rounded-0 fs-7" value="30 Sep 2023">
+						<span class="input-group-text rounded-0">
+							<i class="fas fa-calendar-day"></i>
+						</span>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!-- 
+
+From date
+13-Jan-23
+To date
+31-Jan-23
+Cost
+850.00
+Sequence number
+0
+
+
+
 			13-Jan-23
 			To date
 			31-Jan-23
 			Cost
 			850.00
-			Sequence number
+			Sequence number -->
 	</div>
 </div>
 
