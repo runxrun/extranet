@@ -149,7 +149,6 @@ body {
 .rn-day-flag {
 	background-color: #fff4e5;
 }
-
 .rn-blackout {
 	background-color: #b62b38;
 }
@@ -168,8 +167,19 @@ body {
 
 
 
-
-
+.rn-sidemenu-hover {
+    transition: all 0.3s;
+    &:hover {
+	    background-color: $light-color;
+	}
+}
+.rn-side-submenu-hover {
+    color: $normal-color;
+    transition: all 0.3s;
+    &:hover {
+    	color: #2686eb;
+	}
+}
 
 .dropdown-item {
     color: $normal-color !important;
