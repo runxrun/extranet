@@ -325,7 +325,7 @@
 										Book from date
 									</div>
 									<div class="input-group">
-										<input type="text" class="form-control rounded-0 fs-7" value="30 Sep 2023">
+										<input type="text" class="form-control rounded-0 fs-7" value="01 Oct 2022">
 										<span class="input-group-text rounded-0">
 											<i class="fas fa-calendar-day"></i>
 										</span>
@@ -349,7 +349,7 @@
 										Rate from date
 									</div>
 									<div class="input-group">
-										<input type="text" class="form-control rounded-0 fs-7" value="30 Sep 2023">
+										<input type="text" class="form-control rounded-0 fs-7" value="01 Jan 2023">
 										<span class="input-group-text rounded-0">
 											<i class="fas fa-calendar-day"></i>
 										</span>

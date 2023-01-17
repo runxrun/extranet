@@ -143,24 +143,82 @@
 		<div role="alert" class="alert alert-warning py-2 fs-8 m-0">
 			<i class="fas fa-exclamation-circle"></i>
 			<span class="px-2">
-				set time
+				Determine the duration and expense for your enhancement.
 			</span>
 		</div>
 	</div>
 	<div class="p-4">
-		<div class="row">
-			<div class="col-12 col-md-6 col-lg-3">
+		<div class="pb-3 border-bottom mb-3">
+			<div class="row g-3">
+				<div class="col-auto">
+					<div class="form-check fs-7 fw-bold text-dark">
+						<input class="form-check-input" type="checkbox" value="1" id="enhancementActive" checked>
+						<label class="form-check-label" for="enhancementActive">This enhancement is activated</label>
+						<!-- Select the checkbox to activate the enhancement. -->
+					</div>
+				</div>		
+			</div>
+		</div>
+		<div class="row g-3">
+			<div class="col-12 col-sm-6 col-lg-3">
 				<div class="fs-7 text-secondary">
 					From date
 				</div>	
 				<div class="pt-1">
 					<div class="input-group">
-						<input type="text" class="form-control rounded-0 fs-7" value="30 Sep 2023">
+						<input type="text" class="form-control rounded-0 fs-7" value="13 Jan 2023">
 						<span class="input-group-text rounded-0">
 							<i class="fas fa-calendar-day"></i>
 						</span>
 					</div>
 				</div>	
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3">
+				<div class="fs-7 text-secondary">
+					To date
+				</div>	
+				<div class="pt-1">
+					<div class="input-group">
+						<input type="text" class="form-control rounded-0 fs-7" value="31 Jan 2023">
+						<span class="input-group-text rounded-0">
+							<i class="fas fa-calendar-day"></i>
+						</span>
+					</div>
+				</div>	
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3">
+				<div class="fs-7 text-secondary">
+					Cost
+				</div>	
+				<div class="pt-1">
+					<div class="input-group">
+						<input type="number" class="form-control rounded-0 fs-7" value="250.00">
+						<span class="input-group-text rounded-0 fs-7 fw-bold text-dark">
+							THB
+						</span>
+					</div>
+				</div>	
+			</div>
+			<div class="col-6 col-sm-3 col-lg-2">
+				<div class="fs-7 text-secondary">
+					Sequence
+				</div>	
+				<div class="pt-1">
+					<div class="input-group">
+						<input type="number" class="form-control rounded-0 fs-7" value="2">
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<div class="pt-4">
+			<div class="row g-3">
+				<div class="col-auto">
+					<div class="form-check fs-7 fw-bold text-dark">
+						<input class="form-check-input" type="checkbox" value="0" id="flightActive">
+						<label class="form-check-label" for="flightActive">Request flight detail</label>
+					</div>
+				</div>		
 			</div>
 		</div>
 		<!-- 
