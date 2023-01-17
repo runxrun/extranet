@@ -1,5 +1,5 @@
 <div class="bg-white border-bottom rounded-1 mt-3">
-	<div class="p-2">
+	<div class="pt-2 px-2">
 		<div class="bg-light py-2 px-3 d-flex fs-7">
 			<span class="fw-bold text-dark">Promotions</span>
 		</div>
@@ -79,7 +79,7 @@
 		foreach ($listpromo as $key => $value)
 		{
 		?>		
-		<div class="border-bottom pb-2 px-2 mb-2">
+		<div class="border-top py-3 px-2">
 			<div class="row g-3">
 				<div class="col-12 col-lg-3">
 					<div class="fs-9 text-secondary text-uppercase text-truncate">
@@ -173,11 +173,29 @@
 		}
 		?>
 	</div>
-	<div class="p-4">
-		<br>
-	</div>
 </div>
 
+<div class="d-flex justify-content-center py-4">
+	<nav aria-label="...">
+		<ul class="pagination">
+			<li class="page-item disabled">
+				<a class="page-link fs-8" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+			</li>
+			<li class="page-item active" aria-current="page">
+				<a class="page-link fs-8" href="#">1</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link fs-8" href="#">2</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link fs-8" href="#">3</a>
+			</li>
+			<li class="page-item">
+				<a class="page-link fs-8" href="#">Next</a>
+			</li>
+		</ul>
+	</nav>
+</div>
 
 <div 
 	class="modal fade"
