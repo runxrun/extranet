@@ -102,7 +102,7 @@
 					<?php 
 					$array_image = array(
 						array(
-						'image_name' => 'https://lh3.googleusercontent.com/p/AF1QipOJA02wgl7erD2csRk6u91Pl9_QV1Qetz_W8ofz=w600-k'),
+						'image_name' => '//ak-d.tripcdn.com/images/fd/hotelintl/g1/M07/5D/8E/CghzfFSuKkmANBPCAAClIsGOS8c907_R_960_640_R5_D.jpg'),
 						array(
 						'image_name' => 'https://ak-d.tripcdn.com/images/fd/hotelintl/g2/M0B/61/5D/CghzgVSuKeiAS_VlAACZ9HsuxHY489_R_960_660_R5_D.jpg'),
 					);
@@ -174,7 +174,7 @@
 						array(
 						'image_name' => 'https://d23e6w66rgwdf8.cloudfront.net/images/hotels/id/553780/hotel_553780_1581924496_975682311.JPG'),
 						array(
-						'image_name' => 'https://lh3.googleusercontent.com/p/AF1QipN2KqbnTQ-LVYVn0CWnd0rfx6Ht4WlcJF1SvxbQ=w600-k'),
+						'image_name' => '//ak-d.tripcdn.com/images/0221112000abog95d94B5_R_960_640_R5_D.jpg'),
 						array(
 						'image_name' => 'https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_360,q_auto,w_360/itemimages/87/49/8749882.jpeg'),
 						array(

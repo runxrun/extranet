@@ -8,24 +8,45 @@
 <?php include_once('../application/includes/mainmenu.php'); ?>
 <div class="bg-light">
 	<div class="container">
+
+
 		<div class="pt-4 d-none d-lg-block">
+			<?php 
+				$getpage = $_GET['page'];
+				$btnpage = array(
+					array('menuname'=>'Infomation', 'menulink'=>'information',),
+					array('menuname'=>'Description', 'menulink'=>'description',),
+					array('menuname'=>'Room Category', 'menulink'=>'room-category',),
+					array('menuname'=>'Facilities', 'menulink'=>'facilities',),
+					array('menuname'=>'Images', 'menulink'=>'images',),
+					array('menuname'=>'Contact List', 'menulink'=>'contact-list',),
+					array('menuname'=>'Meal Type', 'menulink'=>'meal-type-list',),
+					array('menuname'=>'Rack Rate Price', 'menulink'=>'rack-rate-price',),
+				);
+				switch($getpage)
+				{
+					case "information" : $idpage = 0; break;
+					case "description" : $idpage = 1; break;
+					case "room-category" : $idpage = 2; break;
+					case "room-category-detail" : $idpage = 2; break;
+					case "facilities" : $idpage = 3; break;
+					case "images" : $idpage = 4; break;
+					case "contact-list" : $idpage = 5; break;
+					case "contact-detail" : $idpage = 5; break;
+					case "meal-type-list" : $idpage = 6; break;
+					case "meal-type-detail" : $idpage = 6; break;
+					case "rack-rate-price" : $idpage = 7; break;
+					case "rack-rate-price-detail" : $idpage = 7; break;
+					default : $idpage = 99; break;
+				}
+			?>
 			<div class="d-flex flex-nowrap">
 				<?php
-				$page_get = $_GET['page'];
-				$info_array = array(
-					array('menu_name'=>'Information', 'menu_link'=>'information'),
-					array('menu_name'=>'Description', 'menu_link'=>'description'),
-					array('menu_name'=>'Room Category', 'menu_link'=>'room-category'),
-					array('menu_name'=>'Facilities', 'menu_link'=>'facilities'),
-					array('menu_name'=>'Images', 'menu_link'=>'images'),
-					array('menu_name'=>'Contact List', 'menu_link'=>'contact-list'),
-					array('menu_name'=>'Meal Type List', 'menu_link'=>'meal-type-list'),
-					array('menu_name'=>'Rack Rate Price', 'menu_link'=>'rack-rate-price'),
-				);
-				foreach ($info_array as $key => $value)
+				foreach ($btnpage as $key => $value)
 				{
+					$btnlink = '/profile/hotel-profile.php?page='.$value["menulink"];
 
-					if($value['menu_link'] == $page_get)
+					if($key==$idpage)
 					{
 						$btn_active = 'border-primary border-2';
 						$text_active = 'text-primary fw-bold';
@@ -35,25 +56,26 @@
 						$btn_active = '';
 						$text_active = 'text-secondary';
 					}
-				?>
+					?>
 					<div class="pb-1 w-100 p-0">
 						<div class="px-1">
 							<button
 								class="btn bg-white w-100 rounded-0 py-2 shadow-none border-0 border-bottom <?php echo $btn_active; ?>"
-								onclick="window.open('<?php echo '/profile/hotel-profile.php?page='.$value['menu_link']; ?>', '_self');">
-								<span class="d-block fs-9 text-truncate <?php echo $text_active; ?>">
-									<?php echo $value['menu_name']; ?>
-								</span>
+								onclick=" window.open('<?php echo $btnlink; ?>','_self');">					
+								<div class="d-block fs-9 text-truncate <?php echo $text_active; ?>">
+									<?php echo $value["menuname"] ?>								
+								</div>
 							</button>
 						</div>
 					</div>
-				<?php
+					<?php
 				}
 				?>
-			</div>	
+			</div>
 		</div>
+
 		<?php
-		switch(strtoupper($page_get))
+		switch(strtoupper($getpage))
 		{
 			case "INFORMATION" : $page_inc = 'information-page.php'; break;
 			case "DESCRIPTION" : $page_inc = 'description-page.php'; break;
