@@ -10,6 +10,7 @@ $roomtype = array(
 			//array('typeofroom'=>'Quad', 'typeofrate'=>'3200'),
 			array('typeofroom'=>'Extra bed for adult', 'typeofrate'=>'500'),
 			array('typeofroom'=>'Extra bed for child', 'typeofrate'=>'500'),
+			array('typeofroom'=>'Child sharing pay breakfast', 'typeofrate'=>'100'),
 		),
 	),
 	array(
@@ -20,6 +21,7 @@ $roomtype = array(
 			//array('typeofroom'=>'Quad', 'typeofrate'=>'-'),
 			array('typeofroom'=>'Extra bed for adult', 'typeofrate'=>'500'),
 			array('typeofroom'=>'Extra bed for child', 'typeofrate'=>'500'),
+			array('typeofroom'=>'Child sharing pay breakfast', 'typeofrate'=>'100'),
 		),
 	),
 );
@@ -40,13 +42,11 @@ foreach ($roomtype as $key => $value)
 		</div>
 		<div class="rn-table-rate-status ">
 			<div class="h-100 rn-table-border-start">
-				<!-- 
-				<button class="btn btn-outline-light shadow-none py-0 px-2 text-start w-100 h-100 rounded-0 fs-9">
-					<span class="text-dark fw-bold">
-						&nbsp;
+				<button class="btn border-0 shadow-none py-0 px-2 text-start w-100 h-100 rounded-0 fs-9">
+					<span class="text-secondary">
+						Black out
 					</span>
 				</button>
-				-->
 			</div>
 		</div>
 		<?php for($action_detail=1;$action_detail<=14;$action_detail++)
@@ -54,12 +54,11 @@ foreach ($roomtype as $key => $value)
 		?>
 		<div class="rn-table-rate-action">
 			<div class="h-100 rn-table-border-start">
-				<!-- 
-				<input
-					type="text"
-					class="form-control py-0 px-1 border-0 shadow-none rounded-0 w-100 h-100 fs-9 text-dark fw-bold text-center rn-rate-input rn-cursor-pointer"
-					value="">
-				-->
+				<div class="d-flex justify-content-center align-items-center h-100">
+					<label class="btn btn-outline-light d-flex h-100 w-100 justify-content-center align-items-center">
+						<input type="checkbox" class="form-check-input	rounded-0 m-0 p-0" id="btncheck1" autocomplete="off">
+					</label>
+				</div>
 			</div>
 		</div>				
 		<?php

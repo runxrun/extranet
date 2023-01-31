@@ -119,7 +119,7 @@ switch (strtoupper($current_page))
 								<div>
 									<a 
 										href="javascript: void(0);" 
-										class="dropdown-item py-2 fs-7 text-decoration-none"
+										class="dropdown-item py-2 fs-8 text-decoration-none"
 										onclick="window.open('/dynamic-rate/','_self');">
 										Dynamic Rates
 									</a>
@@ -127,7 +127,7 @@ switch (strtoupper($current_page))
 								<div>
 									<a
 										href="javascript: void(0);"										
-										class="dropdown-item py-2 fs-7 text-decoration-none"
+										class="dropdown-item py-2 fs-8 text-decoration-none"
 										onclick="window.open('/promotion/','_self');">
 										Promotion
 									</a>
@@ -135,7 +135,7 @@ switch (strtoupper($current_page))
 								<div>
 									<a
 										href="javascript: void(0);"
-										class="dropdown-item py-2 fs-7 text-decoration-none"
+										class="dropdown-item py-2 fs-8 text-decoration-none"
 										onclick="window.open('/enhancement/','_self');">
 										Enhancement
 									</a>

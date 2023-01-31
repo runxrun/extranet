@@ -19,9 +19,10 @@ $date_calr = array(
 <div class="rn-table-dates">
 	<div class="rn-table-row">
 		<div class="rn-table-rate-dateoption">
-
 			<div class="row justify-content-between align-items-center h-100">
 				<div class="col-4">
+					<?php
+					/*
 					<div class="p-1">
 						<button class="btn btn-outline-secondary rounded-0 border-0">
 							<div>
@@ -29,6 +30,24 @@ $date_calr = array(
 							</div>
 							<div class="fs-9">
 								<small>Select date</small>
+							</div>
+						</button>
+					</div>
+					*/
+					?>
+					<div class="p-1">
+						<button
+							class="btn btn-outline-secondary rounded-0 border-0"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#collapseSelectAll"
+							aria-expanded="false"
+							aria-controls="collapseSelectAll">
+							<div>
+								<i class="far fa-check-square"></i>
+							</div>
+							<div class="fs-9">
+								<small>Select all</small>
 							</div>
 						</button>
 					</div>
@@ -49,8 +68,10 @@ $date_calr = array(
 								<i class="fas fa-angle-left"></i>
 							</button>
 						</div>
-						<div class="px-2 fw-bold text-dark fs-7">
-							14 Jul 2022
+						<div class="px-2">
+							<button class="btn rounded-0 border-0 fs-7 p-0 fw-bold text-dark fs-7">
+								14 Jul 2022
+							</button>
 						</div>
 						<div class="px-0">
 							<button 
@@ -81,11 +102,21 @@ $date_calr = array(
 					<span class="date text-dark fw-bold"><?php echo $value['date']; ?></span>
 					<span class="month"><?php echo $value['month']; ?></span>
 				</div>
+				<div class="collapse border-top" id="collapseSelectAll">
+					<label class="btn btn-outline-light d-flex h-100 w-100 justify-content-center align-items-center">
+						<input type="checkbox" class="form-check-input rounded-0 m-0 p-0" id="btncheck1" autocomplete="off">
+					</label>
+				</div>
 			</div>
 		</div>		
 		<?php
 		} 
 		?>
 	</div>
+
+
+</div>
+
+
 </div>
 

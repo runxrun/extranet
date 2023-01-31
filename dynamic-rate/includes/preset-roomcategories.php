@@ -1,27 +1,8 @@
 
 
 <div class="container py-4">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	<div class="row">
 		<div class="col-12 col-md-6 col-lg-4">	
-
-
 			<div class="bg-white border-bottom rounded-1 overflow-hidden">
 				<div class="border-top border-3 border-primary py-2 px-3">
 					<div class="pb-2 border-bottom border-1 d-flex justify-content-between">
@@ -41,10 +22,7 @@
 						</div>
 					</div>
 				</div>
-
-
 				<div class="px-3 pb-2">
-
 					<div class="py-1">
 						<div class="row">
 							<div class="col-8">
@@ -153,19 +131,7 @@
 					</div>
 				</div>
 
-
-
 			</div>
 		</div>
 	</div>
-	
-
-
-
-
-
-
-
-
-
 </div>

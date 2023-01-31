@@ -9,7 +9,6 @@
 
 <div class="bg-light">
 	<div class="container">
-
 		<div class="pt-4">
 			<div class="row justify-content-between">
 				<div class="pb-4 col-12 col-md-auto">
@@ -90,6 +89,8 @@
 														Cut of day
 													</a>
 												</li>
+												<?php
+												/*
 												<li>
 													<a 
 														class="dropdown-item"
@@ -98,6 +99,8 @@
 														Black out
 													</a>
 												</li>
+												*/
+												?>
 											</ul>
 										</div>
 									</div>
