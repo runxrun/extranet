@@ -31,6 +31,15 @@ switch (strtoupper($current_page))
 		$p_manual = "text-secondary";
 		break;
 
+	case 'CANCELLATION-POLICY':
+		$p_icon = "fas fa-calendar-alt";
+		$p_title = "Enhancement";
+		$p_dashboard = "text-secondary";
+		$p_profile = "text-secondary";
+		$p_dynamic = "text-primary";
+		$p_manual = "text-secondary";
+		break;
+
 	case 'PROFILE':
 		$p_icon = "fas fa-h-square";
 		$p_title = "Profile";
@@ -138,6 +147,14 @@ switch (strtoupper($current_page))
 										class="dropdown-item py-2 fs-8 text-decoration-none"
 										onclick="window.open('/enhancement/','_self');">
 										Enhancement
+									</a>
+								</div>
+								<div>
+									<a
+										href="javascript: void(0);"
+										class="dropdown-item py-2 fs-8 text-decoration-none"
+										onclick="window.open('/cancellation-policy/','_self');">
+										Cancellation Policy
 									</a>
 								</div>
 							</div>

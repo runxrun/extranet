@@ -47,7 +47,7 @@ $date_calr = array(
 								<i class="far fa-check-square"></i>
 							</div>
 							<div class="fs-9">
-								<small>Select all</small>
+								<small>All rooms</small>
 							</div>
 						</button>
 					</div>
