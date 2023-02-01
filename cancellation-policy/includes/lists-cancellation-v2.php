@@ -8,7 +8,7 @@ $cxllists = array(
         'cancelpolicy'=>array(
             array(
                 'mealtype'=>'Room only',
-                'formdate'=>'01 Jan 2023',
+                'fromdate'=>'01 Jan 2023',
                 'todate'=>'31 Dec 2023',
                 'cancelday'=>14,
                 'chargerate'=>'30%',
@@ -17,7 +17,7 @@ $cxllists = array(
             ),
             array(
                 'mealtype'=>'Room only',
-                'formdate'=>'01 Jan 2023',
+                'fromdate'=>'01 Jan 2023',
                 'todate'=>'31 Dec 2023',
                 'cancelday'=>7,
                 'chargerate'=>'50%',
@@ -26,7 +26,7 @@ $cxllists = array(
             ),
             array(
                 'mealtype'=>'Room and Breakfast',
-                'formdate'=>'01 Jan 2023',
+                'fromdate'=>'01 Jan 2023',
                 'todate'=>'31 Dec 2023',
                 'cancelday'=>14,
                 'chargerate'=>'50%',
@@ -35,7 +35,7 @@ $cxllists = array(
             ),
             array(
                 'mealtype'=>'Room and Breakfast',
-                'formdate'=>'01 Jan 2023',
+                'fromdate'=>'01 Jan 2023',
                 'todate'=>'31 Dec 2023',
                 'cancelday'=>7,
                 'chargerate'=>'1',
@@ -50,7 +50,7 @@ $cxllists = array(
         'cancelpolicy'=>array(
             array(
                 'mealtype'=>'All room type',
-                'formdate'=>'01 Jan 2023',
+                'fromdate'=>'01 Jan 2023',
                 'todate'=>'31 Dec 2023',
                 'cancelday'=>14,
                 'chargerate'=>'50%',
@@ -65,7 +65,7 @@ $cxllists = array(
         'cancelpolicy'=>array(
             array(
                 'mealtype'=>'All room type',
-                'formdate'=>'01 Jan 2023',
+                'fromdate'=>'01 Jan 2023',
                 'todate'=>'31 Dec 2023',
                 'cancelday'=>14,
                 'chargerate'=>'50%',
@@ -81,7 +81,7 @@ $cxllists = array(
         'cancelpolicy'=>array(
             array(
                 'mealtype'=>'All room type',
-                'formdate'=>'01 Jan 2023',
+                'fromdate'=>'01 Jan 2023',
                 'todate'=>'31 Dec 2023',
                 'cancelday'=>14,
                 'chargerate'=>'-',
@@ -89,7 +89,7 @@ $cxllists = array(
             ),
             array(
                 'mealtype'=>'All room type',
-                'formdate'=>'01 Jan 2023',
+                'fromdate'=>'01 Jan 2023',
                 'todate'=>'31 Dec 2023',
                 'cancelday'=>9,
                 'chargerate'=>'30 THB',
@@ -97,7 +97,7 @@ $cxllists = array(
             ),
             array(
                 'mealtype'=>'All room type',
-                'formdate'=>'01 Jan 2023',
+                'fromdate'=>'01 Jan 2023',
                 'todate'=>'31 Dec 2023',
                 'cancelday'=>5,
                 'chargerate'=>'50%',
@@ -105,7 +105,7 @@ $cxllists = array(
             ),
             array(
                 'mealtype'=>'All room type',
-                'formdate'=>'01 Jan 2023',
+                'fromdate'=>'01 Jan 2023',
                 'todate'=>'31 Dec 2023',
                 'cancelday'=>2,
                 'chargerate'=>'100%',
@@ -152,7 +152,7 @@ $cxllists = array(
                     ?>
                     <tr>
                         <td class="text-nowrap text-secondary" scope="row"><?php echo $item['mealtype']; ?></td>
-                        <td class="text-nowrap text-secondary"><?php echo $item['formdate']; ?></td>
+                        <td class="text-nowrap text-secondary"><?php echo $item['fromdate']; ?></td>
                         <td class="text-nowrap text-secondary"><?php echo $item['todate']; ?></td>
                         <td class="text-nowrap text-secondary"><?php echo $item['cancelday']; ?> days</td>
                         <td class="text-nowrap text-secondary"><?php echo $item['chargerate']; ?></td>

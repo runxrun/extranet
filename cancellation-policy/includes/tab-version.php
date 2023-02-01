@@ -47,7 +47,7 @@
     	role="tabpanel"
     	aria-labelledby="pills-v1-tab">
     	<div class="py-4">
-			<?php include_once('lists-cancellation-v2.php'); ?>
+			<?php include_once('lists-cancellation-v1.php'); ?>
 		</div>
     </div>
     <div
@@ -56,7 +56,7 @@
     	role="tabpanel"
     	aria-labelledby="pills-v2-tab">
     	<div class="py-4">
-			<?php include_once('lists-cancellation-v1.php'); ?>
+			<?php include_once('lists-cancellation-v2.php'); ?>
 		</div>
     </div>
     <div
