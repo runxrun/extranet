@@ -158,14 +158,19 @@ $cxllists = array(
                         <td class="text-nowrap text-secondary"><?php echo $item['chargerate']; ?></td>
                         <td class="text-nowrap text-secondary"><?php echo $item['chargetype']; ?></td>
                         <td class="text-nowrap text-secondary p-0">
-                            <button class="btn btn-outline-primary w-100 h-100 border-0 shadow-none rounded-0" onclick="window.open('/promotion/?page=edit-promotion','_self');">
+                            <button
+                                class="btn btn-outline-primary w-100 h-100 border-0 shadow-none rounded-0"
+                                onclick="window.open('/cancellation-policy/?page=edit-cancellation','_self');">
                                 <span class="fs-8">
                                     <i class="fas fa-search"></i>
                                 </span>
                             </button>
                         </td>
                         <td class="text-nowrap text-secondary p-0">
-                            <button class="btn btn-outline-danger w-100 h-100 border-0 shadow-none rounded-0" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                            <button
+                                class="btn btn-outline-danger w-100 h-100 border-0 shadow-none rounded-0"
+                                data-bs-toggle="modal"
+                                data-bs-target="#deleteModal">
                                 <span class="fs-8">
                                     <i class="fas fa-trash"></i>
                                 </span>

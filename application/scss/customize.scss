@@ -177,23 +177,14 @@ body {
 
 
 
+.rn-tablehover {
+    transition: all 0.3s;
 
-
-
-
-
-
-
-
-.rn-tablehober {
-    tr td {
-        transition: all 0.3s;
-    }
-
-    tr:hover td{
+    &:hover {
         background-color: rgba(180, 180, 180, 0.2);
     }
 }
+
 
 .rn-sidemenu-hover {
     transition: all 0.3s;
