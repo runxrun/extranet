@@ -180,7 +180,8 @@ foreach ($cxllists_v1 as $key => $value)
 							<div>
 								<button 
 									class="btn btn-outline-primary w-100 border-0 shadow-none rounded-0" 
-									onclick="">
+									data-bs-target="#modalStepEdit"
+									data-bs-toggle="modal">
 									<span class="fs-8">
 										<i class="fas fa-search"></i>
 									</span>
@@ -190,34 +191,13 @@ foreach ($cxllists_v1 as $key => $value)
 								<button 
 									class="btn btn-outline-danger w-100 border-0 shadow-none rounded-0" 
 									data-bs-toggle="modal" 
-									data-bs-target="#deleteModal">
+									data-bs-target="#modalStepDelete">
 									<span class="fs-8">
 										<i class="fas fa-trash"></i>
 									</span>
 								</button>
 							</div>
 						</div>
-
-					</div>
-				</div>
-
-
-				<div class="row d-none">
-					<div class="col-12 col-md-4 col-xl-3">
-						<div class="row g-2">
-							<div class="col-auto fs-7 text-secondary text-nowrap">
-								<?php echo $item['fromdate']; ?>
-							</div>
-							<div class="col-auto fs-7 text-secondary text-nowrap">
-								to
-							</div>
-							<div class="col-auto fs-7 text-secondary text-nowrap">
-								<?php echo $item['todate']; ?>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-md-8 col-xl-9">
-
 					</div>
 				</div>
 			</div>
@@ -233,44 +213,116 @@ foreach ($cxllists_v1 as $key => $value)
 
 
 
-<!-- <div class="d-flex flex-wrap flex-md-nowrap rn-tablehover">
-							<div class="w-100">
-								<div class="d-flex pb-2">
-									<div class="fs-7 text-secondary px-2">
-										<?php echo $key3+1; ?>.
-									</div>
-									<div class="fs-7 text-secondary">
-										<?php
-										$template = '';
-										$days = ($detail['cancelday']>1 ? 'days' : 'day');
-										switch(strtolower($detail['chargetype']))
-										{
-											case "free" : $template = 'Cancellation made prior to <b class="text-dark">'.$detail['cancelday'].' '.$days.'</b> will result in no charges for the cancellation fee on the booking.'; break;
-											case "percent" : $template = 'Cancellations up to <b class="text-dark">'.$detail['cancelday'].' '.$days.'</b> in advance, with a <b class="text-dark">'.$detail['chargerate'].'% charge</b> of the room price'; break;
-											case "full" : $template = 'Cancellations must be made <b class="text-dark">'.$detail['cancelday'].' '.$days.'</b> prior to arrival or the room price will not be refunded.'; break;
-										}
-										echo $template;
-										?>										
-									</div>
-								</div>
+
+<div class="modal fade" id="modalStepEdit" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title fs-6 fw-bold text-dark">Select cancellation policy</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+        		<?php 
+        		$select_cxl = array(
+        			array('desc' => 'Cancellation made prior to 14 days will result in no charges for the cancellation fee on the booking.',),
+        			array('desc' => 'Cancellations up to 10 days in advance, with a 50% charge of the room price',),
+        			array('desc' => 'Cancellations must be made 5 days prior to arrival or the room price will not be refunded.',),
+        		);
+        		foreach ($select_cxl as $key => $value)
+        		{
+        			$checked = ($key==0 ? 'checked' : '');
+        		?>
+	            	<div class="d-flex">
+	            		<div class="">
+							<div class="form-check fs-7">
+								<input
+									type="radio"
+									name="select_cxl"
+									id="<?php echo 'chk'.$key; ?>"
+									<?php echo $checked; ?>
+									class="form-check-input">
+								<label class="form-check-label text-secondary" for="<?php echo 'chk'.$key;?>">
+									<?php echo $value['desc']; ?>
+								</label>
 							</div>
-							<div>
-								<div class="d-flex flex-nowrap">
-									<div>
-										<button class="btn btn-outline-primary w-100 border-0 shadow-none rounded-0" onclick="window.open('/promotion/?page=edit-promotion','_self');">
-											<span class="fs-8">
-												<i class="fas fa-search"></i>
-											</span>
-										</button>
-									</div>
-									<div>
-										<button class="btn btn-outline-danger w-100 border-0 shadow-none rounded-0" data-bs-toggle="modal" data-bs-target="#deleteModal">
-											<span class="fs-8">
-												<i class="fas fa-trash"></i>
-											</span>
-										</button>
-									</div>
-								</div>
+	            		</div>
+	            	</div>
+        		<?php
+        		}
+        		?>
+            </div>
+            <div class="modal-footer">
+		        <button 
+			        type="button"
+			        class="btn btn-secondary rounded-0 fs-7"
+			        data-bs-dismiss="modal">
+				    Close
+				</button>
+		        <button
+		        	type="button"
+		        	class="btn btn-primary rounded-0 fs-7"
+		        	onclick="window.open('/cancellation-policy/?page=edit-cancellation','_self');">
+	        		Edit Cancellation
+	        	</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" id="modalStepDelete" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title fs-6 fw-bold text-dark">Select cancellation policy</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+        		<?php 
+        		$select_cxl = array(
+        			array('desc' => 'Cancellation made prior to 14 days will result in no charges for the cancellation fee on the booking.',),
+        			array('desc' => 'Cancellations up to 10 days in advance, with a 50% charge of the room price',),
+        			array('desc' => 'Cancellations must be made 5 days prior to arrival or the room price will not be refunded.',),
+        		);
+        		foreach ($select_cxl as $key => $value)
+        		{
+        			$checked = ($key==0 ? 'checked' : '');
+        		?>
+	            	<div class="d-flex">
+	            		<div class="">
+							<div class="form-check fs-7">
+								<input
+									type="radio"
+									name="select_cxl"
+									id="<?php echo 'chkdel'.$key; ?>"
+									<?php echo $checked; ?>
+									class="form-check-input">
+								<label class="form-check-label text-secondary" for="<?php echo 'chkdel'.$key;?>">
+									<?php echo $value['desc']; ?>
+								</label>
 							</div>
-						</div>		
-						 -->
+	            		</div>
+	            	</div>
+        		<?php
+        		}
+        		?>
+            </div>
+            <div class="modal-footer">
+		        <button 
+			        type="button"
+			        class="btn btn-secondary rounded-0 fs-7"
+			        data-bs-dismiss="modal">
+				    Close
+				</button>
+		        <button
+		        	type="button"
+		        	class="btn btn-danger rounded-0 fs-7"
+		        	data-bs-dismiss="modal">
+	        		Delete Cancellation
+	        	</button>
+            </div>
+        </div>
+    </div>
+</div>

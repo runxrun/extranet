@@ -1,8 +1,5 @@
-
-
 <div class="pb-4">
 	<div class="bg-white border-bottom rounded-1">
-
 		<div class="py-3 px-4 border-bottom">
 			<div class="d-flex">
 				<span class="fs-6 fw-bold text-primary pe-2">
@@ -14,7 +11,6 @@
 			</div>
 		</div>
 		<div class="p-4">
-
 			<div class="row g-3">
 				<div class="col-12 col-sm-6 col-lg-3">
 					<div class="fs-7 text-secondary">
@@ -75,8 +71,6 @@
 				</div>
 			</div>
 		</div>
-
-
 		<div class="px-4">
 			<div role="alert" class="alert alert-warning py-2 fs-8 m-0">
 				<i class="fas fa-exclamation-circle"></i>
@@ -87,8 +81,6 @@
 			</div>
 		</div>
 		<div class="p-4">
-			
-
 			<div class="row">
 				<div class="col-auto">
 					<div class="form-check">
