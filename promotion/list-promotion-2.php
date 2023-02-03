@@ -106,13 +106,13 @@ $listpromo = array(
 					</th>
 				</tr>
 				<tr>
-					<th scope="col">Meal type</th>
-					<th scope="col">Promotion</th>
-					<th scope="col">Stay</th>
-					<th scope="col">Book</th>
-					<th scope="col">Rate Code</th>
-					<th scope="col">Discount</th>
-					<th scope="col">Discount Rate</th>
+					<th scope="col" class="text-nowrap">Meal type</th>
+					<th scope="col" class="text-nowrap">Promotion</th>
+					<th scope="col" class="text-nowrap">Stay</th>
+					<th scope="col" class="text-nowrap">Book</th>
+					<th scope="col" class="text-nowrap">Rate Code</th>
+					<th scope="col" class="text-nowrap">Discount</th>
+					<th scope="col" class="text-nowrap">Discount Rate</th>
 					<th scope="col" colspan="2"></th>
 				</tr>
 			</thead>
@@ -122,9 +122,13 @@ $listpromo = array(
 				{
 					?>
 					<tr class="text-secondary">
-						<td><?php echo $item['mealtype']; ?></td>
 						<td>
-							<div class="fw-bold <?php echo $item['class']; ?>">
+							<div class="text-nowrap">
+								<?php echo $item['mealtype']; ?>
+							</div>
+						</td>
+						<td>
+							<div class="fw-bold text-nowrap <?php echo $item['class']; ?>">
 								<?php echo $item['type']; ?>
 							</div>						
 						</td>
@@ -138,9 +142,21 @@ $listpromo = array(
 								<?php echo $item['book']; ?>
 							</div>
 						</td>
-						<td><?php echo $item['ratecode']; ?></td>
-						<td><?php echo $item['discount']; ?></td>
-						<td><?php echo $item['discountrate']; ?></td>
+						<td>
+							<div class="text-nowrap">
+								<?php echo $item['ratecode']; ?>
+							</div>
+						</td>
+						<td>
+							<div class="text-nowrap">
+								<?php echo $item['discount']; ?>
+							</div>
+						</td>
+						<td>
+							<div class="text-nowrap">
+								<?php echo $item['discountrate']; ?>
+							</div>
+						</td>
 						<td class="p-0">
 							<button
 								class="btn btn-outline-primary w-100 border-0 shadow-none rounded-0"
