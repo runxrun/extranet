@@ -1,10 +1,15 @@
+
+
 <div class="pb-4">
 	<div class="bg-white border-bottom rounded-1">
-		<div class="pt-4 px-4">
-			<div role="alert" class="alert alert-warning py-2 fs-8 m-0">
-				<i class="fas fa-exclamation-circle"></i>
-				<span class="px-2">
-					Update cancellation policy
+
+		<div class="py-3 px-4 border-bottom">
+			<div class="d-flex">
+				<span class="fs-6 fw-bold text-primary pe-2">
+					<i class="fas fa-info-circle"></i>
+				</span>
+				<span class="fs-6 fw-bold text-primary">
+					Cancellation policy
 				</span>
 			</div>
 		</div>
@@ -17,7 +22,7 @@
 					</div>	
 					<div class="pt-1">
 						<div class="input-group">
-							<input type="text" class="form-control rounded-0 fs-7" value="13 Jan 2023">
+							<input type="text" class="form-control rounded-0 fs-7" value="01 Jan 2023">
 							<span class="input-group-text rounded-0">
 								<i class="fas fa-calendar-day"></i>
 							</span>
@@ -30,7 +35,7 @@
 					</div>	
 					<div class="pt-1">
 						<div class="input-group">
-							<input type="text" class="form-control rounded-0 fs-7" value="31 Jan 2023">
+							<input type="text" class="form-control rounded-0 fs-7" value="31 Dec 2023">
 							<span class="input-group-text rounded-0">
 								<i class="fas fa-calendar-day"></i>
 							</span>
@@ -70,16 +75,9 @@
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
 
 
-
-
-
-<div class="pb-4">
-	<div class="bg-white border-bottom rounded-1">
-		<div class="pt-4 px-4">
+		<div class="px-4">
 			<div role="alert" class="alert alert-warning py-2 fs-8 m-0">
 				<i class="fas fa-exclamation-circle"></i>
 				<span class="px-2">
