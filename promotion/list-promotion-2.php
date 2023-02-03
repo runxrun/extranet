@@ -2,63 +2,66 @@
 $listpromo = array(
 	array(
 		"roomcatg" => "Standard",
-		"mealtype" => "All meal type",
 		"promotion" => array(
 			array(
+				"mealtype" => "All meal type",
 				"class" => "text-primary",
 				"type" => "Advance Purchase (by Period)",
 				"stay" => "14 Jan 2023 to 31 Jan 2023",
 				"book" => "14 Jan 2023 to 31 Jan 2023",
-				"ratecode" => "EB11",
-				"discount" => "percent",
-				"discountrate" => "10",
+				"ratecode" => "EB10",
+				"discount" => "Percent",
+				"discountrate" => "10%",
 			),
-		),
-	),
-	array(
-		"roomcatg" => "Standard",
-		"mealtype" => "All meal type",
-		"promotion" => array(
 			array(
-				"class" => "text-primary",
-				"type" => "Advance Purchase (by Notice Day)",
-				"stay" => "01 Feb 2023 to 28 Feb 2023",
-				"book" => "01 Feb 2023 to 28 Feb 2023",
-				"ratecode" => "FEB11",
-				"discount" => "percent",
-				"discountrate" => "7",
+				"mealtype" => "All meal type",
+				"class" => "text-success",
+				"type" => "Long stay / Pay less",
+				"stay" => "14 Jan 2023 to 31 Jan 2023",
+				"book" => "14 Jan 2023 to 31 Jan 2023",
+				"ratecode" => "LN12",
+				"discount" => "Percent",
+				"discountrate" => "12%",
+			),
+			array(
+				"mealtype" => "Room Only",
+				"class" => "text-success",
+				"type" => "Long stay / Pay less",
+				"stay" => "14 Jan 2023 to 31 Jan 2023",
+				"book" => "14 Jan 2023 to 31 Jan 2023",
+				"ratecode" => "LN15",
+				"discount" => "Percent",
+				"discountrate" => "15%",
 			),
 		),
 	),
 	array(
 		"roomcatg" => "Deluxe",
-		"mealtype" => "All meal type",
 		"promotion" => array(
 			array(
-				"class" => "text-success",
-				"type" => "Long stay / Pay less",
-				"stay" => "12 Jan 2022 to 16 Jan 2023",
-				"book" => "12 Jan 2022 to 16 Jan 2023",
-				"ratecode" => "",
-				"discount" => "amount",
-				"discountrate" => "200",
+				"mealtype" => "All meal type",
+				"class" => "text-primary",
+				"type" => "Advance Purchase (by Period)",
+				"stay" => "14 Jan 2023 to 31 Jan 2023",
+				"book" => "14 Jan 2023 to 31 Jan 2023",
+				"ratecode" => "EB10",
+				"discount" => "Percent",
+				"discountrate" => "10%",
 			),
 		),
 	),
 	array(
-		"roomcatg" => "Family Suite",
-		"mealtype" => "All meal type",
+		"roomcatg" => "Studio",
 		"promotion" => array(
 			array(
+				"mealtype" => "All meal type",
 				"class" => "text-danger",
 				"type" => "Bonus Night (Free Night Earned)",
-				"stay" => "12 Jan 2022 to 16 Jan 2023",
-				"book" => "12 Jan 2022 to 16 Jan 2023",
+				"stay" => "14 Jan 2023 to 31 Jan 2023",
+				"book" => "14 Jan 2023 to 31 Jan 2023",
 				"ratecode" => "",
-				"discount" => "",
-				"discountrate" => "",
-				"count" => "2",
-				"free" => "1",
+				"discount" => "Count 2",
+				"discountrate" => "Free 1",
 			),
 		),
 	),
@@ -87,45 +90,95 @@ $listpromo = array(
 		</div>
 	</div>
 </div>
-
 <div class="mt-4 table-responsive">
-	<table class="table bg-white fs-7">
+	<table class="table table-bordered bg-white fs-7">
 		<?php 
 		foreach ($listpromo as $key => $value)
 		{
+		?>
+			<thead>
+				<tr>
+					<th class="bg-light" colspan="9">
+						<div class="d-flex fs-7 fw-bold text-dark">
+							<div class="px-1"><i class="fas fa-bed"></i></div>
+							<div class="px-1"><?php echo $value['roomcatg']; ?></div>
+						</div>
+					</th>
+				</tr>
+				<tr>
+					<th scope="col">Meal type</th>
+					<th scope="col">Promotion</th>
+					<th scope="col">Stay</th>
+					<th scope="col">Book</th>
+					<th scope="col">Rate Code</th>
+					<th scope="col">Discount</th>
+					<th scope="col">Discount Rate</th>
+					<th scope="col" colspan="2"></th>
+				</tr>
+			</thead>
+	  		<tbody>
+				<?php 
+				foreach ($value['promotion'] as $key2 => $item)
+				{
+					?>
+					<tr class="text-secondary">
+						<td><?php echo $item['mealtype']; ?></td>
+						<td>
+							<div class="fw-bold <?php echo $item['class']; ?>">
+								<?php echo $item['type']; ?>
+							</div>						
+						</td>
+						<td>
+							<div class="text-nowrap">
+								<?php echo $item['stay']; ?>
+							</div>
+						</td>
+						<td>
+							<div class="text-nowrap">
+								<?php echo $item['book']; ?>
+							</div>
+						</td>
+						<td><?php echo $item['ratecode']; ?></td>
+						<td><?php echo $item['discount']; ?></td>
+						<td><?php echo $item['discountrate']; ?></td>
+						<td class="p-0">
+							<button
+								class="btn btn-outline-primary w-100 border-0 shadow-none rounded-0"
+								onclick="window.open('/promotion/?page=edit-promotion','_self');">
+								<span class="fs-8">
+									<i class="fas fa-search"></i>
+								</span>
+							</button>
+						</td>
+						<td class="p-0">
+							<button 
+								class="btn btn-outline-danger w-100 border-0 shadow-none rounded-0" 
+								data-bs-toggle="modal" 
+								data-bs-target="#deleteModal">
+								<span class="fs-8">
+									<i class="fas fa-trash"></i>
+								</span>
+							</button>
+						</td>
+					</tr>
+					<?php
+				}
+				?>
+	  		</tbody>
+			<?php 				
+			if($key != (count($listpromo)-1))
+				{
+					echo '
+						<th
+							colspan="9"
+							class="bg-light p-0"
+							style="border: 0px; border-left: 1px solid #f2f3f4; border-right: 1px solid #f2f3f4;">
+							<div style="background-color: #f2f3f4; height: 24px;"></div>
+						</th>
+					';
+				}
+		}
 		?>		
-		<thead class="table-light">
-			<tr>
-				<th scope="col">#</th>
-				<th scope="col">First</th>
-				<th scope="col">Last</th>
-				<th scope="col">Handle</th>
-			</tr>
-		</thead>
-  		<tbody>
-			<?php 
-			foreach ($value['promotion'] as $key2 => $item)
-			{
-			?>
-			<tr>
-				<td>#</td>
-				<td>First</td>
-				<td>Last</td>
-				<td>Handle</td>
-			</tr>
-			<?php 
-			}
-			?>	
-			<tr class="bg-light">
-				<td><br></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-  		</tbody>
-	<?php 
-	}
-	?>		
 	</table>
 </div>
 

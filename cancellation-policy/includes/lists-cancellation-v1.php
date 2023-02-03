@@ -289,7 +289,7 @@ foreach ($cxllists_v1 as $key => $value)
         		foreach ($select_cxl as $key => $value)
         		{
         			$checked = ($key==0 ? 'checked' : '');
-        		?>
+        			?>
 	            	<div class="d-flex">
 	            		<div class="">
 							<div class="form-check fs-7">
@@ -305,7 +305,7 @@ foreach ($cxllists_v1 as $key => $value)
 							</div>
 	            		</div>
 	            	</div>
-        		<?php
+        			<?php
         		}
         		?>
             </div>

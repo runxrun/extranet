@@ -13,12 +13,12 @@ include_once('../application/includes/mainmenu.php');
 	<div class="container">
 		<div class="py-4">
 			<?php
-				include('includes/promotion-title.php'); 
+				//include('includes/promotion-title.php'); 
 				switch($promo_page)
 				{
 					case "ADD-PROMOTION" : 
 					case "EDIT-PROMOTION" : include('add-promotion.php'); break;
-					default : include('list-promotion.php'); break;
+					default : include('list-promotion-2.php'); break;
 					//default : include('empty.php'); break;
 				}
 			?>
