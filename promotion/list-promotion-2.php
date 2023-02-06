@@ -68,29 +68,12 @@ $listpromo = array(
 ); 
 ?>
 
-<div class="bg-white border-bottom rounded-1 p-4">
-	<div class="row justify-content-between">
-		<div class="pb-2 pb-sm-0 col-auto">
-			<div class="d-flex">
-				<span class="fs-6 fw-bold text-primary pe-2">
-					<i class="fas fa-info-circle"></i>
-				</span>
-				<span class="fs-6 fw-bold text-primary">
-					Promotion
-				</span>
-			</div>
-		</div>
-		<div class="col-auto">
-			<button
-				class="btn btn-success rounded-0 py-2 fs-8 text-white"
-				onclick="window.open('/promotion/?page=add-promotion','_self');">
-				<span class="pe-2"><i class="fas fa-plus-circle"></i></span>
-				<span class="pe-2">Add promotion</span>
-			</button>
-		</div>
-	</div>
-</div>
-<div class="mt-4 table-responsive">
+<?php
+include_once('includes/promotion-title.php');
+include_once('includes/promotion-filter.php');
+?>
+
+<div class="table-responsive">
 	<table class="table table-bordered bg-white fs-7">
 		<?php 
 		foreach ($listpromo as $key => $value)
@@ -201,22 +184,13 @@ $listpromo = array(
 
 
 
-<div class="bg-white border-bottom rounded-1 mt-3  d-none">
+<div class="bg-white border-bottom rounded-1 mt-3 d-none">
 	<div class="pt-2 px-2">
 		<div class="bg-light py-2 px-3 d-flex fs-7">
 			<span class="fw-bold text-dark">Promotions</span>
 		</div>
 	</div>
 	<div class="px-2">
-
-
-
-
-
-
-
-
-
 		<?php 
 		foreach ($listpromo as $key => $value)
 		{
@@ -317,6 +291,7 @@ $listpromo = array(
 	</div>
 </div>
 
+<!-- 
 <div class="d-flex justify-content-center py-4">
 	<nav aria-label="...">
 		<ul class="pagination">
@@ -338,6 +313,7 @@ $listpromo = array(
 		</ul>
 	</nav>
 </div>
+-->
 
 <div 
 	class="modal fade"

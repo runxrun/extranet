@@ -1,4 +1,14 @@
-<div class="bg-white border-bottom rounded-1 mt-3">
+<div class="bg-white border-bottom rounded-1">
+	<div class="py-3 px-4 border-bottom">
+		<div class="d-flex">
+			<span class="fs-6 fw-bold text-primary pe-2">
+				<i class="fas fa-info-circle"></i>
+			</span>
+			<span class="fs-6 fw-bold text-primary">
+				Enhancement
+			</span>
+		</div>
+	</div>
 	<div class="pt-4 px-4">
 		<div role="alert" class="alert alert-warning py-2 fs-8 m-0">
 			<i class="fas fa-exclamation-circle"></i>

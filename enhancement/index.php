@@ -15,7 +15,7 @@ include_once('../application/includes/header.php');
 	<div class="container">
 		<div class="py-4">
 			<?php
-				include('includes/enhancement-title.php'); 
+				//include('includes/enhancement-title.php'); 
 				switch($enhancement_page)
 				{
 					case "ADD-ENHANCEMENT" : 

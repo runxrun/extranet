@@ -20,7 +20,10 @@
 		</div>
 	</div>
 </div>
-<div class="py-4">
+
+<?php include_once('includes/cancellation-filter.php'); ?>
+
+<div class="pb-4">
 	<div class="tab-content" id="pills-tabContent">
 	    <div
 	    	class="tab-pane fade show active"
