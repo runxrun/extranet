@@ -81,5 +81,48 @@
 	            </div>
 	        </div>
 	    </div>
+	    <div class="pb-4 col-auto">
+	    	<div class="nav nav-pills" id="pills-tab" role="tablist">
+			    <div class="nav-item" role="presentation">
+			        <button
+						id="pills-v1-tab"
+						type="button"
+						role="tab"
+			        	class="nav-link rounded-0 fs-9 w-100 py-1 px-2 active"
+						data-bs-toggle="pill"
+						data-bs-target="#pills-v1"
+						aria-controls="pills-v1"
+						aria-selected="true">
+						<i class="fas fa-list"></i>
+					</button>
+			    </div>
+			    <div class="nav-item" role="presentation">
+			        <button
+						id="pills-v2-tab"
+						type="button"
+						role="tab"
+			        	class="nav-link rounded-0 fs-9 w-100 py-1 px-2" 
+						data-bs-toggle="pill"
+						data-bs-target="#pills-v2"
+						aria-controls="pills-v2"
+						aria-selected="false">
+						<i class="fas fa-table"></i>
+					</button>
+			    </div>
+			    <div class="nav-item" role="presentation">
+			        <button
+						id="pills-v3-tab"
+						type="button"
+						role="tab"
+			        	class="nav-link rounded-0 fs-9 w-100 py-1 px-2" 
+						data-bs-toggle="pill"
+						data-bs-target="#pills-v3"
+						aria-controls="pills-v3"
+						aria-selected="false">
+						<i class="fas fa-border-none"></i>
+					</button>
+			    </div>
+			</div>
+	    </div>
 	</div>
 </div>

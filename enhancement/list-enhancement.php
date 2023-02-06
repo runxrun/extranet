@@ -98,7 +98,7 @@ include('includes/enhancement-filter.php');
     </table>
 </div>
 	
-
+<!-- 
 <div class="d-flex justify-content-center py-4">
 	<nav aria-label="...">
 		<ul class="pagination">
@@ -120,7 +120,7 @@ include('includes/enhancement-filter.php');
 		</ul>
 	</nav>
 </div>
-
+ -->
 
 <div 
 	class="modal fade"
