@@ -29,6 +29,30 @@
 	            </div>
 	            <div class="col-auto">
 	                <div class="dropdown">
+	                    <button type="button" class="btn dropdown-toggle border bg-white rounded-0 fs-9" id="btnPromoType" data-bs-toggle="dropdown" aria-expanded="false">
+	                        Promotion type
+	                    </button>
+	                    <ul class="dropdown-menu rounded-0 fs-9" aria-labelledby="btnPromoType">
+	                        <li>
+	                            <a class="dropdown-item" href="javascript:void(0)">
+	                            	Long stay / Pay less
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a class="dropdown-item" href="javascript:void(0)">
+	                                Advance Purchase (by Period)
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a class="dropdown-item" href="javascript:void(0)">
+	                                Bonus Night (Free Night Earned)
+	                            </a>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <div class="col-auto">
+	                <div class="dropdown">
 	                    <button type="button" class="btn dropdown-toggle border bg-white rounded-0 fs-9" id="btnMealType" data-bs-toggle="dropdown" aria-expanded="false">
 	                        Meal type
 	                    </button>
