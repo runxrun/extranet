@@ -98,7 +98,7 @@
 									<div class="row">
 										<div class="col-12">
 											<div class="pb-2 form-check fs-7 text-secondary">
-								                <input class="form-check-input rounded-0" type="checkbox" value="" id="selected_all">
+								                <input class="form-check-input rounded-0" type="checkbox" id="selected_all" checked>
 								                <label class="form-check-label fw-bold text-dark" for="selected_all">Select all</label>
 								            </div>
 										</div>
@@ -116,7 +116,7 @@
 										?>
 										<div class="col-12">
 								            <div class="form-check fs-7 text-secondary">
-								                <input class="form-check-input rounded-0" type="checkbox" value="" id="<?php echo $value['id']; ?>">
+								                <input class="form-check-input rounded-0" type="checkbox" id="<?php echo $value['id']; ?>" checked>
 								                <label class="form-check-label" for="<?php echo $value['id']; ?>"><?php echo $value['day']; ?></label>
 								            </div>
 										</div>
@@ -127,37 +127,37 @@
 						    	</div>
 						        <div class="col-12 col-lg-4">
 									<div class="pb-2 form-check fs-7 text-secondary">
-						                <input class="form-check-input rounded-0" type="checkbox" value="" id="selected_all_roomtype">
+						                <input class="form-check-input rounded-0" type="checkbox" id="selected_all_roomtype" checked>
 						                <label class="form-check-label fw-bold text-dark" for="selected_all_roomtype">Select all</label>
 						            </div>
 						            <div class="form-check fs-7 text-secondary">
-						                <input class="form-check-input rounded-0" type="checkbox" value="" id="sgtwdb">
+						                <input class="form-check-input rounded-0" type="checkbox" id="sgtwdb" checked>
 						                <label class="form-check-label" for="sgtwdb">Single / Twin / Double</label>
 						            </div>
 						            <div class="form-check fs-7 text-secondary">
-						                <input class="form-check-input rounded-0" type="checkbox" value="" id="quad">
+						                <input class="form-check-input rounded-0" type="checkbox" id="quad" checked>
 						                <label class="form-check-label" for="quad">Quad</label>
 						            </div>
 						            <div class="form-check fs-7 text-secondary">
-						                <input class="form-check-input rounded-0" type="checkbox" value="" id="extrabed">
+						                <input class="form-check-input rounded-0" type="checkbox" id="extrabed" checked>
 						                <label class="form-check-label" for="extrabed">Extra bed</label>
 						            </div>
 						            <div class="form-check fs-7 text-secondary">
-						                <input class="form-check-input rounded-0" type="checkbox" value="" id="extrabedchild">
+						                <input class="form-check-input rounded-0" type="checkbox" id="extrabedchild" checked>
 						                <label class="form-check-label" for="extrabedchild">Extra bed - child</label>
 						            </div>
 						        </div>
 						        <div class="col-12 col-lg-4">
 									<div class="pb-2 form-check fs-7 text-secondary">
-						                <input class="form-check-input rounded-0" type="checkbox" value="" id="selected_all_meal">
+						                <input class="form-check-input rounded-0" type="checkbox" id="selected_all_meal" checked>
 						                <label class="form-check-label fw-bold text-dark" for="selected_all_meal">Select all</label>
 						            </div>
 						            <div class="form-check fs-7 text-secondary">
-						                <input class="form-check-input rounded-0" type="checkbox" value="" id="bfad">
+						                <input class="form-check-input rounded-0" type="checkbox" id="bfad" checked>
 						                <label class="form-check-label" for="bfad">Breakfast adult</label>
 						            </div>
 						            <div class="form-check fs-7 text-secondary">
-						                <input class="form-check-input rounded-0" type="checkbox" value="" id="bfch">
+						                <input class="form-check-input rounded-0" type="checkbox" id="bfch" checked>
 						                <label class="form-check-label" for="bfch">Breakfast child</label>
 						            </div>
 						        </div>
