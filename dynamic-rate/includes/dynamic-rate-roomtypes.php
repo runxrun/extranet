@@ -198,8 +198,6 @@ foreach ($roomtype as $key => $value)
 	<div class="row g-0">
 		<div class="col-3">
 			<div class="p-3">
-
-
 				<div class="dropdown">
 					<button
 						type="button"
@@ -212,7 +210,7 @@ foreach ($roomtype as $key => $value)
 								<i class="fas fa-exclamation-circle"></i>
 							</div>
 							<div class="pe-2 fs-7 text-dark fw-bold">
-								Cancellation policy
+								Cancellation policy <?php //echo $key_name; ?>
 							</div>
 							<div class="ps-2 fs-7 text-dark">
 								<i class="fas fa-ellipsis-h"></i>
@@ -232,8 +230,6 @@ foreach ($roomtype as $key => $value)
 						</li>
 					</ul>
 				</div>
-
-
 			</div>			
 		</div>
 		<div class="col-9">
@@ -286,10 +282,19 @@ foreach ($roomtype as $key => $value)
 					),
 				);
 
+
 				foreach ($cancel_array as $key => $value)
 				{
+					$d_none = '';
+
+					if(($key_name==0) && ($key==1)){$d_none = 'd-none';}
+					if(($key_name==0) && ($key==2)){$d_none = 'd-none';}
+					if(($key_name==1) && ($key==0)){$d_none = 'd-none';}
+					if(($key_name==2) && ($key==0)){$d_none = 'd-none';}
+					if(($key_name==2) && ($key==1)){$d_none = 'd-none';}
+					if(($key_name==2) && ($key==2)){$d_none = 'd-none';}
 				?>
-				<div class="pb-3">					
+				<div class="pb-3 <?php echo $d_none; ?>">					
 					<div class="d-flex flex-wrap pb-2">
 						<div class="pe-2">
 							<div class="fs-7 text-dark fw-bold">
