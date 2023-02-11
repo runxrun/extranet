@@ -64,4 +64,3 @@ foreach ($roomtype as $key => $value)
 	<?php
 }
 ?>
-

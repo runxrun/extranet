@@ -175,8 +175,6 @@ body {
 	background-color: #b62b38;
 }
 
-
-
 .rn-tablehover {
     transition: all 0.3s;
 
@@ -184,7 +182,6 @@ body {
         background-color: rgba(180, 180, 180, 0.2);
     }
 }
-
 
 .rn-sidemenu-hover {
     transition: all 0.3s;
@@ -217,4 +214,6 @@ body {
     height: 300px;
 }
 
-
+.rn-hover-underline:hover {
+	text-decoration: underline;
+}
