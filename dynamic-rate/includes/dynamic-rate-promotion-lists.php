@@ -40,7 +40,54 @@
 			</div>
 		</div>
 		<div class="col-9">
+
 			<div class="pt-3 pb-2 px-2">
+				<div class="pb-3">
+					<div class="d-flex fs-7 text-primary fw-bold">
+						<div class="pe-2">Advance Purchase (by Period)</div>
+						<div class="pe-2">- All market</div>
+						<div class="pe-2">- All rooms</div>
+						<div class="pe-2">- All meal type</div>
+					</div>					
+					<div class="pt-2 fs-7 text-secondary">
+						<div class="row">
+							<div class="col-2 text-dark fw-bold">Rate period</div>
+							<div class="col-10">14 Jan 2023 to 31 May 2023</div>
+							<div class="col-2 text-dark fw-bold">Book period</div>
+							<div class="col-10">01 July 2023 to 31 Oct 2023</div>
+							<div class="col-2 text-dark fw-bold">Minimum stay</div>
+							<div class="col-10">2 Nights</div>
+							<div class="col-2 text-dark fw-bold">Day flag</div>
+							<div class="col-10">
+								<div class="row gx-2">
+									<div class="col-auto">Mon</div>
+									<div class="col-auto">/</div>
+									<div class="col-auto">Tue</div>
+									<div class="col-auto">/</div>
+									<div class="col-auto">Wed</div>
+									<div class="col-auto">/</div>
+									<div class="col-auto">Thu</div>
+									<div class="col-auto">/</div>
+									<div class="col-auto">Fri</div>
+								</div>
+							</div>
+							<div class="col-2 text-dark fw-bold">Rate Code</div>
+							<div class="col-10">EB10</div>		
+							<div class="col-2 text-dark fw-bold">Discount</div>
+							<div class="col-10">Pecent</div>		
+							<div class="col-2 text-dark fw-bold">Discount Rate</div>
+							<div class="col-10">10%</div>
+						</div>
+					</div>
+				</div>
+
+
+				<br>
+				<br>
+				<br>
+				<br>
+
+
 				<div class="pb-3">
 					<div class="fs-7 text-dark fw-bold">
 						<div class="pe-2">This room does not contain any promotions or discounts.</div>
@@ -68,8 +115,18 @@
             </div>
             <div class="modal-body">
 
-				<div class="row">
-					<div class="pb-3 col-12 col-lg-6">
+				<div class="row mb-2">
+					<div class="pb-2 col-12 col-lg-6">
+						<div class="fs-8 text-secondary text-truncate">
+							Market
+						</div>
+						<div class="pt-1">
+							<select class="form-select rounded-0 fs-7" disabled>
+								<option value="">All market</option>
+							</select>
+						</div>
+					</div>
+					<div class="pb-2 col-12 col-lg-6">
 						<div class="fs-8 text-secondary text-truncate">
 							Room category
 						</div>
@@ -82,7 +139,7 @@
 							</select>
 						</div>
 					</div>
-					<div class="pb-3 col-12 col-lg-6">
+					<div class="pb-2 col-12 col-lg-6">
 						<div class="fs-8 text-secondary text-truncate">
 							Meal type
 						</div>
