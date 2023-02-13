@@ -43,12 +43,36 @@
 
 			<div class="pt-3 pb-2 px-2">
 				<div class="pb-3">
-					<div class="d-flex fs-7 text-primary fw-bold">
-						<div class="pe-2">Advance Purchase (by Period)</div>
-						<div class="pe-2">- All market</div>
-						<div class="pe-2">- All rooms</div>
-						<div class="pe-2">- All meal type</div>
-					</div>					
+					<div class="row justify-content-between">
+						<div class="col-10">
+							<div class="d-flex fs-7 text-primary fw-bold">
+								<div class="pe-2">Advance Purchase (by Period)</div>
+								<div class="pe-2">- All market</div>
+								<div class="pe-2">- All rooms</div>
+								<div class="pe-2">- All meal type</div>
+							</div>	
+						</div>
+						<div class="col-auto">							
+							<div class="d-flex gx-4">
+								<div class="pe-3">
+									<button 
+										class="btn border-0 fs-7 text-primary p-0 w-100 rn-hover-underline"
+										data-bs-toggle="modal"
+										data-bs-target="#modalPromotionAddEdit2">
+										Edit
+									</button>
+								</div>
+								<div class="ps-3">
+									<button
+										class="btn border-0 fs-7 text-danger p-0 w-100 rn-hover-underline" 
+										data-bs-toggle="modal" 
+										data-bs-target="#deleteModalPromotion">
+										Delete
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>				
 					<div class="pt-2 fs-7 text-secondary">
 						<div class="row">
 							<div class="col-2 text-dark fw-bold">Rate period</div>
@@ -79,12 +103,29 @@
 							<div class="col-10">10%</div>
 						</div>
 					</div>
+					<div class="pt-2 fs-7 text-secondary">
+						<div class="row">
+							<div class="col-2 text-dark fw-bold">
+								Cancellation policy
+							</div>
+							<div class="col-10">
+								<div class="pb-1">
+									Cancellation made prior to 7 days will result in no charges for the cancellation fee on the booking.
+								</div>
+								<div class="pb-1">
+									Cancellations up to 5 days in advance, with a 50% charge of the room price
+								</div>
+								<div class="pb-1">
+									Cancellations must be made 2 days prior to arrival or the room price will not be refunded.
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 
 
 				<br>
-				<br>
-				<br>
+				<hr class="m-0">
 				<br>
 
 
@@ -427,8 +468,6 @@
 						</div>
 					</div>
 				</div>
-
-
             </div>
             <div class="modal-footer">
                 <button
@@ -451,6 +490,31 @@
 
 
 
+
+
+<!-- Modal -->
+<div class="modal fade" id="deleteModalPromotion" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="fs-6 fw-bold text-dark">Delete Promotion</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="fs-6 text-secondary">
+                    Would you like to proceed with delete this promotion?
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary fs-8 rounded-0" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger fs-8 rounded-0 px-4">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
