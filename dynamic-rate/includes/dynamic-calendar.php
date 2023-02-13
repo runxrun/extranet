@@ -1,19 +1,19 @@
 <?php 
 $date_calr = array(
-	array ('day' => 'Thu','date' => '14','month' => 'Jul',),
-	array ('day' => 'Fri','date' => '15','month' => 'Jul',),
-	array ('day' => 'Sat','date' => '16','month' => 'Jul', 'dayflag' => 'rn-day-flag',),
-	array ('day' => 'Sun','date' => '17','month' => 'Jul', 'dayflag' => 'rn-day-flag',),
-	array ('day' => 'Mon','date' => '18','month' => 'Jul',),
-	array ('day' => 'Tue','date' => '19','month' => 'Jul',),
-	array ('day' => 'Wed','date' => '20','month' => 'Jul',),
-	array ('day' => 'Thu','date' => '21','month' => 'Jul',),
-	array ('day' => 'Fri','date' => '22','month' => 'Jul',),
-	array ('day' => 'Sat','date' => '23','month' => 'Jul', 'dayflag' => 'rn-day-flag',),
-	array ('day' => 'Sun','date' => '24','month' => 'Jul', 'dayflag' => 'rn-day-flag',),
-	array ('day' => 'Mon','date' => '25','month' => 'Jul',),
-	array ('day' => 'Tue','date' => '26','month' => 'Jul',),
-	array ('day' => 'Wed','date' => '27','month' => 'Jul',),
+	array ('day' => 'Tue','date' => '14','month' => 'Feb',),
+	array ('day' => 'Wed','date' => '15','month' => 'Feb',),
+	array ('day' => 'Thu','date' => '16','month' => 'Feb',),
+	array ('day' => 'Fri','date' => '17','month' => 'Feb',),
+	array ('day' => 'Sat','date' => '18','month' => 'Feb', 'dayflag' => 'rn-day-flag',),
+	array ('day' => 'Sun','date' => '19','month' => 'Feb', 'dayflag' => 'rn-day-flag',),
+	array ('day' => 'Mon','date' => '20','month' => 'Feb',),
+	array ('day' => 'Tue','date' => '21','month' => 'Feb',),
+	array ('day' => 'Wed','date' => '22','month' => 'Feb',),
+	array ('day' => 'Thu','date' => '23','month' => 'Feb',),
+	array ('day' => 'Fri','date' => '24','month' => 'Feb',),
+	array ('day' => 'Sat','date' => '25','month' => 'Feb', 'dayflag' => 'rn-day-flag',),
+	array ('day' => 'Sun','date' => '26','month' => 'Feb', 'dayflag' => 'rn-day-flag',),
+	array ('day' => 'Mon','date' => '27','month' => 'Feb',),
 );
 ?>
 <div class="pb-4">
@@ -71,7 +71,7 @@ $date_calr = array(
 							</div>
 							<div class="px-2">
 								<button class="btn rounded-0 border-0 fs-7 p-0 fw-bold text-dark fs-7">
-									14 Jul 2022
+									14 Feb 2023
 								</button>
 							</div>
 							<div class="px-0">

@@ -24,17 +24,7 @@
 							</select>
 						</div>
 					</div>
-					<div class="pb-3 col-12 col-lg-2">
-						<div class="pb-1 fs-8 text-secondary">
-							Rate code
-						</div>
-						<div>
-							<input type="text" class="form-control rounded-0 fs-7">
-						</div>
-					</div>
-
-
-					<div class="pb-3 col-12 col-lg-2">
+					<div class="pb-3 col-6 col-lg-3 col-xl-2">
 						<div class="pb-1 fs-8 text-secondary">
 							From date
 						</div>	
@@ -48,7 +38,7 @@
 							</span>
 						</div>
 					</div>
-					<div class="pb-3 col-12 col-lg-2">
+					<div class="pb-3 col-6 col-lg-3 col-xl-2">
 						<div class="pb-1 fs-8 text-secondary">
 							To date
 						</div>	
@@ -60,6 +50,14 @@
 							<span class="input-group-text rounded-0">
 								<i class="fas fa-calendar-day"></i>
 							</span>
+						</div>
+					</div>
+					<div class="pb-3 col-12 col-lg-2">
+						<div class="pb-1 fs-8 text-secondary">
+							Rate code
+						</div>
+						<div>
+							<input type="text" class="form-control rounded-0 fs-7">
 						</div>
 					</div>
 				</div>
@@ -91,11 +89,19 @@
 							</select>
 						</div>
 					</div>
+					<div class="pb-3 col-12 col-lg-2">
+						<div class="pb-1 fs-8 text-secondary">
+							Minimum stay
+						</div>
+						<div>
+							<input type="number" value="0" class="form-control rounded-0 fs-7" min="0">
+						</div>
+					</div>
 				</div>
 				<div class="py-3">
-					<div class="row g-2">
-						<div class="col-1">
-							<div class="fs-8 fw-bold text-dark px-2">
+					<div class="row gy-1 gx-2">
+						<div class="col-3 col-lg-auto">
+							<div class="fs-8 fw-bold text-dark pe-2">
 								Day flag
 							</div>
 						</div>
@@ -112,8 +118,8 @@
 						foreach ($set_day_flag as $key => $value) 
 						{
 						?>
-						<div class="col-1">
-							<div class="form-check">
+						<div class="col-3 col-lg-auto">
+							<div class="form-check pe-lg-3">
 								<input 
 									type="checkbox"
 									class="form-check-input rounded-0"
@@ -133,7 +139,7 @@
 					</div>
 				</div>
 				<div class="row gx-3">
-					<div class="pb-3 col-12 col-lg-2">
+					<div class="pb-3 col-4 col-lg-2">
 						<div class="pb-1 fs-8 text-secondary">
 							Single
 						</div>
@@ -144,7 +150,7 @@
 								value="0">
 						</div>
 					</div>
-					<div class="pb-3 col-12 col-lg-2">
+					<div class="pb-3 col-4 col-lg-2">
 						<div class="pb-1 fs-8 text-secondary">
 							Twin/Double
 						</div>
@@ -155,7 +161,7 @@
 								value="0">
 						</div>
 					</div>
-					<div class="pb-3 col-12 col-lg-2">
+					<div class="pb-3 col-4 col-lg-2">
 						<div class="pb-1 fs-8 text-secondary">
 							Quad
 						</div>
@@ -166,7 +172,7 @@
 								value="0">
 						</div>
 					</div>
-					<div class="pb-3 col-12 col-lg-2">
+					<div class="pb-3 col-4 col-lg-2">
 						<div class="pb-1 fs-8 text-secondary">
 							Extra bed for adult
 						</div>
@@ -177,7 +183,7 @@
 								value="0">
 						</div>
 					</div>
-					<div class="pb-3 col-12 col-lg-2">
+					<div class="pb-3 col-4 col-lg-2">
 						<div class="pb-1 fs-8 text-secondary">
 							Extra bed for child
 						</div>
