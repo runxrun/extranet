@@ -12,17 +12,6 @@ $roomtype = array(
 		),
 	),
 	array(
-		'mealtype' => 'Room and Breakfast / Rate min stay (3 Nights)',
-		'type' => array(
-			array('typeofroom'=>'Single', 'typeofrate'=>'2200'),
-			array('typeofroom'=>'Twin/Double', 'typeofrate'=>'2400'),
-			//array('typeofroom'=>'Quad', 'typeofrate'=>'3200'),
-			array('typeofroom'=>'Extra bed for adult', 'typeofrate'=>'500'),
-			array('typeofroom'=>'Extra bed for child', 'typeofrate'=>'500'),
-			array('typeofroom'=>'Child sharing pay breakfast', 'typeofrate'=>'100'),
-		),
-	),
-	array(
 		'mealtype' => 'Room Only',
 		'type' => array(
 			array('typeofroom'=>'Single', 'typeofrate'=>'2500'),

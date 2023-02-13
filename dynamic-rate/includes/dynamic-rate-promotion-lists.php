@@ -1,9 +1,59 @@
 
+
+
 <div class="border-bottom">
 	<div class="row g-0">
 		<div class="col-3">
 			<div class="p-3">
-				PROMOTION
+				<div class="dropdown">
+					<button
+						type="button"
+						id="btnCXL"
+						class="btn btn-outline-none p-0 border-0"
+						data-bs-toggle="dropdown"
+						aria-expanded="false">
+						<div class="d-flex">
+							<div class="pe-2 fs-7 text-dark">
+								<i class="fas fa-tags"></i>
+							</div>
+							<div class="pe-2 fs-7 text-dark fw-bold">
+								Promotion
+							</div>
+							<div class="ps-2 fs-7 text-dark">
+								<i class="fas fa-ellipsis-h"></i>
+							</div>
+						</div>
+					</button>
+					<ul class="dropdown-menu rounded-0 w-100 mt-2">
+						<li>
+							<a
+								class="dropdown-item d-flex"
+								href="javascript: void(0);"
+								data-bs-toggle="modal"
+								data-bs-target="#modalPromotionAddEdit">
+								<span class="pe-2 fs-7"><i class="fas fa-plus"></i></span>
+								<span class="ps-1 fs-7">Create promotion</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-9">
+			<div class="pt-3 pb-2 px-2">
+				<div class="pb-3">
+					<div class="fs-7 text-dark fw-bold">
+						<div class="pe-2">This room does not contain any promotions or discounts.</div>
+					</div>
+					<div class="pt-1 fs-7 text-secondary">
+						<button 
+							class="btn btn-outline-success fs-8 rounded-0"
+							data-bs-toggle="modal"
+							data-bs-target="#modalPromotionAddEdit">
+							Create a new promotion
+						</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -177,12 +227,6 @@
 
 
 
-
-
-
-
-
-<!-- Modal -->
 <div class="modal fade" id="modalPromotionAddEdit" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content">
@@ -191,11 +235,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-
-
-
-
-
+                Show a second modal and hide this one with the button below.
 
             		<br>
             		<br>
@@ -205,16 +245,46 @@
             		<br>
             		<br>
             		<br>
-
 
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary fs-8 rounded-0" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary fs-8 rounded-0 px-4" data-bs-target="#modalPromotionAddEdit2" data-bs-toggle="modal">Open second modal</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modalPromotionAddEdit2" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="fs-6 fw-bold text-dark">Add / Update Promotions</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+            	Set promotion here!!
+            		<br>
+            		<br>
+            		<br>
+            		<br>
+            		<br>
+            		<br>
+            		<br>
+            		<br>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary fs-8 rounded-0" data-bs-target="#modalPromotionAddEdit" data-bs-toggle="modal">Back to first</button>
                 <button type="button" class="btn btn-primary fs-8 rounded-0 px-4"  data-bs-dismiss="modal">Save changes</button>
             </div>
         </div>
     </div>
 </div>
+
+
+
+
 
 
 

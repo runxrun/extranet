@@ -7,7 +7,7 @@
 		<div class="modal-content">
 			<div class="modal-body">
 				<div class="pt-4 text-center display-1 text-secondary">
-					<i class="fas fa-question"></i>
+					<i class="fas fa-lock"></i>
 				</div>
 				<div class="pt-3 text-center fs-6 fw-bold text-dark">
 					Are you sure you want to log out?
@@ -26,7 +26,7 @@
 				<div class="col-auto">
 					<button
 						type="button"
-						class="btn btn-secondary rounded-1 fs-8"
+						class="btn btn-outline-secondary rounded-1 fs-8"
 						data-bs-dismiss="modal">
 						Close
 					</button>
