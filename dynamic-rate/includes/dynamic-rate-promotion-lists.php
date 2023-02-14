@@ -41,95 +41,196 @@
 		</div>
 		<div class="col-9">
 
+
+			<?php 
+			$promolists = array(
+				array(
+					'promoclass' => 'text-primary',
+					'promotype' => 'Advance Purchase (by Period)',
+					'market' => 'All market',
+					'roomcatg' => 'All rooms',
+					'mealtype' => 'All meal type',
+					'rateperiod' => '14 Jan 2023 to 31 May 2023',
+					'bookperiod' => '01 July 2023 to 31 Oct 2023',
+					'minstay' => 2,
+					'dayflag' => array('Mon','Tue','Wed','Thu','Fri',),
+					'ratecode' => 'EB10',
+					'discounttype' => 'Percent',
+					'discountrate' => 10,
+					'cancelpromo' => array(
+						array('policy'=>'Cancellation made prior to 7 days will result in no charges for the cancellation fee on the booking.'),
+						array('policy'=>'Cancellations up to 5 days in advance, with a 50% charge of the room price.'),
+						array('policy'=>'Cancellations must be made 2 days prior to arrival or the room price will not be refunded.'),
+					),
+				),
+				array(
+					'promoclass' => 'text-primary',
+					'promotype' => 'Advance Purchase (by Period)',
+					'market' => 'All market',
+					'roomcatg' => 'All rooms',
+					'mealtype' => 'All meal type',
+					'rateperiod' => '14 Jan 2023 to 31 May 2023',
+					'bookperiod' => '01 July 2023 to 31 Oct 2023',
+					'minstay' => 2,
+					'dayflag' => array('Sat','Sun',),
+					'ratecode' => 'EB08',
+					'discounttype' => 'Percent',
+					'discountrate' => 8,
+					'cancelpromo' => array(
+						array('policy'=>'Cancellation made prior to 10 days will result in no charges for the cancellation fee on the booking.'),
+						array('policy'=>'Cancellations up to 7 days in advance, with a 50% charge of the room price.'),
+						array('policy'=>'Cancellations must be made 3 days prior to arrival or the room price will not be refunded.'),
+					),
+				),
+				array(
+					'promoclass' => 'text-success',
+					'promotype' => 'Long Stay / Pay Less',
+					'market' => 'All market',
+					'roomcatg' => 'All rooms',
+					'mealtype' => 'All meal type',
+					'rateperiod' => '14 Jan 2023 to 31 May 2023',
+					'bookperiod' => '01 July 2023 to 31 Oct 2023',
+					'minstay' => 2,
+					'dayflag' => array('Mon','Tue','Wed','Thu','Fri','Sat','Sun',),
+					'ratecode' => 'EB08',
+					'discounttype' => 'Percent',
+					'discountrate' => 8,
+					'cancelpromo' => array(
+						array('policy'=>'Cancellation made prior to 10 days will result in no charges for the cancellation fee on the booking.'),
+						array('policy'=>'Cancellations up to 7 days in advance, with a 50% charge of the room price.'),
+						array('policy'=>'Cancellations must be made 3 days prior to arrival or the room price will not be refunded.'),
+					),
+				),
+			);
+			?>
+
 			<div class="pt-3 pb-2 px-2">
-				<div class="pb-3">
+				<?php
+				foreach ($promolists as $key => $value)
+				{
+				?>
+				<div class="pb-2">
 					<div class="row justify-content-between">
 						<div class="col-10">
-							<div class="d-flex fs-7 text-primary fw-bold">
-								<div class="pe-2">Advance Purchase (by Period)</div>
-								<div class="pe-2">- All market</div>
-								<div class="pe-2">- All rooms</div>
-								<div class="pe-2">- All meal type</div>
-							</div>	
+
+							<button 
+								type="button" 
+								class="btn d-flex fs-7 <?php echo $value['promoclass'] ?> fw-bold text-uppercase p-0 border-0" 
+								data-bs-toggle="collapse"
+								data-bs-target="#<?php echo 'collapseExample'.$key_name.$key; ?>" 
+								aria-controls="<?php echo 'collapseExample'.$key_name.$key; ?>"
+								aria-expanded="false">
+								<div class="pe-2"><?php echo $value['promotype']; ?></div>
+								<div class="pe-2">- <?php echo $value['market']; ?></div>
+								<div class="pe-2">- <?php echo $value['roomcatg']; ?></div>
+								<div class="pe-2">- <?php echo $value['mealtype']; ?></div>
+							</button>
 						</div>
-						<div class="col-auto">							
-							<div class="d-flex gx-4">
-								<div class="pe-3">
-									<button 
-										class="btn border-0 fs-7 text-primary p-0 w-100 rn-hover-underline"
-										data-bs-toggle="modal"
-										data-bs-target="#modalPromotionAddEdit2">
-										Edit
-									</button>
-								</div>
-								<div class="ps-3">
-									<button
-										class="btn border-0 fs-7 text-danger p-0 w-100 rn-hover-underline" 
-										data-bs-toggle="modal" 
-										data-bs-target="#deleteModalPromotion">
-										Delete
-									</button>
+						<div class="col-auto">
+							<div class="pe-3">
+								<div class="d-flex gx-4">
+									<div class="pe-3">
+										<button 
+											class="btn border-0 fs-7 text-primary p-0 w-100 rn-hover-underline"
+											data-bs-toggle="modal"
+											data-bs-target="#modalPromotionAddEdit2">
+											Edit
+										</button>
+									</div>
+									<div class="ps-3">
+										<button
+											class="btn border-0 fs-7 text-danger p-0 w-100 rn-hover-underline" 
+											data-bs-toggle="modal" 
+											data-bs-target="#deleteModalPromotion">
+											Delete
+										</button>
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>				
-					<div class="pt-2 fs-7 text-secondary">
-						<div class="row">
-							<div class="col-2 text-dark fw-bold">Rate period</div>
-							<div class="col-10">14 Jan 2023 to 31 May 2023</div>
-							<div class="col-2 text-dark fw-bold">Book period</div>
-							<div class="col-10">01 July 2023 to 31 Oct 2023</div>
-							<div class="col-2 text-dark fw-bold">Minimum stay</div>
-							<div class="col-10">2 Nights</div>
-							<div class="col-2 text-dark fw-bold">Day flag</div>
-							<div class="col-10">
-								<div class="row gx-2">
-									<div class="col-auto">Mon</div>
-									<div class="col-auto">/</div>
-									<div class="col-auto">Tue</div>
-									<div class="col-auto">/</div>
-									<div class="col-auto">Wed</div>
-									<div class="col-auto">/</div>
-									<div class="col-auto">Thu</div>
-									<div class="col-auto">/</div>
-									<div class="col-auto">Fri</div>
-								</div>
-							</div>
-							<div class="col-2 text-dark fw-bold">Rate Code</div>
-							<div class="col-10">EB10</div>		
-							<div class="col-2 text-dark fw-bold">Discount</div>
-							<div class="col-10">Pecent</div>		
-							<div class="col-2 text-dark fw-bold">Discount Rate</div>
-							<div class="col-10">10%</div>
 						</div>
 					</div>
-					<div class="pt-2 fs-7 text-secondary">
-						<div class="row">
-							<div class="col-2 text-dark fw-bold">
-								Cancellation policy
+					<div class="collapse" id="<?php echo 'collapseExample'.$key_name.$key; ?>">
+						<div class="pt-2 fs-7 text-secondary">
+							<div class="row">
+								<div class="pb-1 col-2 text-dark fw-bold">Rate period</div>
+								<div class="pb-1 col-10"><?php echo $value['rateperiod']; ?></div>
+								<div class="pb-1 col-2 text-dark fw-bold">Book period</div>
+								<div class="pb-1 col-10"><?php echo $value['bookperiod']; ?></div>
+								<div class="pb-1 col-2 text-dark fw-bold">Minimum stay</div>
+								<div class="pb-1 col-10"><?php echo $value['minstay']; ?> Nights</div>
+								<div class="pb-1 col-2 text-dark fw-bold">Day flag</div>
+								<div class="pb-1 col-10">
+									<div class="row gx-2">
+										<?php 
+										foreach ($value['dayflag'] as $key2 => $dayflag)
+										{
+											if($key2!=0){echo '<div class="col-auto">/</div>';}
+										?>
+										<div class="col-auto"><?php echo $dayflag; ?></div>
+										<?php	
+										}
+										?>
+									</div>
+								</div>
+								<div class="pb-1 col-2 text-dark fw-bold">Rate Code</div>
+								<div class="pb-1 col-10"><?php echo $value['ratecode']; ?></div>		
+								<div class="pb-1 col-2 text-dark fw-bold">Discount</div>
+								<div class="pb-1 col-10"><?php echo $value['discountrate'].' '.$value['discounttype']; ?></div>
 							</div>
-							<div class="col-10">
-								<div class="pb-1">
-									Cancellation made prior to 7 days will result in no charges for the cancellation fee on the booking.
+						</div>
+						<div class="pt-3 fs-7 text-secondary">
+							<div class="row">
+								<div class="col-2 text-dark fw-bold">
+									Cancellation policy
 								</div>
-								<div class="pb-1">
-									Cancellations up to 5 days in advance, with a 50% charge of the room price
-								</div>
-								<div class="pb-1">
-									Cancellations must be made 2 days prior to arrival or the room price will not be refunded.
+								<div class="col-10">
+									<?php 
+									foreach ($value['cancelpromo'] as $key2 => $cancelpromo)
+									{
+									?>
+									<div class="pb-1">
+										<?php echo $cancelpromo['policy']; ?>
+									</div>
+									<?php	
+									}
+									?>
+									<div class="pt-2 pb-4">
+										<div class="row">
+											<div class="col-auto">
+												<button
+													class="btn border-0 fs-7 text-success p-0 w-100 rn-hover-underline"
+													data-bs-toggle="modal" 
+													data-bs-target="#modalStepEditCancellation2">
+													Create
+												</button>
+											</div>
+											<div class="col-auto">
+												<button
+													class="btn border-0 fs-7 text-primary p-0 w-100 rn-hover-underline"
+													data-bs-toggle="modal" 
+													data-bs-target="#modalStepEditCancellation">
+													Edit
+												</button>
+											</div>
+											<div class="col-auto">
+												<button
+													class="btn border-0 fs-7 text-danger p-0 w-100 rn-hover-underline"
+													data-bs-toggle="modal" 
+													data-bs-target="#modalStepDeleteCancellation">
+													Delete
+												</button>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
-
-				<br>
-				<hr class="m-0">
-				<br>
-
-
-				<div class="pb-3">
+				<?php	
+				}
+				?>
+				<div class="pb-3 d-none">
 					<div class="fs-7 text-dark fw-bold">
 						<div class="pe-2">This room does not contain any promotions or discounts.</div>
 					</div>
@@ -146,6 +247,18 @@
 		</div>
 	</div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="modal fade" id="modalPromotionAddEdit" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -210,8 +323,8 @@
 					$promotype = array(
 						array('name'=>'Advance Purchase Rate (by Period)', ),
 						array('name'=>'Advance Purchase Rate (by Notice Day)', ),
-						array('name'=>'Bonus Night (Free Nights Earned)', ),
 						array('name'=>'Long Stay / Pay Less', ),
+						array('name'=>'Bonus Night (Free Nights Earned)', ),
 					);
 					?>
 					<?php 
@@ -534,8 +647,310 @@
 
 
 
+<div class="modal fade" id="modalStepDeleteCancellation" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title fs-6 fw-bold text-dark">Select cancellation policy</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+        		<?php 
+        		$select_cxl = array(
+					array('desc' => 'Cancellation made prior to 7 days will result in no charges for the cancellation fee on the booking.'),
+					array('desc' => 'Cancellations up to 5 days in advance, with a 50% charge of the room price.'),
+					array('desc' => 'Cancellations must be made 2 days prior to arrival or the room price will not be refunded.'),
+        		);
+        		foreach ($select_cxl as $key => $value)
+        		{
+        			$checked = ($key==0 ? 'checked' : '');
+        		?>
+	            	<div class="d-flex">
+	            		<div class="">
+							<div class="form-check fs-7">
+								<input
+									type="radio"
+									name="select_cxl"
+									id="<?php echo 'chk'.$key; ?>"
+									<?php echo $checked; ?>
+									class="form-check-input">
+								<label class="form-check-label text-secondary" for="<?php echo 'chk'.$key;?>">
+									<?php echo $value['desc']; ?>
+								</label>
+							</div>
+	            		</div>
+	            	</div>
+        		<?php
+        		}
+        		?>
+            </div>
+            <div class="modal-footer">
+		        <button 
+			        type="button"
+			        class="btn btn-secondary rounded-0 fs-7"
+			        data-bs-dismiss="modal">
+				    Close
+				</button>
+		        <button
+		        	type="button"
+		        	class="btn btn-danger rounded-0 fs-7"
+		        	data-bs-target="#modalStepDeleteCancellation2"
+		        	data-bs-toggle="modal">
+	        		Delete Cancellation
+	        	</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
+
+
+<div class="modal fade" id="modalStepDeleteCancellation2" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title fs-6 fw-bold text-dark">Delete cancellation policy</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            	<div class="text-secondary">
+	            	Would you like to proceed with delete this promotion?
+	            	<br>
+	            	<br>
+            	</div>
+			</div>
+            <div class="modal-footer">
+		        <button 
+			        type="button"
+			        class="btn btn-secondary rounded-0 fs-7"
+		        	data-bs-target="#modalStepDeleteCancellation"
+		        	data-bs-toggle="modal">
+				    Back
+				</button>
+		        <button
+		        	type="button"
+		        	class="btn btn-danger rounded-0 fs-7"
+			        data-bs-dismiss="modal">
+	        		Delete
+	        	</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="modal fade" id="modalStepEditCancellation" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title fs-6 fw-bold text-dark">Select cancellation policy</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+        		<?php 
+        		$select_cxl = array(
+					array('desc' => 'Cancellation made prior to 7 days will result in no charges for the cancellation fee on the booking.'),
+					array('desc' => 'Cancellations up to 5 days in advance, with a 50% charge of the room price.'),
+					array('desc' => 'Cancellations must be made 2 days prior to arrival or the room price will not be refunded.'),
+        		);
+        		foreach ($select_cxl as $key => $value)
+        		{
+        			$checked = ($key==0 ? 'checked' : '');
+        		?>
+	            	<div class="d-flex">
+	            		<div class="">
+							<div class="form-check fs-7">
+								<input
+									type="radio"
+									name="select_cxl"
+									id="<?php echo 'chk'.$key; ?>"
+									<?php echo $checked; ?>
+									class="form-check-input">
+								<label class="form-check-label text-secondary" for="<?php echo 'chk'.$key;?>">
+									<?php echo $value['desc']; ?>
+								</label>
+							</div>
+	            		</div>
+	            	</div>
+        		<?php
+        		}
+        		?>
+            </div>
+            <div class="modal-footer">
+		        <button 
+			        type="button"
+			        class="btn btn-secondary rounded-0 fs-7"
+			        data-bs-dismiss="modal">
+				    Close
+				</button>
+		        <button
+		        	type="button"
+		        	class="btn btn-primary rounded-0 fs-7"
+		        	data-bs-target="#modalStepEditCancellation2"
+		        	data-bs-toggle="modal">
+	        		Edit Cancellation
+	        	</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" id="modalStepEditCancellation2" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title fs-6 fw-bold text-dark">Add/Edit cancellation policy</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+
+				<div class="row g-3">
+					<div class="col-12 col-lg-6">
+						<div class="fs-7 text-secondary">
+							Promotion
+						</div>	
+						<div class="pt-1">
+							<input type="text" class="form-control rounded-0 fs-7" value="Advance Purchase (by Period)" disabled>
+						</div>	
+					</div>
+					<div class="col-12 col-lg-6">
+						<div class="fs-7 text-secondary">
+							Room category
+						</div>	
+						<div class="pt-1">
+							<input type="text" class="form-control rounded-0 fs-7" value="All rooms" disabled>
+						</div>	
+					</div>
+					<div class="col-12 col-lg-6">
+						<div class="fs-7 text-secondary">
+							Meal type
+						</div>	
+						<div class="pt-1">
+							<input type="text" class="form-control rounded-0 fs-7" value="All meal type" disabled>
+						</div>	
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="fs-7 text-secondary">
+							From date
+						</div>	
+						<div class="pt-1">
+							<div class="input-group">
+								<input type="text" class="form-control rounded-0 fs-7" value="01 Jan 2023">
+								<span class="input-group-text rounded-0">
+									<i class="fas fa-calendar-day"></i>
+								</span>
+							</div>
+						</div>	
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="fs-7 text-secondary">
+							To date
+						</div>	
+						<div class="pt-1">
+							<div class="input-group">
+								<input type="text" class="form-control rounded-0 fs-7" value="31 Dec 2023">
+								<span class="input-group-text rounded-0">
+									<i class="fas fa-calendar-day"></i>
+								</span>
+							</div>
+						</div>	
+					</div>
+
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="fs-7 text-secondary">
+							Charge type
+						</div>	
+						<div class="pt-1">
+							<select class="form-select rounded-0 fs-7">
+								<option value="">Select</option>
+								<option value="">Amount</option>
+								<option value="">Precent</option>
+								<option value="">Full charge</option>
+								<option value="">Night/Room</option>
+							</select>
+						</div>	
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="fs-7 text-secondary">
+							Charge rate
+						</div>	
+						<div class="pt-1">
+							<input type="number" class="form-control rounded-0 fs-7" value="0" min="0">
+						</div>	
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3">
+						<div class="fs-7 text-secondary">
+							Cancel day(s) Only number
+						</div>	
+						<div class="pt-1">
+							<input type="number" class="form-control rounded-0 fs-7" value="0" min="0">
+						</div>	
+					</div>
+				</div>
+
+				<div class="py-4">
+					<div role="alert" class="alert alert-warning py-2 fs-8 m-0">
+						<i class="fas fa-exclamation-circle"></i>
+						<span class="px-2">
+							If the box is check (No show - Non Refundable) sentence will be automatically added on 
+							for any concerned hotel on this cancellation policy.
+						</span>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-auto">
+						<div class="form-check">
+							<input type="checkbox" id="no_show" class="form-check-input rounded-0" value="No show - Non Refundable">
+							<label class="form-check-label fs-7 text-secondary" for="no_show">
+								No show - Non Refundable
+							</label>
+						</div>
+					</div>
+					<div class="col-auto">
+						<div class="form-check">
+							<input type="checkbox" id="non_refundable" class="form-check-input rounded-0" value="Non - Refundable">
+							<label class="form-check-label fs-7 text-secondary" for="non_refundable">
+								Non - Refundable
+							</label>
+						</div>
+					</div>
+				</div>
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button
+                	type="button"
+                	class="btn btn-secondary fs-8 rounded-0"
+                	data-bs-target="#modalStepEditCancellation"
+                	data-bs-toggle="modal">
+					Back                		
+                </button>
+		        <button
+		        	type="button"
+		        	class="btn btn-primary rounded-0 fs-7"
+		        	data-bs-target="#modalStepEditCancellation2"
+		        	data-bs-toggle="modal">
+	        		Save changes
+	        	</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
