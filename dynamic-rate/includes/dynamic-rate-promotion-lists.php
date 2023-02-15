@@ -110,9 +110,8 @@
 				{
 				?>
 				<div class="pb-2">
-					<div class="row justify-content-between">
+					<div class="row g-0 justify-content-between">
 						<div class="col-10">
-
 							<button 
 								type="button" 
 								class="btn d-flex fs-7 <?php echo $value['promoclass'] ?> fw-bold text-uppercase p-0 border-0" 
@@ -195,7 +194,7 @@
 									}
 									?>
 									<div class="pt-2 pb-4">
-										<div class="row">
+										<div class="row g-0">
 											<div class="col-auto">
 												<button
 													class="btn border-0 fs-7 text-success p-0 w-100 rn-hover-underline"

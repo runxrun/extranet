@@ -29,6 +29,7 @@
 					array('roomcatg_name' => 'Standard'),
 					array('roomcatg_name' => 'Deluxe'),
 					array('roomcatg_name' => 'Family Suite'),
+					array('roomcatg_name' => 'Villa Suite'),
 				);
 				foreach ($roomcategory_array as $key_name => $value_name)
 				{

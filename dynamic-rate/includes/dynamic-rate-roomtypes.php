@@ -9,6 +9,7 @@ $roomtype = array(
 			array('typeofroom'=>'Extra bed for adult', 'typeofrate'=>'500'),
 			array('typeofroom'=>'Extra bed for child', 'typeofrate'=>'500'),
 			array('typeofroom'=>'Child sharing pay breakfast', 'typeofrate'=>'100'),
+			array('typeofroom'=>'Unit (8 Adults, 2 Children)', 'typeofrate'=>'8200'),
 		),
 	),
 	array(
@@ -20,6 +21,7 @@ $roomtype = array(
 			array('typeofroom'=>'Extra bed for adult', 'typeofrate'=>'500'),
 			array('typeofroom'=>'Extra bed for child', 'typeofrate'=>'500'),
 			array('typeofroom'=>'Child sharing pay breakfast', 'typeofrate'=>'100'),
+			array('typeofroom'=>'Unit (8 Adults, 2 Children)', 'typeofrate'=>'9200'),
 		),
 	),
 	array(
@@ -31,6 +33,7 @@ $roomtype = array(
 			array('typeofroom'=>'Extra bed for adult', 'typeofrate'=>'500'),
 			array('typeofroom'=>'Extra bed for child', 'typeofrate'=>'500'),
 			array('typeofroom'=>'Child sharing pay breakfast', 'typeofrate'=>'100'),
+			array('typeofroom'=>'Unit (8 Adults, 2 Children)', 'typeofrate'=>'9200'),
 		),
 	),
 );
@@ -79,11 +82,17 @@ foreach ($roomtype as $key => $value)
 	<?php
 	foreach ($value['type'] as $key2 => $value2) 
 	{
+		$class_dnone = '';
+		
+		if(($key_name==3) && ($key2<5)){$class_dnone = 'd-none';}
+		if(($key_name<3) && ($key2>4)){$class_dnone = 'd-none';}
+
+
 	?>
-	<div class="rn-table-row rn-table-roomtype">
+	<div class="rn-table-row rn-table-roomtype <?php echo $class_dnone; ?>">
 		<div class="rn-table-rate-name">
 			<div class="d-flex justify-content-between align-items-center h-100 fs-9 py-2 p-2">
-				<div class="text-secondary px-2">								
+				<div class="text-secondary px-2">
 					<?php echo $value2['typeofroom'] ?>
 				</div>
 				<div class="px-2">

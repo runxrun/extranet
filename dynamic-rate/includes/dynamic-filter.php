@@ -131,6 +131,12 @@
 						Family Suite
 					</a>
 				</li>
+                <a
+                	class="dropdown-item"
+                	href="javascript:void(0)"
+                	onclick="">
+                    Villa Suite
+                </a>
 			</ul>
 		</div>
 	</div>

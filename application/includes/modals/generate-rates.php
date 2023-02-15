@@ -138,63 +138,160 @@
 						?>
 					</div>
 				</div>
-				<div class="row gx-3">
-					<div class="pb-3 col-4 col-lg-2">
-						<div class="pb-1 fs-8 text-secondary">
-							Single
+
+
+
+
+			    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+			        <button
+				        type="button"
+				        class="nav-link active fs-7"
+				        id="nav-home-tab"
+				        data-bs-toggle="tab"
+				        data-bs-target="#nav-bedtype"
+				        aria-controls="nav-bedtype"
+				        aria-selected="true"
+				        role="tab">
+			        	Bed type
+			        </button>
+			        <button
+			        	type="button"
+			        	class="nav-link fs-7"
+			        	id="nav-profile-tab"
+			        	data-bs-toggle="tab"
+			        	data-bs-target="#nav-unit"
+			        	aria-controls="nav-unit"
+			        	aria-selected="false"
+			        	role="tab">
+			        	Unit
+			        </button>
+			        
+			    </div>
+
+
+				<div class="tab-content" id="nav-tabContent">
+				    <div
+				    	class="tab-pane py-3 fade show active"
+				    	id="nav-bedtype"
+				    	role="tabpanel">
+
+						<div class="row gx-3">
+							<div class="pb-3 col-4 col-lg-2">
+								<div class="pb-1 fs-8 text-secondary">
+									Single
+								</div>
+								<div>
+									<input
+										type="number"
+										class="form-control rounded-0 fs-7 text-center"
+										value="0"
+										min="0">
+								</div>
+							</div>
+							<div class="pb-3 col-4 col-lg-2">
+								<div class="pb-1 fs-8 text-secondary">
+									Twin/Double
+								</div>
+								<div>
+									<input
+										type="number"
+										class="form-control rounded-0 fs-7 text-center"
+										value="0"
+										min="0">
+								</div>
+							</div>
+							<div class="pb-3 col-4 col-lg-2">
+								<div class="pb-1 fs-8 text-secondary">
+									Quad
+								</div>
+								<div>
+									<input
+										type="number"
+										class="form-control rounded-0 fs-7 text-center"
+										value="0"
+										min="0">
+								</div>
+							</div>
+							<div class="pb-3 col-4 col-lg-2">
+								<div class="pb-1 fs-8 text-secondary">
+									Extra bed for adult
+								</div>
+								<div>
+									<input
+										type="number"
+										class="form-control rounded-0 fs-7 text-center"
+										value="0"
+										min="0">
+								</div>
+							</div>
+							<div class="pb-3 col-4 col-lg-2">
+								<div class="pb-1 fs-8 text-secondary">
+									Extra bed for child
+								</div>
+								<div>
+									<input
+										type="number"
+										class="form-control rounded-0 fs-7 text-center"
+										value="0"
+										min="0">
+								</div>
+							</div>
 						</div>
-						<div>
-							<input
-								type="text"
-								class="form-control rounded-0 fs-7 text-center"
-								value="0">
+
+
+				    </div>
+				    <div
+				    	class="tab-pane py-3 fade"
+				    	id="nav-unit"
+				    	role="tabpanel">
+
+
+						<div class="row gx-3">
+							<div class="pb-3 col-4 col-lg-2">
+								<div class="pb-1 fs-8 text-secondary">
+									Unit (Maximum adults)
+								</div>
+								<div>
+									<input
+										type="number"
+										class="form-control rounded-0 fs-7 text-center"
+										value="0"
+										min="0">
+								</div>
+							</div>
+							<div class="pb-3 col-4 col-lg-2">
+								<div class="pb-1 fs-8 text-secondary">
+									Unit (Maximum children)
+								</div>
+								<div>
+									<input
+										type="number"
+										class="form-control rounded-0 fs-7 text-center"
+										value="0"
+										min="0">
+								</div>
+							</div>
+							<div class="pb-3 col-4 col-lg-2">
+								<div class="pb-1 fs-8 text-secondary">
+									Unit price
+								</div>
+								<div>
+									<input
+										type="number"
+										class="form-control rounded-0 fs-7 text-center"
+										value="0.00"
+										min="0">
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="pb-3 col-4 col-lg-2">
-						<div class="pb-1 fs-8 text-secondary">
-							Twin/Double
-						</div>
-						<div>
-							<input
-								type="text"
-								class="form-control rounded-0 fs-7 text-center"
-								value="0">
-						</div>
-					</div>
-					<div class="pb-3 col-4 col-lg-2">
-						<div class="pb-1 fs-8 text-secondary">
-							Quad
-						</div>
-						<div>
-							<input
-								type="text"
-								class="form-control rounded-0 fs-7 text-center"
-								value="0">
-						</div>
-					</div>
-					<div class="pb-3 col-4 col-lg-2">
-						<div class="pb-1 fs-8 text-secondary">
-							Extra bed for adult
-						</div>
-						<div>
-							<input
-								type="text"
-								class="form-control rounded-0 fs-7 text-center"
-								value="0">
-						</div>
-					</div>
-					<div class="pb-3 col-4 col-lg-2">
-						<div class="pb-1 fs-8 text-secondary">
-							Extra bed for child
-						</div>
-						<div>
-							<input
-								type="text"
-								class="form-control rounded-0 fs-7 text-center"
-								value="0">
-						</div>
+
+
+
 					</div>
 				</div>
+
+
+
 			</div>
 			<div class="modal-footer">
 				<button

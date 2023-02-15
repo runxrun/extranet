@@ -9,7 +9,18 @@ switch (strtoupper($current_page))
 		$p_title = "Dynamic rate";
 		$p_dashboard = "text-secondary";
 		$p_profile = "text-secondary";
+		$p_contract = "text-secondary";
 		$p_dynamic = "text-primary";
+		$p_manual = "text-secondary";
+		break;
+
+	case 'CONTRACT-RATE':
+		$p_icon = "fas fa-calendar-alt";
+		$p_title = "Dynamic rate";
+		$p_dashboard = "text-secondary";
+		$p_profile = "text-secondary";
+		$p_contract = "text-primary";
+		$p_dynamic = "text-secondary";
 		$p_manual = "text-secondary";
 		break;
 
@@ -18,6 +29,7 @@ switch (strtoupper($current_page))
 		$p_title = "Promotion";
 		$p_dashboard = "text-secondary";
 		$p_profile = "text-secondary";
+		$p_contract = "text-secondary";
 		$p_dynamic = "text-primary";
 		$p_manual = "text-secondary";
 		break;
@@ -27,6 +39,7 @@ switch (strtoupper($current_page))
 		$p_title = "Enhancement";
 		$p_dashboard = "text-secondary";
 		$p_profile = "text-secondary";
+		$p_contract = "text-secondary";
 		$p_dynamic = "text-primary";
 		$p_manual = "text-secondary";
 		break;
@@ -36,6 +49,7 @@ switch (strtoupper($current_page))
 		$p_title = "Enhancement";
 		$p_dashboard = "text-secondary";
 		$p_profile = "text-secondary";
+		$p_contract = "text-secondary";
 		$p_dynamic = "text-primary";
 		$p_manual = "text-secondary";
 		break;
@@ -45,6 +59,7 @@ switch (strtoupper($current_page))
 		$p_title = "Profile";
 		$p_dashboard = "text-secondary";
 		$p_profile = "text-primary";
+		$p_contract = "text-secondary";
 		$p_dynamic = "text-secondary";
 		$p_manual = "text-secondary";
 		break;
@@ -54,6 +69,7 @@ switch (strtoupper($current_page))
 		$p_title = "Dashboard";
 		$p_dashboard = "text-primary";
 		$p_profile = "text-secondary";
+		$p_contract = "text-secondary";
 		$p_dynamic = "text-secondary";
 		$p_manual = "text-secondary";
 		break;
@@ -103,6 +119,18 @@ switch (strtoupper($current_page))
 						</div>
 						<div class="fs-9">
 							Hotel Profile
+						</div>
+					</button>
+				</div>
+				<div class="col-auto">
+					<button
+						class="btn shadow-none border-0 <?php echo $p_contract; ?>"
+						onclick="window.open('/contract-rate/','_self');">
+						<div class="fs-4">
+							<i class="fas fa-file-alt"></i>
+						</div>
+						<div class="fs-9">
+							Contract Rates
 						</div>
 					</button>
 				</div>
