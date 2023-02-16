@@ -253,8 +253,8 @@
 							?>
 							<div class="d-flex justify-content-end">
 								<div class="col-auto">
-									<button class="btn btn-danger rounded-0 fs-9">
-										Remove
+									<button class="btn btn-danger rounded-circle fs-9">
+										<i class="fas fa-times"></i>
 									</button>
 								</div>
 							</div>
@@ -294,6 +294,126 @@
 							data-bs-toggle="modal" 
 							data-bs-dismiss="modal">
 							Continue
+						</button>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<div
+	class="modal fade"
+	id="generateContractRateModal3"
+	data-bs-backdrop="static"
+	data-bs-keyboard="false"
+	tabindex="-1" 
+	aria-hidden="true">
+	<div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title fw-bold fs-6">Generate</div>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+
+
+				<?php
+				for ($i=0; $i < 2; $i++) 
+				{ 
+				?>
+
+					<?php 
+					if ($i>0)
+					{
+						echo '<div class="pb-3"><hr class="m-0"></div>';
+					}
+					?>
+
+
+					<div class="row gx-3">
+						<div class="col-12 col-lg-10 col-xl-11">
+							<div class="row gx-3">
+								<div class="pb-3 col-12 col-lg-6 col-xl-5">
+									<div class="pb-1 fs-8 text-secondary">
+										Meal type
+									</div>	
+									<div>
+										<select class="form-select rounded-0 fs-7">
+											<option value="">Select</option>
+											<option value="" selected>Room Only</option>
+											<option value="">American Breakfast</option>
+											<option value="">Asian Breakfast</option>
+											<option value="">Indian Breakfast</option>
+										</select>
+									</div>
+								</div>
+								<div class="pb-3 col-6 col-lg-3">
+									<div class="pb-1 fs-8 text-secondary">
+										Adult's meal
+									</div>	
+									<div class="pb-1">
+										<input type="number" class="form-control rounded-0 fs-7" min="0" placeholder="0.00">
+									</div>
+									<div class="fs-9 text-success">
+										Apply to bonus night
+									</div>
+								</div>
+								<div class="pb-3 col-6 col-lg-3">
+									<div class="pb-1 fs-8 text-secondary">
+										Child's meal
+									</div>	
+									<div class="pb-1">
+										<input type="number" class="form-control rounded-0 fs-7" min="0" placeholder="0.00">
+									</div>
+									<div class="fs-9 text-success">
+										Apply to bonus night
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-2 col-xl-1">
+							<?php
+							if ($i>0)
+							{ 
+							?>
+							<div class="d-flex justify-content-end">
+								<div class="col-auto">
+									<button class="btn btn-danger rounded-circle fs-9">
+										<small><i class="fas fa-times"></i></small>
+									</button>
+								</div>
+							</div>
+							<?php
+							}
+							?>
+						</div>
+					</div>
+				<?php 
+				}
+				?>
+			</div>
+			<div class="modal-footer">
+				<div class="d-flex justify-content-between w-100">
+					<div class="col-auto">
+						<button class="btn btn-success rounded-0 fs-7">
+							Add more
+						</button>
+					</div>
+					<div class="col-auto">
+						<button
+							type="button"
+							class="btn btn-secondary rounded-0 fs-7"
+							data-bs-target="#generateContractRateModal"
+							data-bs-toggle="modal" 
+							data-bs-dismiss="modal">
+							Back
+						</button>
+						<button
+							type="button"
+							class="btn btn-primary rounded-0 fs-7"
+							data-bs-dismiss="modal">
+							Generate
 						</button>
 					</div>
 				</div>
