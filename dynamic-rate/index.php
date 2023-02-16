@@ -90,8 +90,6 @@
 														Cut of day
 													</a>
 												</li>
-												<?php
-												/*
 												<li>
 													<a 
 														class="dropdown-item"
@@ -100,8 +98,6 @@
 														Black out
 													</a>
 												</li>
-												*/
-												?>
 											</ul>
 										</div>
 									</div>

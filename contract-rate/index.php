@@ -189,11 +189,22 @@
 												case '6': $day = 'Fri'; break;
 												case '7': $day = 'Sat'; break;
 											}
-
-
 											$dayflagname .= $day;
 											echo '<span class="pe-2">'.strtoupper($dayflagname).'</span>';
+										}									
+
+
+										foreach ($value7['minstay'] as $key8 => $value8) {
+											echo '<br>Min stay : '.$value8['rateminstay'];
+											echo ' - SGL : '.$value8['sgl'];
+											echo ' - TWN/DBL : '.$value8['twndbl'];
+											echo ' - QUAD : '.$value8['quad'];
+											echo ' - Extra bed for adult : '.$value8['xbedad'];
+											echo ' - Extra bed for children : '.$value8['xbedch'];
 										}
+										
+										echo '<br>';
+
 
 									}
 								}
