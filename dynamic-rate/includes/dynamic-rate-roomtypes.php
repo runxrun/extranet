@@ -1,7 +1,7 @@
 <?php
 $roomtype = array(
 	array(
-		'mealtype' => 'Room Only / Rate min stay (3 Nights)',
+		'mealtype' => 'Room Only / Rate min stay (2 Nights)',
 		'type' => array(
 			array('typeofroom'=>'Single', 'typeofrate'=>'2000'),
 			array('typeofroom'=>'Twin/Double', 'typeofrate'=>'2200'),
@@ -33,7 +33,7 @@ $roomtype = array(
 			array('typeofroom'=>'Extra bed for adult', 'typeofrate'=>'500'),
 			array('typeofroom'=>'Extra bed for child', 'typeofrate'=>'500'),
 			array('typeofroom'=>'Child sharing pay breakfast', 'typeofrate'=>'100'),
-			array('typeofroom'=>'Unit (8 Adults, 2 Children)', 'typeofrate'=>'9200'),
+			array('typeofroom'=>'Unit (8 Adults, 2 Children)', 'typeofrate'=>'9500'),
 		),
 	),
 );

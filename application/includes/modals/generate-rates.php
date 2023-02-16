@@ -296,13 +296,13 @@
 			<div class="modal-footer">
 				<button
 					type="button"
-					class="btn btn-secondary rounded-1 fs-7"
+					class="btn btn-secondary rounded-0 fs-7"
 					data-bs-dismiss="modal">
 					Close
 				</button>
 				<button
 					type="button"
-					class="btn btn-primary rounded-1 fs-7"
+					class="btn btn-primary rounded-0 fs-7"
 					data-bs-dismiss="modal">
 					Save changes
 				</button>

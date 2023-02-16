@@ -94,7 +94,36 @@
     </div>
     <div class="col-auto">
         <div class="dropdown">
-            <button type="button" class="btn dropdown-toggle border bg-white rounded-0 fs-9" id="btnMealTypes" data-bs-toggle="dropdown" aria-expanded="false">
+            <button 
+                type="button" 
+                class="btn dropdown-toggle border bg-white rounded-0 fs-9" 
+                id="btnMealTypes" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false">
+                Market
+            </button>
+            <ul class="dropdown-menu rounded-0 fs-9" aria-labelledby="btnMealTypes">
+                <li>
+                    <a class="dropdown-item" href="javascript:void(0)" onclick="">
+                        All Market
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="javascript:void(0)" onclick="">
+                        Asian Market
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-auto">
+        <div class="dropdown">
+            <button 
+                type="button" 
+                class="btn dropdown-toggle border bg-white rounded-0 fs-9" 
+                id="btnMealTypes" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false">
                 All Meal Types
             </button>
             <ul class="dropdown-menu rounded-0 fs-9" aria-labelledby="btnMealTypes">
@@ -118,22 +147,22 @@
             </button>
             <ul class="dropdown-menu rounded-0 fs-9 text-secondary" aria-labelledby="btnRoomTypes">
                 <li>
-                    <a class="dropdown-item" href="javascript:void(0)" onclick="window.open('/dynamic-rate/','_self');">
+                    <a class="dropdown-item" href="javascript:void(0)">
                         Single
                     </a>
                 </li>
                 <li>
-                    <a class="dropdown-item" href="javascript:void(0)" onclick="window.open('/dynamic-rate/','_self');">
+                    <a class="dropdown-item" href="javascript:void(0)">
                         Twin/Double
                     </a>
                 </li>
                 <li>
-                    <a class="dropdown-item" href="javascript:void(0)" onclick="window.open('/dynamic-rate/','_self');">
+                    <a class="dropdown-item" href="javascript:void(0)">
                         Quad
                     </a>
                 </li>
                 <li>
-                    <a class="dropdown-item" href="javascript:void(0)" onclick="window.open('/dynamic-rate/','_self');">
+                    <a class="dropdown-item" href="javascript:void(0)">
                         Extra bed
                     </a>
                 </li>

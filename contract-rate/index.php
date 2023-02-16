@@ -26,10 +26,13 @@
 					<br>
 					<br>
 					<div class="text-secondary text-center pb-2">
-						Have no contract rate
+						We do not have a contract rate.
 					</div>
 					<div class="pb-3 d-flex justify-content-center">
-						<button class="btn btn-primary fs-7 rounded-0 px-4">
+						<button
+							class="btn btn-primary fs-7 rounded-0 px-4"
+							data-bs-toggle="modal"
+							data-bs-target="#generateContractRateModal">
 							Create rate
 						</button>
 					</div>
@@ -53,7 +56,7 @@
 <?php 
 include_once('../application/includes/footer.php'); 
 include_once('../application/includes/modals.php');
-include_once('../application/includes/modals/generate-rates.php');
+include_once('../application/includes/modals/generate-contract-rates.php');
 ?>
 </body>
 </html>
