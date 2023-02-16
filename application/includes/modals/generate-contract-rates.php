@@ -165,7 +165,7 @@
 					<div class="row gx-3">
 						<div class="col-12 col-lg-10 col-xl-11">
 							<div class="row gx-3">
-								<div class="pb-3 col-6 col-lg-3">
+								<div class="pb-3 col-6 col-lg-3 order-1">
 									<div class="pb-1 fs-8 text-secondary">
 										From date
 									</div>	
@@ -179,7 +179,7 @@
 										</span>
 									</div>
 								</div>
-								<div class="pb-3 col-6 col-lg-3">
+								<div class="pb-3 col-6 col-lg-3 order-2">
 									<div class="pb-1 fs-8 text-secondary">
 										To date
 									</div>	
@@ -193,7 +193,19 @@
 										</span>
 									</div>
 								</div>
-								<div class="pb-3 col-12 col-lg-4">
+								<div class="pb-3 col-6 col-lg-2 order-4 order-lg-3">
+									<div class="pb-1 fs-8 text-secondary">
+										Min stay
+									</div>	
+									<div class="input-group">
+										<input
+											type="number"
+											class="form-control rounded-0 fs-7"
+											value="0"
+											min="0">
+									</div>
+								</div>
+								<div class="pb-3 col-12 col-lg-4 order-3 order-lg-4">
 									<div class="pb-1 fs-8 text-secondary">
 										Season (Optional)
 									</div>	
@@ -204,7 +216,7 @@
 											placeholder="Season name">
 									</div>
 								</div>
-								<div class="pt-2 pb-3 col-12">
+								<div class="pt-2 pb-3 col-12 order-5">
 									<div class="row gy-1 gx-2">
 										<div class="col-12 col-lg-auto">
 											<div class="fs-8 fw-bold text-dark pe-3">
