@@ -65,7 +65,31 @@
     -->
     <div class="col-auto">
         <div class="dropdown">
-            <button type="button" class="btn dropdown-toggle border bg-white rounded-0 fs-9" id="btnRoomCategories" data-bs-toggle="dropdown" aria-expanded="false">
+            <button 
+                type="button" 
+                class="btn dropdown-toggle border bg-white rounded-0 fs-9 w-100 text-start" 
+                id="btnMealTypes" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false">
+                Market
+            </button>
+            <ul class="dropdown-menu rounded-0 fs-9" aria-labelledby="btnMealTypes">
+                <li>
+                    <a class="dropdown-item" href="javascript:void(0)" onclick="">
+                        All Market
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="javascript:void(0)" onclick="">
+                        Asian Market
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-auto">
+        <div class="dropdown">
+            <button type="button" class="btn dropdown-toggle border bg-white rounded-0 fs-9" id="btnMarket" data-bs-toggle="dropdown" aria-expanded="false">
                 All Room Categories
             </button>
             <ul class="dropdown-menu rounded-0 fs-9" aria-labelledby="btnRatesAvailability">
@@ -87,30 +111,6 @@
                 <li>
                     <a class="dropdown-item" href="javascript:void(0)" onclick="">
                         Villa Suite
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="col-auto">
-        <div class="dropdown">
-            <button 
-                type="button" 
-                class="btn dropdown-toggle border bg-white rounded-0 fs-9" 
-                id="btnMealTypes" 
-                data-bs-toggle="dropdown" 
-                aria-expanded="false">
-                Market
-            </button>
-            <ul class="dropdown-menu rounded-0 fs-9" aria-labelledby="btnMealTypes">
-                <li>
-                    <a class="dropdown-item" href="javascript:void(0)" onclick="">
-                        All Market
-                    </a>
-                </li>
-                <li>
-                    <a class="dropdown-item" href="javascript:void(0)" onclick="">
-                        Asian Market
                     </a>
                 </li>
             </ul>
