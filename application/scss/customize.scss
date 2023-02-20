@@ -217,3 +217,76 @@ body {
 .rn-hover-underline:hover {
 	text-decoration: underline;
 }
+
+
+
+
+
+
+.rn-overflow-h {
+	overflow-y: hidden;
+	overflow-x: auto;
+}
+.rn-min-width {
+	min-width: 934px;
+}
+.rn-ctable {
+	width: 100%;
+}
+.rn-c-tr {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	transition: all 0.3s;
+}
+.rn-c-tr:hover {
+	background-color: rgba(200, 200, 200, 0.1);
+}
+.rn-c-th {
+	padding: 0.5rem 0.75rem;
+}
+.rn-c-td {
+	padding: 0rem;
+}
+.rn-bd-start {
+	border-left: 1px solid #dee2e6;	
+}
+.rn-bd-top {
+	border-top: 1px solid #dee2e6;	
+}
+
+.rn-ctable .meal{ width: 16%;}
+.rn-ctable .period{ width: 15%;}
+.rn-ctable .dayflag{ width: 17%;}
+.rn-ctable .minstay{ width: 7%;}
+.rn-ctable .sgl{ width: 9%;}
+.rn-ctable .twndbl{ width: 9%;}
+.rn-ctable .quad{ width: 9%;}
+.rn-ctable .xbedad{ width: 9%;}
+.rn-ctable .xbedch{ width: 9%;}
+.rn-ctable .unit{ width: 15%;}
+.rn-ctable .maxad{ width: 15%;}
+.rn-ctable .maxch{ width: 15%;}
+
+.rn-ctable input {
+	border-radius: 0px;
+	border: 1px solid #ffffff;
+	background-color: #ffffff;
+	font-size: 0.90rem;
+	width: 100%;
+	padding: 0.5550rem 0.50rem;
+	color: #212529;
+	outline: none;
+	transition: all 0.3s;
+	height: 100%;
+}
+.rn-ctable input:focus {
+	border: 1px solid #86b7fe;
+}
+.rn-ctable input:disabled {
+	color: #65689D;
+	cursor: default;
+	border: 1px solid #f7f7f7;
+	background-color: #f7f7f7;
+}
+
