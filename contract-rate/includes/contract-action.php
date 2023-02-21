@@ -1,7 +1,12 @@
 <div class="row g-2">
     <div class="col-auto">
-        <button class="btn btn-primary rounded-0 fs-9" data-bs-toggle="modal" data-bs-target="#generateContractRateModal">
+        <button class="btn btn-primary rounded-0 fs-9 px-4" data-bs-toggle="modal" data-bs-target="#generateContractRateModal">
             Generate
+        </button>
+    </div>
+    <div class="col-auto">
+        <button class="btn btn-outline-primary rounded-0 fs-9" data-bs-toggle="modal" data-bs-target="#autoFillContractRateModal">
+            Auto fill
         </button>
     </div>
     <div class="col-auto">

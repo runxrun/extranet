@@ -2,9 +2,11 @@
 
 <?php
 $roomtype = array(
-	array(
-		'setallot' => 'Set allotment',
-	),
+	array('setallot' => 'Apply all room type',),
+	array('setallot' => 'Single',),
+	array('setallot' => 'Twin / Double',),
+	array('setallot' => 'Triple',),
+	array('setallot' => 'Quad',),
 );
 foreach ($roomtype as $key => $value) 
 {
@@ -40,21 +42,32 @@ foreach ($roomtype as $key => $value)
 		<div class="rn-table-rate-status ">
 			<div class="h-100 rn-table-border-start">
 				<button class="btn btn-outline-light shadow-none py-0 px-2 text-start w-100 h-100 rounded-0 fs-9">
-					<span class="text-dark fw-bold">
-						Allotment
+					<?php
+					$allotment_text = "";
+					if ($key==0) {
+						$allotment_text = "Activated";
+					}  
+					?>
+					<span class="text-success">
+						<?php echo $allotment_text; ?>
 					</span>
 				</button>
 			</div>
 		</div>
-		<?php for($action_detail=1;$action_detail<=14;$action_detail++)
+		<?php 
+		for($action_detail=1;$action_detail<=14;$action_detail++)
 		{
+			$allotment = 0;
+			if ($key==0) {
+				$allotment = 10;
+			}
 		?>
 		<div class="rn-table-rate-action">
 			<div class="h-100 rn-table-border-start">
 				<input
 					type="text"
 					class="form-control py-0 px-1 border-0 shadow-none rounded-0 w-100 h-100 fs-9 text-secondary text-center rn-rate-input rn-cursor-pointer"
-					value="10">
+					value="<?php echo $allotment; ?>">
 			</div>
 		</div>
 		<?php

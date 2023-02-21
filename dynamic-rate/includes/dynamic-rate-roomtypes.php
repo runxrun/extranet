@@ -5,7 +5,7 @@ $roomtype = array(
 		'type' => array(
 			array('typeofroom'=>'Single', 'typeofrate'=>'2000'),
 			array('typeofroom'=>'Twin/Double', 'typeofrate'=>'2200'),
-			//array('typeofroom'=>'Quad', 'typeofrate'=>'3200'),
+			array('typeofroom'=>'Quad', 'typeofrate'=>'3200'),
 			array('typeofroom'=>'Extra bed for adult', 'typeofrate'=>'500'),
 			array('typeofroom'=>'Extra bed for child', 'typeofrate'=>'500'),
 			array('typeofroom'=>'Child sharing pay breakfast', 'typeofrate'=>'100'),
@@ -17,7 +17,7 @@ $roomtype = array(
 		'type' => array(
 			array('typeofroom'=>'Single', 'typeofrate'=>'2500'),
 			array('typeofroom'=>'Twin/Double', 'typeofrate'=>'2700'),
-			//array('typeofroom'=>'Quad', 'typeofrate'=>'3200'),
+			array('typeofroom'=>'Quad', 'typeofrate'=>'3200'),
 			array('typeofroom'=>'Extra bed for adult', 'typeofrate'=>'500'),
 			array('typeofroom'=>'Extra bed for child', 'typeofrate'=>'500'),
 			array('typeofroom'=>'Child sharing pay breakfast', 'typeofrate'=>'100'),
@@ -29,7 +29,7 @@ $roomtype = array(
 		'type' => array(
 			array('typeofroom'=>'Single', 'typeofrate'=>'2700'),
 			array('typeofroom'=>'Twin/Double', 'typeofrate'=>'2900'),
-			//array('typeofroom'=>'Quad', 'typeofrate'=>'-'),
+			array('typeofroom'=>'Quad', 'typeofrate'=>'-'),
 			array('typeofroom'=>'Extra bed for adult', 'typeofrate'=>'500'),
 			array('typeofroom'=>'Extra bed for child', 'typeofrate'=>'500'),
 			array('typeofroom'=>'Child sharing pay breakfast', 'typeofrate'=>'100'),

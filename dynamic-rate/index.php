@@ -86,8 +86,8 @@
 													<a 
 														class="dropdown-item"
 														href="javascript:void(0)" 
-														onclick="window.open('/dynamic-rate/?rate_status=cutofday','_self');">
-														Cut of day
+														onclick="window.open('/dynamic-rate/?rate_status=cutoffdate','_self');">
+														Cut off date
 													</a>
 												</li>
 												<li>
@@ -106,21 +106,51 @@
 							<div class="rn-table-rate-status">
 								<div class="d-flex align-items-center h-100 fs-9 py-2 p-2 rn-table-border-start">
 									<span class="text-dark px-1 fw-bold">
-										Allotment
+										<?php 
+										switch(strtoupper($_GET['rate_status']))
+										{
+											case "CUTOFFDATE" : 
+												$stitle = "Cut off date"; 
+												$tagtitle = "";
+												$svalue = "0";
+												break;
+											case "CTACTD" : 
+												$stitle = ""; 
+												$tagtitle = "";
+												$svalue = "";
+												break;
+											case "SETALLOTMENT" : 
+												$stitle = "Allotment"; 
+												$tagtitle = "10 / 0 / 10";
+												$svalue = "10";
+												break;
+											case "BLACKOUT" : 
+												$stitle = ""; 
+												$tagtitle = "";
+												$svalue = "";
+												break;
+											default : 
+												$stitle = "Allotment";
+												$tagtitle = "10 / 0 / 10";
+												$svalue = "10";
+												break;
+										}
+										echo $stitle;
+										?>										
 									</span>
 								</div>					
 							</div>
 							<?php for($action=1; $action<=14; $action++)
 							{							
 							?>
-							<div class="rn-table-rate-action ">
+							<div class="rn-table-rate-action">
 								<div 
-									class="d-flex align-items-center h-100 fs-9 py-2 p-2 rn-table-border-start"
-									title="10 / 0 / 10">
+									class="d-flex align-items-center h-100 fs-9 py-2 p-2 rn-table-border-start" 
+									title="<?php echo $tagtitle; ?>">
 									<span class="text-dark px-1 fw-bold w-100 text-center">
-										10
+										<?php echo $svalue; ?>
 									</span>
-								</div>					
+								</div>
 							</div>
 							<?php
 							} 
@@ -131,7 +161,7 @@
 						switch(strtoupper($_GET['rate_status']))
 						{
 							case "SETALLOTMENT" : include('includes/dynamic-setallotment.php'); break;
-							case "CUTOFDAY" : include('includes/dynamic-cutofday.php'); break;
+							case "CUTOFFDATE" : include('includes/dynamic-cutofday.php'); break;
 							case "CTACTD" : include('includes/dynamic-ctactd.php'); break;
 							case "BLACKOUT" : include('includes/dynamic-blackout.php'); break;
 							default : include('includes/dynamic-rate-roomtypes.php'); break;

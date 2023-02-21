@@ -75,22 +75,29 @@
 											<div class="rn-c-th rn-bd-start minstay text-center text-truncate">
 												Min stay
 											</div>
-											<div class="rn-c-th rn-bd-start sgl text-center text-truncate">
-												Single
-											</div>
-											<div class="rn-c-th rn-bd-start twndbl text-center text-truncate">
-												Twin/Double
-											</div>
-											<div class="rn-c-th rn-bd-start quad text-center text-truncate">
-												Quad
-											</div>
-											<div class="rn-c-th rn-bd-start xbedad text-center text-truncate">
-												Extra bed adult
-											</div>
-											<div class="rn-c-th rn-bd-start xbedch text-center text-truncate">
-												Extra bed child
-											</div>
-											<?php if($minstay == 'Y') { ?>
+											<?php 
+											if ($value4['roomunit']=="N") {
+											?>
+												<div class="rn-c-th rn-bd-start sgl text-center text-truncate">
+													Single
+												</div>
+												<div class="rn-c-th rn-bd-start twndbl text-center text-truncate">
+													Twin/Double
+												</div>
+												<div class="rn-c-th rn-bd-start quad text-center text-truncate">
+													Quad
+												</div>
+												<div class="rn-c-th rn-bd-start xbedad text-center text-truncate">
+													Extra bed adult
+												</div>
+												<div class="rn-c-th rn-bd-start xbedch text-center text-truncate">
+													Extra bed child
+												</div>
+											<?php 
+											}
+											else
+											{
+											?>
 												<div class="rn-c-th rn-bd-start xbedch unit text-center text-truncate">
 													Unit
 												</div>
@@ -100,7 +107,9 @@
 												<div class="rn-c-th rn-bd-start xbedch maxch text-center text-truncate">
 													Max child
 												</div>
-											<?php } ?>
+											<?php 
+											} 
+											?>
 										</div>
 										<?php
 										foreach ($value5['mealtype'] as $key6 => $value6) {
@@ -142,29 +151,77 @@
 																	}
 																	$dayflagname .= $day;
 																	echo '<div class="col-auto"><small>'.strtoupper($dayflagname).'</small></div>';
-																}	
+																}
 																?>
 																</div>
 															</div>
 														</div>
 														<div class="rn-c-td rn-bd-start minstay text-truncate">
-															<input type="text" value="<?php echo $value7['minstayrate']; ?>" class="text-center" disabled>
+															<input
+																type="text"
+																value="<?php echo $value7['minstayrate']; ?>"
+																class="text-center"
+																disabled>
 														</div>
+														<?php 
+														if ($value4['roomunit']=="N") {
+														?>
 														<div class="rn-c-td rn-bd-start sgl text-truncate">
-															<input type="text" value="<?php echo number_format($value9['sgl'],0); ?>" class="text-end">
+															<input
+																type="text"
+																value="<?php echo number_format($value9['sgl'],0); ?>"
+																class="text-primary text-end">
 														</div>
 														<div class="rn-c-td rn-bd-start twndbl text-truncate">
-															<input type="text" value="<?php echo number_format($value9['twndbl'],0); ?>" class="text-end">
+															<input
+																type="text"
+																value="<?php echo number_format($value9['twndbl'],0); ?>"
+																class="text-primary text-end">
 														</div>
 														<div class="rn-c-td rn-bd-start quad text-truncate">
-															<input type="text" value="<?php echo number_format($value9['quad'],0); ?>" class="text-end">
+															<input
+																type="text"
+																value="<?php echo number_format($value9['quad'],0); ?>"
+																class="text-primary text-end">
 														</div>
 														<div class="rn-c-td rn-bd-start xbedad text-truncate">
-															<input type="text" value="<?php echo number_format($value9['xbedad'],0); ?>" class="text-end">
+															<input
+																type="text"
+																value="<?php echo number_format($value9['xbedad'],0); ?>"
+																class="text-primary text-end">
 														</div>
 														<div class="rn-c-td rn-bd-start xbedch text-truncate">
-															<input type="text" value="<?php echo number_format($value9['xbedch'],0); ?>" class="text-end">
-														</div>
+															<input
+																type="text"
+																value="<?php echo number_format($value9['xbedch'],0); ?>"
+																class="text-primary text-end">
+														</div>														
+														<?php
+														}
+														else
+														{
+														?>
+														<div class="rn-c-td rn-bd-start unit text-truncate">
+															<input
+																type="text"
+																value="<?php echo number_format($value9['unitrate'],0); ?>"
+																class="text-primary text-end">
+														</div>	
+														<div class="rn-c-td rn-bd-start maxad text-truncate">
+															<input
+																type="text"
+																value="<?php echo number_format($value9['maxadult'],0); ?>"
+																class="text-primary text-end">
+														</div>	
+														<div class="rn-c-td rn-bd-start maxch text-truncate">
+															<input
+																type="text"
+																value="<?php echo number_format($value9['maxchild'],0); ?>"
+																class="text-primary text-end">
+														</div>														
+														<?php	
+														}
+														?>
 													</div>
 													<?php
 													}

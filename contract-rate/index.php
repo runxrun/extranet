@@ -33,6 +33,7 @@ include_once('../application/includes/footer.php');
 include_once('../application/includes/modals.php');
 include_once('../application/includes/modals/generate-contract-rates.php');
 include_once('../application/includes/modals/add-new-roomcategory.php');
+include_once('../application/includes/modals/autofill-contract-rates.php');
 ?>
 </body>
 </html>

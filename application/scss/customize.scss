@@ -49,6 +49,16 @@ body {
     border-color: $primary-color !important;
     box-shadow: $primary-color !important;
 }
+.btn-outline-primary {
+    border-color: $primary-color !important;
+    box-shadow: $primary-color !important;
+    color: $primary-color !important;
+}
+.btn-outline-primary:hover, 
+.btn-outline-primary:focus {
+    background-color: $primary-color !important;
+    color: #ffffff !important;
+}
 
 .border-primary {
 	border-color: $primary-color !important;
@@ -256,17 +266,17 @@ body {
 }
 
 .rn-ctable .meal{ width: 16%;}
-.rn-ctable .period{ width: 15%;}
-.rn-ctable .dayflag{ width: 17%;}
+.rn-ctable .period{ width: 16%;}
+.rn-ctable .dayflag{ width: 18.5%;}
 .rn-ctable .minstay{ width: 7%;}
-.rn-ctable .sgl{ width: 9%;}
-.rn-ctable .twndbl{ width: 9%;}
-.rn-ctable .quad{ width: 9%;}
-.rn-ctable .xbedad{ width: 9%;}
-.rn-ctable .xbedch{ width: 9%;}
-.rn-ctable .unit{ width: 15%;}
-.rn-ctable .maxad{ width: 15%;}
-.rn-ctable .maxch{ width: 15%;}
+.rn-ctable .sgl{ width: 8.5%;}
+.rn-ctable .twndbl{ width: 8.5%;}
+.rn-ctable .quad{ width: 8.5%;}
+.rn-ctable .xbedad{ width: 8.5%;}
+.rn-ctable .xbedch{ width: 8.5%;}
+.rn-ctable .unit{ width: 17%;}
+.rn-ctable .maxad{ width: 12.5%;}
+.rn-ctable .maxch{ width: 12.5%;}
 
 .rn-ctable input {
 	border-radius: 0px;

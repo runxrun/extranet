@@ -20,21 +20,53 @@ $date_calr = array(
 	<div class="rn-table-dates">
 		<div class="rn-table-row">
 			<div class="rn-table-rate-dateoption">
-				<div class="row justify-content-between align-items-center h-100">
+				<div class="row g-0 justify-content-between align-items-center h-100">
 					<div class="col-4">
-						<?php
-						/*
+
+
+						<?php 
+						if (strtolower($_GET['rate_status'])=="cutoffdate")
+						{
+						?>
 						<div class="p-1">
-							<button class="btn btn-outline-secondary rounded-0 border-0">
+							<button
+								class="btn btn-outline-secondary rounded-0 border-0"
+								type="button">
 								<div>
-									<i class="fas fa-calendar-day"></i>
+									<i class="fas fa-cut"></i>
 								</div>
 								<div class="fs-9">
-									<small>Select date</small>
+									<small>Set Cut off</small>
 								</div>
 							</button>
 						</div>
-						*/
+						<?php
+						}
+						?>
+
+						<?php
+						if (strtolower($_GET['rate_status'])=="setallotment")
+						{
+						?>
+						<div class="p-1">
+							<button
+								class="btn btn-outline-secondary rounded-0 border-0"
+								type="button">
+								<div>
+									<i class="fas fa-bed"></i>
+								</div>
+								<div class="fs-9">
+									<small>Alloment all rooms</small>
+								</div>
+							</button>
+						</div>
+						<?php
+						}
+						?>
+
+						<?php
+						if (strtolower($_GET['rate_status'])=="ctactd")
+						{
 						?>
 						<div class="p-1">
 							<button
@@ -45,13 +77,74 @@ $date_calr = array(
 								aria-expanded="false"
 								aria-controls="collapseSelectAll">
 								<div>
-									<i class="far fa-check-square"></i>
+									<!-- <i class="far fa-check-square"></i> -->
+									<i class="far fa-window-close"></i>
 								</div>
 								<div class="fs-9">
-									<small>All rooms</small>
+									<small>Set all rooms</small>
 								</div>
 							</button>
 						</div>
+						<?php	
+						}
+						?>
+
+						<?php
+						if (empty($_GET['rate_status']))
+						{
+						?>
+						<div class="p-1">
+							<button
+								class="btn btn-outline-secondary rounded-0 border-0"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapseSelectAll"
+								aria-expanded="false"
+								aria-controls="collapseSelectAll">
+								<div>
+									<!-- <i class="far fa-check-square"></i> -->
+									<i class="far fa-times-circle"></i>
+								</div>
+								<div class="fs-9">
+									<small>Block all rooms</small>
+								</div>
+							</button>
+						</div>
+						<?php	
+						}
+						?>
+
+
+
+						<?php 
+						if (strtolower($_GET['rate_status'])=="blackout")
+						{
+						?>
+						<div class="p-1">
+							<button
+								class="btn btn-outline-secondary rounded-0 border-0"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapseSelectAll"
+								aria-expanded="false"
+								aria-controls="collapseSelectAll">
+								<div>
+									<!-- <i class="far fa-check-square"></i> -->
+									<i class="far fa-times-circle"></i>
+								</div>
+								<div class="fs-9">
+									<small>Set black out</small>
+								</div>
+							</button>
+						</div>
+						<?php
+						}
+						?>
+
+
+
+
+
 					</div>
 					<div class="col-8">
 						<div class="d-flex justify-content-center align-items-center h-100">
@@ -87,6 +180,34 @@ $date_calr = array(
 									title="Next 14 days">
 									<i class="fas fa-angle-double-right"></i>
 								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="collapse" id="collapseSelectAll">
+							<div class="d-flex justify-content-end p-1">
+								<div class="dropdown">
+									<button
+										class="btn p-0 px-2 text-secondary border-0 shadow-none fs-9"
+										type="button"
+										id="dropdownMenuButton1"
+										data-bs-toggle="dropdown"
+										aria-expanded="false">
+										<i class="fas fa-ellipsis-h"></i>
+									</button>
+									<ul class="dropdown-menu rounded-0 fs-9" aria-labelledby="dropdownMenuButton1" style="">
+										<li>
+											<a class="dropdown-item" href="javascript:void(0)" onclick="">
+												Select all
+											</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="javascript:void(0)" onclick="">
+												Diselect
+											</a>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>

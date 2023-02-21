@@ -39,11 +39,13 @@ foreach ($roomtype as $key => $value)
 		</div>
 		<div class="rn-table-rate-status ">
 			<div class="h-100 rn-table-border-start">
+				<!-- 
 				<button class="btn btn-outline-light shadow-none py-0 px-2 text-start w-100 h-100 rounded-0 fs-9">
 					<span class="text-dark fw-bold">
 						Black out
 					</span>
 				</button>
+				-->
 			</div>
 		</div>
 		<?php for($action_detail=1;$action_detail<=14;$action_detail++)

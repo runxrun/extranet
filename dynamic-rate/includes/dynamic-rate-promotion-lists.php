@@ -193,8 +193,11 @@
 									<?php	
 									}
 									?>
-									<div class="pt-2 pb-4">
-										<div class="row g-0">
+									
+									<?php 
+									/*
+									<div class="pt-2 pb-4 d-none">
+										<div class="row gx-4">
 											<div class="col-auto">
 												<button
 													class="btn border-0 fs-7 text-success p-0 w-100 rn-hover-underline"
@@ -221,6 +224,8 @@
 											</div>
 										</div>
 									</div>
+									*/
+									?>
 								</div>
 							</div>
 						</div>

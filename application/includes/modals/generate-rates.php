@@ -60,6 +60,14 @@
 							<input type="text" class="form-control rounded-0 fs-7">
 						</div>
 					</div>
+					<div class="pb-3 col-12 col-lg-2">
+						<div class="pb-1 fs-8 text-secondary">
+							Cut off date
+						</div>
+						<div>
+							<input type="number" class="form-control rounded-0 fs-7" value="0" min="0">
+						</div>
+					</div>	
 				</div>
 				<div class="row gx-3">
 					<div class="pb-3 col-12 col-lg-6">

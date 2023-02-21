@@ -23,7 +23,7 @@ $contractrate = array(
 														'period'=>array(
 															array(
 																'fromdate'=>'01 Apr 2023',
-																'todate'=>'31 Sep 2022',
+																'todate'=>'31 Sep 2023',
 																'dayflag'=>array(
 																	array(
 																		'dayflagactive'=>array('2','3','4','5','6',),
@@ -72,43 +72,13 @@ $contractrate = array(
 														'period'=>array(
 															array(
 																'fromdate'=>'01 Apr 2023',
-																'todate'=>'31 Sep 2022',
+																'todate'=>'31 Sep 2023',
 																'dayflag'=>array(
 																	array(
-																		'dayflagactive'=>array('2','3','4','5','6',),
-																		'sgl'=>700,
-																		'twndbl'=>700,
-																		'quad'=>1000,
-																		'xbedad'=>300,
-																		'xbedch'=>100,
-																	),
-																	array(
-																		'dayflagactive'=>array('1','7',),
+																		'dayflagactive'=>array('1','2','3','4','5','6','7',),
 																		'sgl'=>800,
 																		'twndbl'=>800,
 																		'quad'=>1200,
-																		'xbedad'=>300,
-																		'xbedch'=>100,
-																	),
-																),
-															),
-															array(
-																'fromdate'=>'01 Oct 2023',
-																'todate'=>'31 Mar 2024',
-																'dayflag'=>array(
-																	array(
-																		'dayflagactive'=>array('2','3','4','5','6',),
-																		'sgl'=>800,
-																		'twndbl'=>800,
-																		'quad'=>1300,
-																		'xbedad'=>300,
-																		'xbedch'=>100,
-																	),
-																	array(
-																		'dayflagactive'=>array('1','7',),
-																		'sgl'=>900,
-																		'twndbl'=>900,
-																		'quad'=>1300,
 																		'xbedad'=>300,
 																		'xbedch'=>100,
 																	),
@@ -126,7 +96,7 @@ $contractrate = array(
 														'period'=>array(
 															array(
 																'fromdate'=>'01 Apr 2023',
-																'todate'=>'31 Sep 2022',
+																'todate'=>'31 Sep 2023',
 																'dayflag'=>array(
 																	array(
 																		'dayflagactive'=>array('2','3','4','5','6',),
@@ -175,43 +145,13 @@ $contractrate = array(
 														'period'=>array(
 															array(
 																'fromdate'=>'01 Apr 2023',
-																'todate'=>'31 Sep 2022',
+																'todate'=>'31 Sep 2023',
 																'dayflag'=>array(
 																	array(
-																		'dayflagactive'=>array('2','3','4','5','6',),
+																		'dayflagactive'=>array('1','2','3','4','5','6','7',),
 																		'sgl'=>930,
 																		'twndbl'=>930,
 																		'quad'=>1230,
-																		'xbedad'=>300,
-																		'xbedch'=>100,
-																	),
-																	array(
-																		'dayflagactive'=>array('1','7',),
-																		'sgl'=>950,
-																		'twndbl'=>950,
-																		'quad'=>1250,
-																		'xbedad'=>300,
-																		'xbedch'=>100,
-																	),
-																),
-															),
-															array(
-																'fromdate'=>'01 Oct 2023',
-																'todate'=>'31 Mar 2024',
-																'dayflag'=>array(
-																	array(
-																		'dayflagactive'=>array('2','3','4','5','6',),
-																		'sgl'=>950,
-																		'twndbl'=>950,
-																		'quad'=>1250,
-																		'xbedad'=>300,
-																		'xbedch'=>100,
-																	),
-																	array(
-																		'dayflagactive'=>array('1','7',),
-																		'sgl'=>1000,
-																		'twndbl'=>1000,
-																		'quad'=>1300,
 																		'xbedad'=>300,
 																		'xbedch'=>100,
 																	),
@@ -491,6 +431,56 @@ $contractrate = array(
 																		'quad'=>2000,
 																		'xbedad'=>300,
 																		'xbedch'=>100,
+																	),
+																),
+															),
+														),
+													),
+												),
+											),
+										),
+									),
+								),
+							),
+							array(
+								'roomcatgname' => 'Villa suite',
+								'roomunit' => 'Y',
+								'ratestatus' => array(
+									array(
+										'status' => 'On request',
+										'mealtype' => array(
+											array(
+												'mealname'=>'Bed & Breakfast',
+												'minstay'=>array(
+													array(
+														'minstayrate'=>'0',
+														'period'=>array(
+															array(
+																'fromdate'=>'01 Apr 2023',
+																'todate'=>'31 Mar 2024',
+																'dayflag'=>array(
+																	array(
+																		'dayflagactive'=>array('1','2','3','4','5','6','7'),
+																		'unitrate'=>9800,
+																		'maxadult'=>8,
+																		'maxchild'=>2,
+																	),
+																),
+															),
+														),
+													),
+													array(
+														'minstayrate'=>'2',
+														'period'=>array(
+															array(
+																'fromdate'=>'01 Apr 2023',
+																'todate'=>'31 Mar 2024',
+																'dayflag'=>array(
+																	array(
+																		'dayflagactive'=>array('1','2','3','4','5','6','7'),
+																		'unitrate'=>8800,
+																		'maxadult'=>8,
+																		'maxchild'=>2,
 																	),
 																),
 															),
