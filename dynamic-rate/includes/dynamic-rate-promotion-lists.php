@@ -194,9 +194,7 @@
 									}
 									?>
 									
-									<?php 
-									/*
-									<div class="pt-2 pb-4 d-none">
+									<div class="pt-2 pb-4">
 										<div class="row gx-4">
 											<div class="col-auto">
 												<button
@@ -224,8 +222,6 @@
 											</div>
 										</div>
 									</div>
-									*/
-									?>
 								</div>
 							</div>
 						</div>
