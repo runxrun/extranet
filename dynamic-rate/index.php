@@ -7,6 +7,20 @@
 <?php include_once('../application/includes/header.php'); ?>
 <?php include_once('../application/includes/mainmenu.php'); ?>
 
+
+
+
+<?php
+if (strtolower($_GET['rate_status'])=="empty")
+{
+
+include_once('includes/dynamic-empty.php'); 
+}
+else
+{
+?>
+	
+
 <div class="bg-light">
 	<div class="container">
 		<div class="pt-4">
@@ -186,6 +200,12 @@
 
 
 </div>
+
+<?php } ?>
+
+
+
+
 <?php 
 include_once('../application/includes/footer.php'); 
 include_once('../application/includes/modals.php');
