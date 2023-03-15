@@ -14,6 +14,16 @@ switch (strtoupper($current_page))
 		$p_manual = "text-secondary";
 		break;
 
+	case 'DYNAMIC-RATE-X':
+		$p_icon = "fas fa-calendar-alt";
+		$p_title = "Dynamic rate";
+		$p_dashboard = "text-secondary";
+		$p_profile = "text-secondary";
+		$p_contract = "text-secondary";
+		$p_dynamic = "text-primary";
+		$p_manual = "text-secondary";
+		break;
+
 	case 'CONTRACT-RATE':
 		$p_icon = "fas fa-calendar-alt";
 		$p_title = "Dynamic rate";
@@ -153,6 +163,14 @@ switch (strtoupper($current_page))
 							class="dropdown-menu rounded-0 p-0 mt-1"
 							aria-labelledby="btnDynamicRates">
 							<div class="border-top border-primary border-3">
+								<div>
+									<a 
+										href="javascript: void(0);" 
+										class="dropdown-item py-2 fs-8 text-decoration-none"
+										onclick="window.open('/dynamic-rate-x/','_self');">
+										Dynamic Rates #X
+									</a>
+								</div>
 								<div>
 									<a 
 										href="javascript: void(0);" 
