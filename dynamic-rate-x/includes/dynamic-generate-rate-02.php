@@ -8,6 +8,7 @@
                     <div class="fs-7 fw-bold text-dark">
                         Room category
                     </div>
+                    <!-- 
                     <div class="fs-7 text-secondary">
                         If the room name is unavailable 
                     </div>
@@ -16,6 +17,7 @@
                             Add new
                         </button>
                     </div>
+                    -->
                 </div>
                 <div class="col-12 col-lg-9">
                     <?php include('generate-rate/roomcategory.php'); ?>
@@ -52,6 +54,7 @@
                     <div class="fs-7 fw-bold text-dark">
                         Meal type
                     </div>
+                    <!--
                     <div class="fs-7 text-secondary">
                         If the meal type is unavailable 
                     </div>
@@ -60,6 +63,7 @@
                             Add new
                         </button>
                     </div>
+                    -->
                 </div>
                 <div class="col-12 col-lg-9">
                     <?php include('generate-rate/meal.php'); ?>    
