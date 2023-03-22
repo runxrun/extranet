@@ -4,30 +4,42 @@
             <div class="fs-8 text-secondary text-truncate">
                 From date
             </div>
-            <div class="pt-1 input-group">
-                <input 
-                    type="text" 
-                    id="txtFromDate"
-                    value="<?php echo date('d M Y');?>" 
-                    class="form-control rounded-0 shadow-none fs-7 text-dark">
-                <span class="input-group-text rounded-0">
-                    <i class="fas fa-calendar-day"></i>
-                </span>
+            <div class="dropdown">
+                <div class="pt-1 input-group" id="rnCalendarFromDate" data-bs-toggle="dropdown" aria-expanded="false">
+                    <input 
+                        type="text" 
+                        id="txtFromDate"
+                        value="<?php echo date('d M Y');?>" 
+                        class="form-control rounded-0 shadow-none fs-7 text-dark">
+                    <span class="input-group-text rounded-0">
+                        <i class="fas fa-calendar-day"></i>
+                    </span>
+                </div>
+
+                <div class="mt-1 dropdown-menu border-0 rounded-0 p-0 rn-calendar" aria-labelledby="rnCalendarFromDate">
+                    <?php include('../application/components/calendar/calendar.component.php'); ?>
+                </div>
             </div>
+            
         </div>
         <div class="col-6 col-lg-3">
             <div class="fs-8 text-secondary text-truncate">
                 To date
             </div>
-            <div class="pt-1 input-group">
-                <input 
-                    type="text"
-                    id="txtToDate"
-                    value="<?php echo date('d M Y', strtotime('-1 day', strtotime('1 year')));?>" 
-                    class="form-control rounded-0 shadow-none fs-7 text-dark">
-                <span class="input-group-text rounded-0">
-                    <i class="fas fa-calendar-day"></i>
-                </span>
+            <div class="dropdown">
+                <div class="pt-1 input-group" id="rnCalendarToDate" data-bs-toggle="dropdown" aria-expanded="false">
+                    <input 
+                        type="text"
+                        id="txtToDate"
+                        value="<?php echo date('d M Y', strtotime('-1 day', strtotime('1 year')));?>" 
+                        class="form-control rounded-0 shadow-none fs-7 text-dark">
+                    <span class="input-group-text rounded-0">
+                        <i class="fas fa-calendar-day"></i>
+                    </span>
+                </div>
+                <div class="mt-1 dropdown-menu border-0 rounded-0 p-0 rn-calendar" aria-labelledby="rnCalendarToDate">
+                    <?php include('../application/components/calendar/calendar.component.php'); ?>
+                </div>
             </div>
         </div>
     </div>
