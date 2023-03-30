@@ -6,7 +6,6 @@
 <body class="bg-dark">
 <?php include_once('../application/includes/header.php'); ?>
 <?php include_once('../application/includes/mainmenu.php'); ?>
-
 <div class="bg-light">
 	<div class="container">
 		<div class="pt-4">
@@ -19,8 +18,6 @@
 				</div>
 			</div>	
 		</div>
-
-
 		<?php 
 		$array_roomx = array(
 			array(
@@ -184,8 +181,8 @@
 							</div>							
 						</div>
 						<div class="col-3">
-							<div class="p-3">
-								<button class="btn btn-outline-primary p-1 w-50 rounded-0 fs-9">
+							<div class="p-3 d-flex h-100 justify-content-end align-items-end">
+								<button class="btn btn-outline-primary p-1 w-50 rounded-0 fs-9" onclick="window.open('/dynamic-rate/', '_self');">
 									Modify
 								</button>
 							</div>
@@ -196,14 +193,58 @@
 				}
 				?>
 
-				<div class="border-top p-3">
-					<div class="">
-						<div class="pb-2">
-							<div class="fs-7 fw-bold text-dark">
-								Cancellation policy
+				<div class="border-top">
+
+					<div class="row">
+						<div class="col-9">
+							<div class="row">
+								<div class="col-3">
+									<div class="p-3 fs-7 fw-bold text-dark">
+										Cancellation policy
+									</div>
+								</div>
+								<div class="col-9">
+
+									<div class="p-3">
+										<div class="d-flex flex-wrap pb-2">
+											<div class="pe-2">
+												<div class="fs-7 text-dark fw-bold">
+													Standard
+												</div>
+											</div>
+											<div class="pe-2">
+												<div class="fs-7 text-dark fw-bold">
+													- Room only
+												</div>
+											</div>
+											<div class="pe-2">
+												<div class="fs-7 text-dark fw-bold">
+												- 01 Mar 2023  to 29 Feb 2024
+												</div>
+											</div>
+										</div>
+										<div class="fs-7 text-secondary">
+											- Cancellation made prior to 7 days will result in no charges for the cancellation fee on the booking.
+										</div>
+										<div class="fs-7 text-secondary">
+											- Cancellations up to 5 days in advance, with a 50% charge of the room price	
+										</div>
+										<div class="fs-7 text-secondary">
+											- Cancellations must be made 2 days prior to arrival or the room price will not be refunded.
+										</div>
+									</div>
+
+								</div>
 							</div>
 						</div>
-						<div>
+						<div class="col-3">	
+							<!--
+							<div class="p-3 d-flex h-100 justify-content-end align-items-end">
+								<button class="btn btn-outline-primary p-1 w-50 rounded-0 fs-9">
+									Modify
+								</button>
+							</div>	
+							-->
 						</div>
 					</div>
 				</div>
@@ -211,9 +252,6 @@
 			<?php
 			}
 			?>
-
-
-
 			<?php
 			/*
 			<div class="border bg-white pb-4">
@@ -245,7 +283,6 @@
 		</div>
 	</div>
 </div>
-
 <?php 
 include_once('../application/includes/footer.php'); 
 include_once('../application/includes/modals.php');
