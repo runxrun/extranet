@@ -1,4 +1,5 @@
 <div class="row g-2">
+	<!-- 
 	<div class="col-auto">
 		<div class="dropdown">
 			<button 
@@ -38,6 +39,7 @@
 			</ul>
 		</div>
 	</div>
+	-->
 	<div class="col-auto">
 		<div class="dropdown">
 			<button 
@@ -116,6 +118,7 @@
 			</ul>
 		</div>
 	</div>
+	<!-- 
 	<div class="col-auto">
 		<div class="dropdown">
 			<button 
@@ -164,6 +167,7 @@
 			</ul>
 		</div>
 	</div>
+	 -->
 	<div class="col-auto">
 		<div class="">
 			<button 
