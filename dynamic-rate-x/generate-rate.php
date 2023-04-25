@@ -26,8 +26,8 @@
 			</div>
 		</div>
 		<?php
-		//include_once('includes/dynamic-generate-rate-01.php'); 
-		include_once('includes/dynamic-generate-rate-02.php'); 
+		include_once('includes/dynamic-generate-rate-01.php'); 
+		// include_once('includes/dynamic-generate-rate-02.php'); 
 		?>
 	</div>
 </div>

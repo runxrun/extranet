@@ -29,8 +29,8 @@
 		}
 
 		//include_once('includes/room-rate/no-rate.php'); 
-		//include_once('includes/room-rate/room-a.php'); 
-		include_once($datapage); 
+		include_once('includes/room-rate/room-a.php'); 
+		//include_once($datapage); 
 		?>
 
 

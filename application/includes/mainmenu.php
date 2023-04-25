@@ -132,6 +132,7 @@ switch (strtoupper($current_page))
 						</div>
 					</button>
 				</div>
+				<!-- 
 				<div class="col-auto">
 					<button
 						class="btn shadow-none border-0 <?php echo $p_contract; ?>"
@@ -143,6 +144,55 @@ switch (strtoupper($current_page))
 							Contract Rates
 						</div>
 					</button>
+				</div>
+				-->
+				<div class="col-auto">
+					<div class="dropdown">
+						<button
+							type="button"
+							id="btnDynamicRates"
+							class="btn shadow-none border-0 <?php echo $p_contract; ?>"
+							data-bs-toggle="dropdown"
+							aria-expanded="false">
+							<div class="fs-4">
+								<i class="fas fa-file-alt"></i>
+							</div>
+							<div class="fs-9">
+								Contract Rates
+							</div>
+						</button>
+						<div
+							class="dropdown-menu rounded-0 p-0 mt-1"
+							aria-labelledby="btnDynamicRates">
+							<div class="border-top border-primary border-3">
+								<div>
+									<a 
+										href="javascript: void(0);" 
+										class="dropdown-item py-2 fs-8 text-decoration-none"
+										onclick="window.open('/contract-rate/','_self');">
+										Contract Rates
+									</a>
+								</div>
+								<div>
+									<a 
+										href="javascript: void(0);" 
+										class="dropdown-item py-2 fs-8 text-decoration-none"
+										onclick="window.open('/contract-rate/','_self');">
+										Promotion 
+									</a>
+								</div>
+								<div>
+									<a 
+										href="javascript: void(0);" 
+										class="dropdown-item py-2 fs-8 text-decoration-none"
+										onclick="window.open('/contract-rate/','_self');">
+										Cancellation Policy
+									</a>
+								</div>
+							</div>
+						</div>
+						
+					</div>
 				</div>
 				<div class="col-auto">
 					<div class="dropdown">
