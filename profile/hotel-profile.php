@@ -9,7 +9,6 @@
 <div class="bg-light">
 	<div class="container">
 
-
 		<div class="pt-4 d-none d-lg-block">
 			<?php 
 				$getpage = $_GET['page'];

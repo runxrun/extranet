@@ -6,7 +6,7 @@
 	data-bs-keyboard="false"
 	tabindex="-1" 
 	aria-hidden="true">
-	<div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">		
+	<div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">		
 		<div class="modal-content">
 			<div class="modal-header">
 				<div class="modal-title fw-bold fs-6">Auto-fill contract rates data in form</div>
@@ -25,47 +25,74 @@
 
 				<div class="pb-3">
 					<div class="row g-3">
-						<div class="col-12 col-lg-4">
+						<div class="col-12 col-lg-6">
 							<div class="fs-8 text-secondary">
 								Room category
 							</div>
 							<div class="pt-1">
 								<select class="form-select rounded-0 fs-7">
-									<option value="">All room category</option>
-									<option value="">Standard</option>
-									<option value="">Deluxe</option>
-									<option value="">Family Suite</option>
+									<option value="">1 Bedroom</option>
+									<option value="">2 Bedroom</option>
+									<option value="">Studio</option>
 									<option value="">Villa Suite</option>
 								</select>
 							</div>
 						</div>
-						<div class="col-12 col-lg-4">
-							<div class="fs-8 text-secondary">
-								Status
-							</div>
-							<div class="pt-1">
-								<select class="form-select rounded-0 fs-7">
-									<option value="">All status</option>
-									<option value="">Available</option>
-									<option value="">On request</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-12 col-lg-4">
+						<div class="col-12 col-lg-6">
 							<div class="fs-8 text-secondary">
 								Meal type
 							</div>
 							<div class="pt-1">
 								<select class="form-select rounded-0 fs-7">
-									<option value="">All meal type</option>
 									<option value="">Room Only</option>
-									<option value="">Bed & Breakfast</option>
+									<option value="" selected>Bed and Breakfast</option>
 								</select>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="pb-2">
+				<div class="pt-3 pb-2">
+					<div class="border-bottom">
+						<div class="pb-1 fs-7 fw-bold text-dark">
+							Select period
+						</div>
+					</div>
+				</div>
+				<div class="pb-3">
+						<div class="row g-3">
+							<div class="col-3">
+								<div class="pb-1 fs-8 text-secondary">
+									From date
+								</div>
+								<div class="input-group">
+									<input type="text" class="form-control rounded-0 fs-7" value="14 May 2023">
+									<span class="input-group-text rounded-0">
+										<i class="fas fa-calendar-day"></i>
+									</span>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="pb-1 fs-8 text-secondary">
+									To date
+								</div>
+								<div class="input-group">
+									<input type="text" class="form-control rounded-0 fs-7" value="23 May 2023">
+									<span class="input-group-text rounded-0">
+										<i class="fas fa-calendar-day"></i>
+									</span>
+								</div>
+							</div>
+							<div class="col-2">
+								<div class="fs-8 text-secondary">
+									Min Stay
+								</div>
+								<div class="pt-1">
+									<input type="number" class="form-control rounded-0 fs-7" value="0">
+								</div>
+							</div>
+						</div>
+				</div>
+				<div class="pt-3 pb-2">
 					<div class="border-bottom">
 						<div class="pb-1 fs-7 fw-bold text-dark">
 							Auto-fill
@@ -74,44 +101,60 @@
 				</div>
 				<div class="pb-3">
 					<div class="row g-3">
-						<div class="col-4 col-lg-2">
+						<div class="col-4 col-lg-3">
 							<div class="fs-8 text-secondary">
 								Single
 							</div>
 							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7" value="0.00">
+								<input type="text" class="form-control rounded-0 fs-7" placeholder="0.00">
 							</div>
 						</div>
-						<div class="col-4 col-lg-2">
+						<div class="col-4 col-lg-3">
 							<div class="fs-8 text-secondary">
 								Twin / Double
 							</div>
 							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7" value="0.00">
+								<input type="text" class="form-control rounded-0 fs-7" placeholder="0.00">
 							</div>
 						</div>
-						<div class="col-4 col-lg-2">
+						<div class="col-4 col-lg-3">
 							<div class="fs-8 text-secondary">
 								Quad
 							</div>
 							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7" value="0.00">
+								<input type="text" class="form-control rounded-0 fs-7" placeholder="0.00">
 							</div>
 						</div>
-						<div class="col-4 col-lg-2">
+						<div class="col-4 col-lg-3">
 							<div class="fs-8 text-secondary">
-								Extra bed adult
+								Extra Bed Adult
 							</div>
 							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7" value="0.00">
+								<input type="text" class="form-control rounded-0 fs-7" placeholder="0.00">
 							</div>
 						</div>
-						<div class="col-4 col-lg-2">
+						<div class="col-4 col-lg-3">
 							<div class="fs-8 text-secondary">
-								Extra bed child
+								Extra Bed Child
 							</div>
 							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7" value="0.00">
+								<input type="text" class="form-control rounded-0 fs-7" placeholder="0.00">
+							</div>
+						</div>
+						<div class="col-4 col-lg-3">
+							<div class="fs-8 text-secondary">
+								Child Price
+							</div>
+							<div class="pt-1">
+								<input type="text" class="form-control rounded-0 fs-7" placeholder="0.00">
+							</div>
+						</div>
+						<div class="col-4 col-lg-3">
+							<div class="fs-8 text-secondary">
+							Child sharing pay breakfast
+							</div>
+							<div class="pt-1">
+								<input type="text" class="form-control rounded-0 fs-7" placeholder="0.00">
 							</div>
 						</div>
 					</div>

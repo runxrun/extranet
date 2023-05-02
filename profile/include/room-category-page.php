@@ -18,6 +18,12 @@ $room_info = array(
 		'room_sqm'=>'32',
 		'room_pax'=>'4',
 	),
+	array(
+		'room_name'=>'Villa Suite',
+		'room_image'=>'0',
+		'room_sqm'=>'32',
+		'room_pax'=>'4',
+	),
 );
 ?>
 <div class="pt-4 px-1">

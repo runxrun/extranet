@@ -161,7 +161,7 @@ $set_data_b = array(
 		'mandatory'=>'Y',
 		'input_type'=>'text',
 		'input_value'=>'https://www.facebook.com/SonahouseHotel/',	
-		'column'=>'col-12 col-md-6 col-lg-3',
+		'column'=>'col-12 col-md-6',
 		'readonly'=>'',
 		'disabled'=>'',
 	),

@@ -103,11 +103,87 @@
 		<div class="p-4">		
 			<div class="row">
 				<?php
-				foreach ($set_data_e as $key => $value)
-				{
-					include('input-element.php');
-				}
+				// foreach ($set_data_e as $key => $value)
+				// {
+				// 	include('input-element.php');
+				// }
 				?>
+				<div class="pb-3 col-12 col-lg-6">
+					<div class="row">
+						<div class="col-6 col-lg-5">
+							<div class="fs-7 fw-bold text-dark">
+								Child Price (Range #1)
+							</div>
+							<div class="pt-2">
+								<div class="input-group">
+									<input type="number" class="form-control fs-7 rounded-0" value="0" disabled>
+									<span class="input-group-text rounded-0 fs-7">Min</span>
+								</div>
+							</div>
+							<div class="pt-2">
+								<div class="input-group">
+									<input type="number" class="form-control fs-7 rounded-0" value="2" disabled>
+									<span class="input-group-text rounded-0 fs-7">Max</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-lg-5">
+							<div class="fs-7 fw-bold text-dark">
+								Child Price (Range #2)
+							</div>
+							<div class="pt-2">
+								<div class="input-group">
+									<input type="number" class="form-control fs-7 rounded-0" value="3">
+									<span class="input-group-text rounded-0 fs-7">Min</span>
+								</div>
+							</div>
+							<div class="pt-2">
+								<div class="input-group">
+									<input type="number" class="form-control fs-7 rounded-0" value="12">
+									<span class="input-group-text rounded-0 fs-7">Max</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pb-3 col-12 col-lg-6">
+					<div class="row">
+						<div class="col-6 col-lg-5">
+							<div class="fs-7 fw-bold text-dark">
+								Extra Bed Child (Range #1)
+							</div>
+							<div class="pt-2">
+								<div class="input-group">
+									<input type="number" class="form-control fs-7 rounded-0" value="0" disabled>
+									<span class="input-group-text rounded-0 fs-7">Min</span>
+								</div>
+							</div>
+							<div class="pt-2">
+								<div class="input-group">
+									<input type="number" class="form-control fs-7 rounded-0" value="2" disabled>
+									<span class="input-group-text rounded-0 fs-7">Max</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-lg-5">
+							<div class="fs-7 fw-bold text-dark">
+								Extra Bed Child (Range #2)
+							</div>
+							<div class="pt-2">
+								<div class="input-group">
+									<input type="number" class="form-control fs-7 rounded-0" value="3">
+									<span class="input-group-text rounded-0 fs-7">Min</span>
+								</div>
+							</div>
+							<div class="pt-2">
+								<div class="input-group">
+									<input type="number" class="form-control fs-7 rounded-0" value="12">
+									<span class="input-group-text rounded-0 fs-7">Max</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
