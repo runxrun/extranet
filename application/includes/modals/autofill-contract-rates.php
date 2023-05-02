@@ -99,7 +99,23 @@
 									Min Stay
 								</div>
 								<div class="pt-1">
-									<input type="number" class="form-control rounded-0 fs-7" value="0">
+									<input type="number" class="form-control rounded-0 fs-7" value="">
+								</div>
+							</div>
+							<div class="col-2">
+								<div class="fs-8 text-secondary">
+									Allotment
+								</div>
+								<div class="pt-1">
+									<input type="number" class="form-control rounded-0 fs-7" value="">
+								</div>
+							</div>
+							<div class="col-2">
+								<div class="fs-8 text-secondary">
+									Cut-off
+								</div>
+								<div class="pt-1">
+									<input type="number" class="form-control rounded-0 fs-7" value="">
 								</div>
 							</div>
 						</div>
@@ -128,7 +144,7 @@
 								Single
 							</div>
 							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7" placeholder="0.00">
+								<input type="text" class="form-control rounded-0 fs-7">
 							</div>
 						</div>
 						<div class="col-4 col-lg-3">
@@ -136,7 +152,7 @@
 								Twin / Double
 							</div>
 							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7" placeholder="0.00">
+								<input type="text" class="form-control rounded-0 fs-7">
 							</div>
 						</div>
 						<div class="col-4 col-lg-3">
@@ -144,7 +160,7 @@
 								Quad
 							</div>
 							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7" placeholder="0.00">
+								<input type="text" class="form-control rounded-0 fs-7">
 							</div>
 						</div>
 						<div class="col-4 col-lg-3">
@@ -152,7 +168,7 @@
 								Extra Bed Adult
 							</div>
 							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7" placeholder="0.00">
+								<input type="text" class="form-control rounded-0 fs-7">
 							</div>
 						</div>
 						<div class="col-4 col-lg-3">
@@ -160,7 +176,7 @@
 								Extra Bed Child
 							</div>
 							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7" placeholder="0.00">
+								<input type="text" class="form-control rounded-0 fs-7">
 							</div>
 						</div>
 						<div class="col-4 col-lg-3">
@@ -168,7 +184,7 @@
 								Child Price
 							</div>
 							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7" placeholder="0.00">
+								<input type="text" class="form-control rounded-0 fs-7">
 							</div>
 						</div>
 						<div class="col-4 col-lg-3">
@@ -176,7 +192,7 @@
 							Child sharing pay breakfast
 							</div>
 							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7" placeholder="0.00">
+								<input type="text" class="form-control rounded-0 fs-7">
 							</div>
 						</div>
 					</div>
