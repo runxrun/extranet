@@ -78,6 +78,30 @@
             </ul>
         </div>
     </div>
+    <div class="col-auto">
+        <div class="dropdown">
+            <button 
+                type="button" 
+                class="btn dropdown-toggle border bg-white rounded-0 fs-9" 
+                id="btnMealTypes" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false">
+                Selling price
+            </button>
+            <ul class="dropdown-menu rounded-0 fs-9" aria-labelledby="btnMealTypes">
+                <li>
+                    <a class="dropdown-item" href="javascript:void(0)" onclick="">
+                        Costing price
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="javascript:void(0)" onclick="">
+                        Selling price
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- 
     <div class="col-auto">
         <div class="dropdown">

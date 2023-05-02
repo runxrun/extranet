@@ -135,6 +135,15 @@
 								//array('mealtypename'=>'Room Only'),
 							),
 						),
+						array(
+							'roomcatg'=>'2 Bedroom',
+							'mealtype'=>array(
+								array(
+									'mealtypename'=>'Bed and Breakfast',
+								),
+								//array('mealtypename'=>'Room Only'),
+							),
+						),
 					),
 				),
 				// array(
@@ -162,9 +171,12 @@
 						{
 					?>
 					<div class="bg-primary">
-						<div class="py-2 px-3 fs-7 fw-bold text-white">
-							<?php echo $value2['roomcatg']; ?> / 
-							<?php echo $value3['mealtypename']; ?></div>
+						<div class="">
+							<button class="btn w-100 border-0 rounded-0 text-start py-2 px-3 fs-7 fw-bold text-white">
+								<?php echo $value2['roomcatg']; ?> /
+								<?php echo $value3['mealtypename']; ?>
+							</button>
+						</div>
 					</div>
 					<div class="border-bottom border-end border-1">
 						<div class="row g-0 fs-9 bg-light">

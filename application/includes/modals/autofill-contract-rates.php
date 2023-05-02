@@ -9,7 +9,7 @@
 	<div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">		
 		<div class="modal-content">
 			<div class="modal-header">
-				<div class="modal-title fw-bold fs-6">Auto-fill contract rates data in form</div>
+				<div class="modal-title fw-bold fs-6">Overlap contract rates data in form</div>
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
@@ -18,7 +18,8 @@
 				<div class="alert alert-warning fs-8 py-2 px-3" role="alert">
 					<div class="d-flex">
 						<div class="pe-2"><i class="fas fa-exclamation-circle"></i></div>
-						<div class="pe-2">Please ensure that your actions do not overlap with the previous ones.</div>
+						<div class="pe-2">Please make sure your actions are correct</div>
+						<!-- <div class="pe-2">Please ensure that your actions do not overlap with the previous ones.</div> -->
 					</div>  
 				</div>
 
@@ -51,13 +52,24 @@
 						</div>
 					</div>
 				</div>
-				<div class="pt-3 pb-2">
-					<div class="border-bottom">
-						<div class="pb-1 fs-7 fw-bold text-dark">
-							Select period
+				<!-- 
+					<div class="pt-3 pb-2">
+						<div class="bg-light py-2 px-3 border-bottom">
+							<div class="fs-7 fw-bold text-dark">
+								Select period
+							</div>
 						</div>
 					</div>
+				<div class="d-flex align-items-center py-3">
+					<div class="pe-2 fs-6 text-dark">
+						<i class="fas fa-calendar-day"></i>
+					</div>
+					<div class="pe-2 fs-6 fw-bold text-dark">
+						Select period
+					</div>
 				</div>
+				-->
+				
 				<div class="pb-3">
 						<div class="row g-3">
 							<div class="col-3">
@@ -92,11 +104,21 @@
 							</div>
 						</div>
 				</div>
+				<!-- 
 				<div class="pt-3 pb-2">
-					<div class="border-bottom">
-						<div class="pb-1 fs-7 fw-bold text-dark">
+					<div class="bg-light py-2 px-3 border-bottom">
+						<div class="fs-7 fw-bold text-dark">
 							Auto-fill
 						</div>
+					</div>
+				</div>
+				-->
+				<div class="d-flex align-items-center py-3">
+					<div class="pe-2 fs-6 text-dark">
+						<i class="fas fa-calendar-day"></i>
+					</div>
+					<div class="pe-2 fs-6 fw-bold text-dark">
+						Standard rate
 					</div>
 				</div>
 				<div class="pb-3">
@@ -171,7 +193,7 @@
 					type="button"
 					class="btn btn-primary rounded-0 fs-7"
 					data-bs-dismiss="modal">
-					Auto fill data
+					Update rate
 				</button>
 			</div>
 		</div>

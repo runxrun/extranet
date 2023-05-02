@@ -6,7 +6,8 @@
     </div>
     <div class="col-auto">
         <button class="btn btn-outline-primary rounded-0 fs-9" data-bs-toggle="modal" data-bs-target="#autoFillContractRateModal">
-            Auto fill
+            Overlap rate
+            <!-- Auto fill -->
         </button>
     </div>
     <div class="col-auto">
