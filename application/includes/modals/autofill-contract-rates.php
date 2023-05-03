@@ -6,7 +6,7 @@
 	data-bs-keyboard="false"
 	tabindex="-1" 
 	aria-hidden="true">
-	<div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">		
+	<div class="modal-dialog modal-xl modal-dialog-centered">		
 		<div class="modal-content">
 			<div class="modal-header">
 				<div class="modal-title fw-bold fs-6">Overlap contract rates data in form</div>
@@ -46,7 +46,7 @@
 							<div class="pt-1">
 								<select class="form-select rounded-0 fs-7">
 									<option value="">Room Only</option>
-									<option value="" selected>Bed and Breakfast</option>
+									<option value="" selected>Room and Breakfast</option>
 								</select>
 							</div>
 						</div>
@@ -99,7 +99,7 @@
 									Min Stay
 								</div>
 								<div class="pt-1">
-									<input type="number" class="form-control rounded-0 fs-7" value="">
+									<input type="number" class="form-control rounded-0 fs-7" value="0">
 								</div>
 							</div>
 							<div class="col-2">
@@ -107,7 +107,7 @@
 									Allotment
 								</div>
 								<div class="pt-1">
-									<input type="number" class="form-control rounded-0 fs-7" value="">
+									<input type="number" class="form-control rounded-0 fs-7" value="1">
 								</div>
 							</div>
 							<div class="col-2">
@@ -115,11 +115,12 @@
 									Cut-off
 								</div>
 								<div class="pt-1">
-									<input type="number" class="form-control rounded-0 fs-7" value="">
+									<input type="number" class="form-control rounded-0 fs-7" value="45">
 								</div>
 							</div>
 						</div>
 				</div>
+
 				<!-- 
 				<div class="pt-3 pb-2">
 					<div class="bg-light py-2 px-3 border-bottom">
@@ -128,10 +129,31 @@
 						</div>
 					</div>
 				</div>
-				-->
 				<div class="d-flex align-items-center py-3">
 					<div class="pe-2 fs-6 text-dark">
 						<i class="fas fa-calendar-day"></i>
+					</div>
+					<div class="pe-2 fs-6 fw-bold text-dark">
+						Mark up
+					</div>
+				</div>
+
+
+				 -->
+
+				<!-- <div class="pt-3">
+					<div class="alert alert-warning fs-8 py-2 px-3" role="alert">
+						<div class="d-flex">
+							<div class="pe-2"><i class="fas fa-exclamation-circle"></i></div>
+							<div class="pe-2">Overlap your rate</div>
+							<div class="pe-2">Please ensure that your actions do not overlap with the previous ones.</div>
+						</div>  
+					</div>
+				</div> -->
+
+				<div class="d-flex align-items-center py-3">
+					<div class="pe-2 fs-6 text-dark">
+						<i class="fas fa-coins"></i>
 					</div>
 					<div class="pe-2 fs-6 fw-bold text-dark">
 						Standard rate
@@ -144,7 +166,7 @@
 								Single
 							</div>
 							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7">
+								<input type="text" class="form-control rounded-0 fs-7" value="2,500.00">
 							</div>
 						</div>
 						<div class="col-4 col-lg-3">
@@ -152,7 +174,7 @@
 								Twin / Double
 							</div>
 							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7">
+								<input type="text" class="form-control rounded-0 fs-7" value="2,500.00">
 							</div>
 						</div>
 						<div class="col-4 col-lg-3">
@@ -160,7 +182,7 @@
 								Quad
 							</div>
 							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7">
+								<input type="text" class="form-control rounded-0 fs-7" value="4,700.00">
 							</div>
 						</div>
 						<div class="col-4 col-lg-3">
@@ -168,7 +190,7 @@
 								Extra Bed Adult
 							</div>
 							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7">
+								<input type="text" class="form-control rounded-0 fs-7" value="550.00">
 							</div>
 						</div>
 						<div class="col-4 col-lg-3">
@@ -176,7 +198,7 @@
 								Extra Bed Child
 							</div>
 							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7">
+								<input type="text" class="form-control rounded-0 fs-7" value="300.00">
 							</div>
 						</div>
 						<div class="col-4 col-lg-3">
@@ -184,7 +206,7 @@
 								Child Price
 							</div>
 							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7">
+								<input type="text" class="form-control rounded-0 fs-7" value="100.00">
 							</div>
 						</div>
 						<div class="col-4 col-lg-3">
@@ -192,7 +214,57 @@
 							Child sharing pay breakfast
 							</div>
 							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7">
+								<input type="text" class="form-control rounded-0 fs-7" value="600.00">
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="d-flex align-items-center py-3">
+					<div class="pe-2 fs-6 text-dark">
+						<i class="fas fa-coins"></i>
+					</div>
+					<div class="pe-2 fs-6 fw-bold text-dark">
+						Unit rate
+					</div>
+				</div>
+				<div class="pb-3">
+					<div class="row g-3">
+						<div class="col-4 col-lg-3">
+							<div class="fs-8 text-secondary">
+								Unit Rate
+							</div>
+							<div class="pt-1">
+								<input type="text" class="form-control rounded-0 fs-7" value="8,500.00">
+							</div>
+						</div>
+						<div class="col-4 col-lg-3">
+							<div class="fs-8 text-secondary">
+								Maximum guests in room
+							</div>
+							<div class="pt-1">
+								<input type="number" class="form-control rounded-0 fs-7" value="8">
+							</div>
+						</div>
+						<div class="col-4 col-lg-3">
+							<div class="fs-8 text-secondary">
+								Maximum children in room
+							</div>
+							<div class="pt-1">
+								<input type="number" class="form-control rounded-0 fs-7" value="2">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="pt-3">
+					<div class="row g-3">
+						<div class="col-12 col-lg-6">
+							<div class="fs-8 text-secondary">
+								Room message
+							</div>
+							<div class="pt-1">
+								<textarea rows="4" class="form-control rounded-0 fs-7"></textarea>
 							</div>
 						</div>
 					</div>

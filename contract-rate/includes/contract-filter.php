@@ -26,8 +26,8 @@
     <div class="col-auto">
         <div class="dropdown">
             <button type="button" class="btn dropdown-toggle border bg-white rounded-0 fs-9" id="btnMarket" data-bs-toggle="dropdown" aria-expanded="false">
-                1 Bedroom
-                <!-- All Room Categories -->
+                <!-- 1 Bedroom -->
+                All Room Categories
             </button>
             <ul class="dropdown-menu rounded-0 fs-9" aria-labelledby="btnRatesAvailability">
                 <li>
