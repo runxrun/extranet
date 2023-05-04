@@ -112,7 +112,9 @@
           &nbsp;
         </div>
         <div>
-          <button class="btn btn-primary rounded-0 fs-8 w-100"><i class="fas fa-search"></i></button>
+          <button class="btn btn-primary rounded-0 fs-8 w-100" onclick="submitSearch();">
+            <i class="fas fa-search"></i>
+          </button>
         </div>
       </div>
     </div>
@@ -136,5 +138,8 @@
       document.getElementById("lyFromDate").style.display="";
       document.getElementById("lyToDate").style.display="";
     }
+  }
+  function submitSearch(){
+    window.open('/channel-manager/?search=1', '_self');
   }
 </script>

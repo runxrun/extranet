@@ -328,6 +328,7 @@ switch (strtoupper($current_page))
 										Promotion
 									</a>
 								</div>
+								<!-- 
 								<div>
 									<a
 										href="javascript: void(0);"
@@ -336,6 +337,7 @@ switch (strtoupper($current_page))
 										Cancellation Policy
 									</a>
 								</div>
+								-->
 							</div>
 						</div>
 					</div>
