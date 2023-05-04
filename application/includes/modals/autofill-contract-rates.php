@@ -31,11 +31,11 @@
 								Room category
 							</div>
 							<div class="pt-1">
-								<select class="form-select rounded-0 fs-7">
-									<option value="">1 Bedroom</option>
-									<option value="">2 Bedroom</option>
-									<option value="">Studio</option>
-									<option value="">Villa Suite</option>
+								<select id="roomCatg" class="form-select rounded-0 fs-7" onchange="chkRateType();">
+									<option value="01">1 Bedroom</option>
+									<option value="02">2 Bedroom</option>
+									<option value="03">Studio</option>
+									<option value="04">Villa Suite</option>
 								</select>
 							</div>
 						</div>
@@ -52,6 +52,21 @@
 						</div>
 					</div>
 				</div>
+				<script>
+					function chkRateType(){
+					var chkRoomCatg = document.getElementById("roomCatg").value;
+					if(chkRoomCatg=="04")
+					{
+						document.getElementById("lyStandardRate").style.display="none";
+						document.getElementById("lyUnitRate").style.display="";
+					}
+					else
+					{
+						document.getElementById("lyStandardRate").style.display="";
+						document.getElementById("lyUnitRate").style.display="none";
+					}
+					}
+				</script>
 				<!-- 
 					<div class="pt-3 pb-2">
 						<div class="bg-light py-2 px-3 border-bottom">
@@ -151,107 +166,111 @@
 					</div>
 				</div> -->
 
-				<div class="d-flex align-items-center py-3">
-					<div class="pe-2 fs-6 text-dark">
-						<i class="fas fa-coins"></i>
+				<div id="lyStandardRate">
+					<div class="d-flex align-items-center py-3">
+						<div class="pe-2 fs-6 text-dark">
+							<i class="fas fa-coins"></i>
+						</div>
+						<div class="pe-2 fs-6 fw-bold text-dark">
+							Standard rate
+						</div>
 					</div>
-					<div class="pe-2 fs-6 fw-bold text-dark">
-						Standard rate
-					</div>
-				</div>
-				<div class="pb-3">
-					<div class="row g-3">
-						<div class="col-4 col-lg-3">
-							<div class="fs-8 text-secondary">
-								Single
+					<div class="pb-3">
+						<div class="row g-3">
+							<div class="col-4 col-lg-3">
+								<div class="fs-8 text-secondary">
+									Single
+								</div>
+								<div class="pt-1">
+									<input type="text" class="form-control rounded-0 fs-7" value="2,500.00">
+								</div>
 							</div>
-							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7" value="2,500.00">
+							<div class="col-4 col-lg-3">
+								<div class="fs-8 text-secondary">
+									Twin / Double
+								</div>
+								<div class="pt-1">
+									<input type="text" class="form-control rounded-0 fs-7" value="2,500.00">
+								</div>
 							</div>
-						</div>
-						<div class="col-4 col-lg-3">
-							<div class="fs-8 text-secondary">
-								Twin / Double
+							<div class="col-4 col-lg-3">
+								<div class="fs-8 text-secondary">
+									Quad
+								</div>
+								<div class="pt-1">
+									<input type="text" class="form-control rounded-0 fs-7" value="4,700.00">
+								</div>
 							</div>
-							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7" value="2,500.00">
+							<div class="col-4 col-lg-3">
+								<div class="fs-8 text-secondary">
+									Extra Bed Adult
+								</div>
+								<div class="pt-1">
+									<input type="text" class="form-control rounded-0 fs-7" value="550.00">
+								</div>
 							</div>
-						</div>
-						<div class="col-4 col-lg-3">
-							<div class="fs-8 text-secondary">
-								Quad
+							<div class="col-4 col-lg-3">
+								<div class="fs-8 text-secondary">
+									Extra Bed Child
+								</div>
+								<div class="pt-1">
+									<input type="text" class="form-control rounded-0 fs-7" value="300.00">
+								</div>
 							</div>
-							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7" value="4,700.00">
+							<div class="col-4 col-lg-3">
+								<div class="fs-8 text-secondary">
+									Child Price
+								</div>
+								<div class="pt-1">
+									<input type="text" class="form-control rounded-0 fs-7" value="100.00">
+								</div>
 							</div>
-						</div>
-						<div class="col-4 col-lg-3">
-							<div class="fs-8 text-secondary">
-								Extra Bed Adult
-							</div>
-							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7" value="550.00">
-							</div>
-						</div>
-						<div class="col-4 col-lg-3">
-							<div class="fs-8 text-secondary">
-								Extra Bed Child
-							</div>
-							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7" value="300.00">
-							</div>
-						</div>
-						<div class="col-4 col-lg-3">
-							<div class="fs-8 text-secondary">
-								Child Price
-							</div>
-							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7" value="100.00">
-							</div>
-						</div>
-						<div class="col-4 col-lg-3">
-							<div class="fs-8 text-secondary">
-							Child sharing pay breakfast
-							</div>
-							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7" value="600.00">
+							<div class="col-4 col-lg-3">
+								<div class="fs-8 text-secondary">
+								Child sharing pay breakfast
+								</div>
+								<div class="pt-1">
+									<input type="text" class="form-control rounded-0 fs-7" value="600.00">
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				
-				<div class="d-flex align-items-center py-3">
-					<div class="pe-2 fs-6 text-dark">
-						<i class="fas fa-coins"></i>
-					</div>
-					<div class="pe-2 fs-6 fw-bold text-dark">
-						Unit rate
-					</div>
-				</div>
-				<div class="pb-3">
-					<div class="row g-3">
-						<div class="col-4 col-lg-3">
-							<div class="fs-8 text-secondary">
-								Unit Rate
-							</div>
-							<div class="pt-1">
-								<input type="text" class="form-control rounded-0 fs-7" value="8,500.00">
-							</div>
+				<div id="lyUnitRate" style="display: none;">
+					<div class="d-flex align-items-center py-3">
+						<div class="pe-2 fs-6 text-dark">
+							<i class="fas fa-coins"></i>
 						</div>
-						<div class="col-4 col-lg-3">
-							<div class="fs-8 text-secondary">
-								Maximum guests in room
-							</div>
-							<div class="pt-1">
-								<input type="number" class="form-control rounded-0 fs-7" value="8">
-							</div>
+						<div class="pe-2 fs-6 fw-bold text-dark">
+							Unit rate
 						</div>
-						<div class="col-4 col-lg-3">
-							<div class="fs-8 text-secondary">
-								Maximum children in room
+					</div>
+					<div class="pb-3">
+						<div class="row g-3">
+							<div class="col-4 col-lg-3">
+								<div class="fs-8 text-secondary">
+									Unit Rate
+								</div>
+								<div class="pt-1">
+									<input type="text" class="form-control rounded-0 fs-7" value="8,500.00">
+								</div>
 							</div>
-							<div class="pt-1">
-								<input type="number" class="form-control rounded-0 fs-7" value="2">
+							<div class="col-4 col-lg-3">
+								<div class="fs-8 text-secondary">
+									Maximum guests in room
+								</div>
+								<div class="pt-1">
+									<input type="number" class="form-control rounded-0 fs-7" value="8">
+								</div>
+							</div>
+							<div class="col-4 col-lg-3">
+								<div class="fs-8 text-secondary">
+									Maximum children in room
+								</div>
+								<div class="pt-1">
+									<input type="number" class="form-control rounded-0 fs-7" value="2">
+								</div>
 							</div>
 						</div>
 					</div>

@@ -68,7 +68,7 @@
 					<div class="d-flex flex-wrap align-items-center" title="Rate update">
 						<div class="pe-2 fs-7 text-success"><i class="fas fa-check-circle"></i></div>
 						<div class="pe-2 fs-7 fw-bold text-success">This rate approve since</div>
-						<div class="pe-2 fs-7 text-secondary">01 January 2023 / 15:24:35</div>
+						<div class="pe-0 fs-7 text-secondary">1 Jan 2023 / 15:24:35</div>
 					</div>
 				</div>
 			</div>
@@ -106,6 +106,8 @@
 			// include_once('includes/contract-lists.php');
 			// include_once('includes/contract-tools.php');
 
+
+			$daterange = 31;
 			$roomarray = array(
 
 				array(
@@ -152,10 +154,18 @@
 
 
 				<div class="mb-3">
-					<div class="bg-white border py-3 px-3 fs-7 fw-bold text-dark">
+					<div class="bg-white border py-3 px-3 fs-7">
 						<div class="d-flex align-items-center">
-							<div class="pe-2"><i class="fas fa-poll"></i></div>
-							<div class="pe-2"><?php echo $value['market']; ?> / THB (Lacal rate: 1.000000)</div>
+							<div class="pe-2 text-primary"><i class="fas fa-poll"></i></div>
+							<div class="pe-2 fw-bold text-dark">
+								<div class="row gx-3">
+									<div class="col-auto">Tariff worldwide 2023-2024</div>
+									<div class="col-auto">|</div>
+									<div class="col-auto"><?php echo $value['market']; ?></div>
+									<div class="col-auto">|</div>
+									<div class="col-auto">THB (Lacal rate: 1.000000)</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<?php
@@ -163,100 +173,184 @@
 					{
 						foreach($value2['mealtype'] as $key3 => $value3)
 						{
-					?>
-					<div class="pt-2">
-						<div class="bg-primary">
-							<div class="d-flex justify-content-between">
-								<div>
-									<button class="btn w-100 border-0 rounded-0 text-start py-2 px-3 fs-7 fw-bold text-white">
-										<?php echo $value2['roomcatg']; ?> /
-										<?php echo $value3['mealtypename']; ?>
-									</button>
-								</div>
-								<div>
-									<button class="btn w-100 border-0 rounded-0 text-start py-2 px-3 fs-7 fw-bold text-white">
-										<i class="fas fa-ellipsis-h"></i>
-									</button>
+						?>
+						<div class="pt-2">
+							<div class="bg-primary">
+								<div class="d-flex justify-content-between">
+									<div>
+										<button class="btn w-100 border-0 rounded-0 text-start py-2 px-3 fs-7 fw-bold text-white">
+											<?php echo $value2['roomcatg']; ?> /
+											<?php echo $value3['mealtypename']; ?>
+										</button>
+									</div>
+									<div>
+										<button class="btn w-100 border-0 rounded-0 text-start py-2 px-3 fs-7 fw-bold text-white">
+											<i class="fas fa-ellipsis-h"></i>
+										</button>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="bg-white border-bottom border-end border-1">
-							<div class="row g-0 fs-9 bg-light">
-								<div class="col-season"><div class="py-2 px-2 text-secondary text-center">Season</div></div>
-								<div class="col-date"><div class="py-2 px-2 text-secondary text-center">Date</div></div>
-								<div class="col-minstay"><div class="py-2 px-2 text-secondary text-center">Min Stay</div></div>
-								<div class="col-sgl"><div class="py-2 px-2 text-secondary text-center">Single</div></div>
-								<div class="col-twndbl"><div class="py-2 px-2 text-secondary text-center"><div>Twin /</div><div>Double</div></div></div>
-								<div class="col-quad"><div class="py-2 px-2 text-secondary text-center">Quad</div></div>
-								<div class="col-xbedad"><div class="py-2 px-2 text-secondary text-center"><div>Extra Bed</div><div>Adult</div></div></div>
-								<div class="col-xbedch"><div class="py-2 px-2 text-secondary text-center"><div>Extra Bed</div><div>Child (3-12)</div></div></div>
-								<div class="col-chrange1"><div class="py-2 px-2 text-secondary text-center"><div>Child price</div><div>(3-12)</div></div></div>
-								<div class="col-sharebed"><div class="py-2 px-2 text-secondary text-center"><div>Child sharing</div><div>pay breakfast</div></div></div>
-								<div class="col-allotment"><div class="py-2 px-2 text-secondary text-center"><div>Allotment</div></div></div>
-								<div class="col-cutoff"><div class="py-2 px-2 text-secondary text-center"><div>Cut-off</div></div></div>
-							</div>
-							<?php
-							for($i=1;$i<=31;$i++)
-							{
-								switch($i)
+							<div class="bg-white border-bottom border-end border-1">
+								<div class="row g-0 fs-9 bg-light">
+									<div class="col-season"><div class="py-2 px-2 text-secondary text-center">Season</div></div>
+									<div class="col-date"><div class="py-2 px-2 text-secondary text-center">Date</div></div>
+									<div class="col-minstay"><div class="py-2 px-2 text-secondary text-center">Min Stay</div></div>
+									<div class="col-sgl"><div class="py-2 px-2 text-secondary text-center">Single</div></div>
+									<div class="col-twndbl"><div class="py-2 px-2 text-secondary text-center"><div>Twin /</div><div>Double</div></div></div>
+									<div class="col-quad"><div class="py-2 px-2 text-secondary text-center">Quad</div></div>
+									<div class="col-xbedad"><div class="py-2 px-2 text-secondary text-center"><div>Extra Bed</div><div>Adult</div></div></div>
+									<div class="col-xbedch"><div class="py-2 px-2 text-secondary text-center"><div>Extra Bed</div><div>Child (3-12)</div></div></div>
+									<div class="col-chrange1"><div class="py-2 px-2 text-secondary text-center"><div>Child price</div><div>(3-12)</div></div></div>
+									<div class="col-sharebed"><div class="py-2 px-2 text-secondary text-center"><div>Child sharing</div><div>pay breakfast</div></div></div>
+									<div class="col-allotment"><div class="py-2 px-2 text-secondary text-center"><div>Allotment</div></div></div>
+									<div class="col-cutoff"><div class="py-2 px-2 text-secondary text-center"><div>Cut-off</div></div></div>
+								</div>
+								<?php
+								for($i=1;$i<=$daterange;$i++)
 								{
-									case 6 :
-									case 7 :
-									case 13 :
-									case 14 :
-									case 20 :
-									case 21 :
-									case 27 :
-									case 28 : $c_weekend = 'rn-weekend'; break;
-									default : $c_weekend = ''; break;
+									switch($i)
+									{
+										case 6 :
+										case 7 :
+										case 13 :
+										case 14 :
+										case 20 :
+										case 21 :
+										case 27 :
+										case 28 : $c_weekend = 'rn-weekend'; break;
+										default : $c_weekend = ''; break;
+									}
+
+
+									$seasonname = ($i>15 ? 'High Season' : 'Low Season' );
+
+								?>
+								<div class="row g-0 fs-9 border-top">
+									<div class="col-season <?php	echo $c_weekend; ?>"><div class="py-2 px-1 text-secondary text-center"><?php echo $seasonname; ?></div></div>
+									<div class="col-date <?php	echo $c_weekend; ?>"><div class="py-2 px-1 text-secondary text-center"><?php echo $i; ?>-May-2023</div></div>
+									<div class="col-minstay"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="0"></div></div>
+									<div class="col-sgl"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="2,500.00"></div></div>
+									<div class="col-twndbl"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="2,500.00"></div></div>
+									<div class="col-quad"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="4,700.00"></div></div>
+									<div class="col-xbedad"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="550.00"></div></div>
+									<div class="col-xbedch"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="300.00"></div></div>
+									<div class="col-chrange1"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="100.00"></div></div>
+									<div class="col-sharebed"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="600.00"></div></div>
+									<div class="col-allotment"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="1"></div></div>
+									<div class="col-cutoff"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="45"></div></div>
+								</div>
+								<?php
 								}
-
-
-								$seasonname = ($i>15 ? 'High Season' : 'Low Season' );
-
-							?>
-							<div class="row g-0 fs-9 border-top">
-								<div class="col-season <?php	echo $c_weekend; ?>"><div class="py-2 px-1 text-secondary text-center"><?php echo $seasonname; ?></div></div>
-								<div class="col-date <?php	echo $c_weekend; ?>"><div class="py-2 px-1 text-secondary text-center"><?php echo $i; ?>-May-2023</div></div>
-								<div class="col-minstay"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="0"></div></div>
-								<div class="col-sgl"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="2,500.00"></div></div>
-								<div class="col-twndbl"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="2,500.00"></div></div>
-								<div class="col-quad"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="4,700.00"></div></div>
-								<div class="col-xbedad"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="550.00"></div></div>
-								<div class="col-xbedch"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="300.00"></div></div>
-								<div class="col-chrange1"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="100.00"></div></div>
-								<div class="col-sharebed"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="600.00"></div></div>
-								<div class="col-allotment"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="1"></div></div>
-								<div class="col-cutoff"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="45"></div></div>
+								?>					
 							</div>
-							<?php
-							}
-							?>					
 						</div>
-					</div>
-					<?php
+						<?php
+						}
 					}
-					}
-					?>
+					?>						
+						<div class="pt-2">
+							<div class="bg-primary">
+								<div class="d-flex justify-content-between">
+									<div>
+										<button class="btn w-100 border-0 rounded-0 text-start py-2 px-3 fs-7 fw-bold text-white">
+											Villa Suite / Room and Breakfast
+										</button>
+									</div>
+									<div>
+										<button class="btn w-100 border-0 rounded-0 text-start py-2 px-3 fs-7 fw-bold text-white">
+											<i class="fas fa-ellipsis-h"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="bg-white border-bottom border-end border-1">
+								<div class="row g-0 fs-9 bg-light">
+									<div class="col-season"><div class="py-2 px-2 text-secondary text-center">Season</div></div>
+									<div class="col-date"><div class="py-2 px-2 text-secondary text-center">Date</div></div>
+									<div class="col-minstay"><div class="py-2 px-2 text-secondary text-center">Min Stay</div></div>
+									<div class="col-unitrate"><div class="py-2 px-2 text-secondary text-center">Unit rate</div></div>
+									<div class="col-maxguest"><div class="py-2 px-2 text-secondary text-center">Maximum guest</div></div>
+									<div class="col-maxchild"><div class="py-2 px-2 text-secondary text-center">Maximum children</div></div>
+									<div class="col-allotment"><div class="py-2 px-2 text-secondary text-center"><div>Allotment</div></div></div>
+									<div class="col-cutoff"><div class="py-2 px-2 text-secondary text-center"><div>Cut-off</div></div></div>
+								</div>
+
+								<?php
+								for($i=1;$i<=$daterange;$i++)
+								{
+									switch($i)
+									{
+										case 6 :
+										case 7 :
+										case 13 :
+										case 14 :
+										case 20 :
+										case 21 :
+										case 27 :
+										case 28 : $c_weekend = 'rn-weekend'; break;
+										default : $c_weekend = ''; break;
+									}
+
+
+									$seasonname = ($i>15 ? 'High Season' : 'Low Season' );
+
+								?>
+								<div class="row g-0 fs-9 border-top">
+									<div class="col-season <?php	echo $c_weekend; ?>"><div class="py-2 px-1 text-secondary text-center"><?php echo $seasonname; ?></div></div>
+									<div class="col-date <?php	echo $c_weekend; ?>"><div class="py-2 px-1 text-secondary text-center"><?php echo $i; ?>-May-2023</div></div>
+									<div class="col-minstay"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="0"></div></div>
+									<div class="col-unitrate"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="12,500.00"></div></div>
+									<div class="col-maxguest"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="8"></div></div>
+									<div class="col-maxchild"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="2"></div></div>
+									<div class="col-allotment"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="1"></div></div>
+									<div class="col-cutoff"><div class="p-0"><input type="text" class="form-control fs-9 rounded-0 border-0 text-center text-secondary" value="45"></div></div>
+								</div>
+								<?php
+								}
+								?>	
+
+							</div>
+						</div>
 				</div>
 			<?php
 			}
 			?>
 			<div class="pt-4">
 				<div class="row g-3 justify-content-between">
-					<div class="col-auto">
-						<div class="d-flex align-items-center">
-							<div class="pe-2 fs-7 text-danger"><i class="fas fa-times-circle"></i></div>
-							<div class="pe-2 fs-7 fw-bold text-danger">This rate is not approve</div>
+					<div class="col-12 col-lg-6">
+						<div class="alert alert-danger p-2 m-0" role="alert">
+							<div class="d-flex align-items-center">
+								<div class="pe-2 fs-7 text-danger"><i class="fas fa-times-circle"></i></div>
+								<div class="pe-2 fs-7 fw-bold text-danger">This rate is not approve</div>
+							</div>
+						</div>
+						<div class="pt-3">
+							<div class="row gy-3 gx-4">
+								<div class="col-12 col-lg-4">
+									<div class="fs-9 text-secondary pb-2">User create</div>
+									<div class="fs-7 fw-bold text-dark">Nirun</div>
+									<div class="fs-9 text-secondary">22 Dec 2022 / 10:05:47</div>
+								</div>
+								<div class="col-12 col-lg-4">
+									<div class="fs-9 text-secondary pb-2">User update</div>
+									<div class="fs-7 fw-bold text-dark">Thitikorn</div>
+									<div class="fs-9 text-secondary">3 May 2023 / 16:41:23</div>
+								</div>
+								<div class="col-12 col-lg-4">
+									<div class="fs-9 text-secondary pb-2">Latest rate approved</div>
+									<div class="fs-7 fw-bold text-dark">Mike</div>
+									<div class="fs-9 text-secondary">1 Jan 2023 / 15:24:35</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-12 col-md-3">
+					<div class="col-12 col-md-6 col-lg-3">
 						<div class="pb-2 text-end">
 							<button class="btn w-100 btn-success fs-7 rounded-0" disabled>
 								Approve rate
 							</button>
 						</div>
-						<div class="pb-3 text-center text-md-end fs-8 text-secondary">
+						<div class="pb-3 text-center fs-8 text-secondary">
 							Only Administrator
 						</div>
 					</div>
@@ -292,6 +386,9 @@ include_once('../application/includes/modals/autofill-contract-rates.php');
 .col-focad,
 .col-focch,
 .col-sharebed,
+.col-unitrate,
+.col-maxguest,
+.col-maxchild,
 .col-allotment,
 .col-cutoff
  {
@@ -317,8 +414,13 @@ include_once('../application/includes/modals/autofill-contract-rates.php');
 .col-focad {width: 8.5%;}
 .col-focch {width: 8.5%; }
 .col-sharebed {width: 8.5%;}
+.col-unitrate {width: 25.5%;}
+.col-maxguest {width: 17%;}
+.col-maxchild {width: 17%;}
 .col-allotment {width: 6%;}
 .col-cutoff {width: 6%;}
+
+
 
 </style>
 

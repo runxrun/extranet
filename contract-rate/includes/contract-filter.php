@@ -7,6 +7,25 @@
                 id="btnMealTypes" 
                 data-bs-toggle="dropdown" 
                 aria-expanded="false">
+                Tariff worldwide 2023-2024
+            </button>
+            <ul class="dropdown-menu rounded-0 fs-9" aria-labelledby="btnMealTypes">
+                <li>
+                    <a class="dropdown-item" href="javascript:void(0)" onclick="">
+                        Tariff worldwide 2023-2024
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>    
+    <div class="col-auto">
+        <div class="dropdown">
+            <button 
+                type="button" 
+                class="btn dropdown-toggle border bg-white rounded-0 fs-9 w-100 text-start" 
+                id="btnMealTypes" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false">
                 All Market
             </button>
             <ul class="dropdown-menu rounded-0 fs-9" aria-labelledby="btnMealTypes">

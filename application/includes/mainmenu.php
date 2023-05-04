@@ -11,6 +11,7 @@ switch (strtoupper($current_page))
 		$p_profile = "text-secondary";
 		$p_contract = "text-secondary";
 		$p_dynamic = "text-primary";
+		$p_channel = "text-secondary";
 		$p_manual = "text-secondary";
 		break;
 
@@ -21,6 +22,18 @@ switch (strtoupper($current_page))
 		$p_profile = "text-secondary";
 		$p_contract = "text-secondary";
 		$p_dynamic = "text-primary";
+		$p_channel = "text-secondary";
+		$p_manual = "text-secondary";
+		break;
+
+	case 'CHANNEL-MANAGER':
+		$p_icon = "fas fa-calendar-alt";
+		$p_title = "Dynamic rate";
+		$p_dashboard = "text-secondary";
+		$p_profile = "text-secondary";
+		$p_contract = "text-secondary";
+		$p_dynamic = "text-secondary";
+		$p_channel = "text-primary";
 		$p_manual = "text-secondary";
 		break;
 
@@ -31,6 +44,7 @@ switch (strtoupper($current_page))
 		$p_profile = "text-secondary";
 		$p_contract = "text-primary";
 		$p_dynamic = "text-secondary";
+		$p_channel = "text-secondary";
 		$p_manual = "text-secondary";
 		break;
 
@@ -41,6 +55,7 @@ switch (strtoupper($current_page))
 		$p_profile = "text-secondary";
 		$p_contract = "text-secondary";
 		$p_dynamic = "text-primary";
+		$p_channel = "text-secondary";
 		$p_manual = "text-secondary";
 		break;
 
@@ -51,6 +66,7 @@ switch (strtoupper($current_page))
 		$p_profile = "text-secondary";
 		$p_contract = "text-secondary";
 		$p_dynamic = "text-primary";
+		$p_channel = "text-secondary";
 		$p_manual = "text-secondary";
 		break;
 
@@ -61,6 +77,7 @@ switch (strtoupper($current_page))
 		$p_profile = "text-secondary";
 		$p_contract = "text-secondary";
 		$p_dynamic = "text-primary";
+		$p_channel = "text-secondary";
 		$p_manual = "text-secondary";
 		break;
 
@@ -71,6 +88,7 @@ switch (strtoupper($current_page))
 		$p_profile = "text-primary";
 		$p_contract = "text-secondary";
 		$p_dynamic = "text-secondary";
+		$p_channel = "text-secondary";
 		$p_manual = "text-secondary";
 		break;
 
@@ -81,6 +99,7 @@ switch (strtoupper($current_page))
 		$p_profile = "text-secondary";
 		$p_contract = "text-secondary";
 		$p_dynamic = "text-secondary";
+		$p_channel = "text-secondary";
 		$p_manual = "text-secondary";
 		break;
 
@@ -132,20 +151,6 @@ switch (strtoupper($current_page))
 						</div>
 					</button>
 				</div>
-				<!-- 
-				<div class="col-auto">
-					<button
-						class="btn shadow-none border-0 <?php echo $p_contract; ?>"
-						onclick="window.open('/contract-rate/','_self');">
-						<div class="fs-4">
-							<i class="fas fa-file-alt"></i>
-						</div>
-						<div class="fs-9">
-							Contract Rates
-						</div>
-					</button>
-				</div>
-				-->
 				<div class="col-auto">
 					<div class="dropdown">
 						<button
@@ -279,6 +284,61 @@ switch (strtoupper($current_page))
 						</div>
 					</div>
 					 -->
+				</div>
+				<div class="col-auto">
+					<div class="dropdown">
+						<button
+							type="button"
+							id="btnChannelManager"
+							class="btn shadow-none border-0 <?php echo $p_channel; ?>"
+							data-bs-toggle="dropdown"
+							aria-expanded="false">
+							<div class="fs-4">
+								<i class="fas fa-chart-line"></i>
+							</div>
+							<div class="fs-9">
+								Channel Manager
+							</div>
+						</button>
+						<div
+							class="dropdown-menu rounded-0 p-0 mt-1"
+							aria-labelledby="btnChannelManager">
+							<div class="border-top border-primary border-3">
+								<div>
+									<a 
+										href="javascript: void(0);" 
+										class="dropdown-item py-2 fs-8 text-decoration-none"
+										onclick="window.open('/channel-manager/','_self');">
+										Channel Management
+									</a>
+								</div>
+								<div>
+									<a 
+										href="javascript: void(0);" 
+										class="dropdown-item py-2 fs-8 text-decoration-none"
+										onclick="window.open('/channel-manager/','_self');">
+										Free Promotion Offer
+									</a>
+								</div>
+								<div>
+									<a
+										href="javascript: void(0);"										
+										class="dropdown-item py-2 fs-8 text-decoration-none"
+										onclick="window.open('/channel-manager/','_self');">
+										Promotion
+									</a>
+								</div>
+								<div>
+									<a
+										href="javascript: void(0);"
+										class="dropdown-item py-2 fs-8 text-decoration-none"
+										onclick="window.open('/channel-manager/','_self');">
+										Cancellation Policy
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="col-auto">
 					<button class="btn shadow-none border-0 <?php echo $p_manual; ?>">
