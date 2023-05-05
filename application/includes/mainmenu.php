@@ -28,6 +28,7 @@ switch (strtoupper($current_page))
 
 	case 'CHANNEL-MANAGER':
 	case 'CHANNEL-MANAGER-PROMOTION':
+	case 'CHANNEL-MANAGER-FREE-PROMOTION':
 	case 'MAPPING':
 		$p_icon = "fas fa-calendar-alt";
 		$p_title = "Dynamic rate";
@@ -326,7 +327,7 @@ switch (strtoupper($current_page))
 									<a 
 										href="javascript: void(0);" 
 										class="dropdown-item py-2 fs-8 text-decoration-none"
-										onclick="window.open('/channel-manager/','_self');">
+										onclick="window.open('/channel-manager-free-promotion/','_self');">
 										Free Promotion Offer
 									</a>
 								</div>

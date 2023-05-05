@@ -318,12 +318,14 @@
 			<div class="pt-4">
 				<div class="row g-3 justify-content-between">
 					<div class="col-12 col-lg-6">
-						<div class="alert alert-danger p-2 m-0" role="alert">
+						<div class="alert alert-warning d-flex py-2" role="alert">
 							<div class="d-flex align-items-center">
-								<div class="pe-2 fs-7 text-danger"><i class="fas fa-times-circle"></i></div>
-								<div class="pe-2 fs-7 fw-bold text-danger">This rate is not approve</div>
+								<div class="pe-2 fs-7"><i class="fas fa-times-circle"></i></div>
+								<div class="pe-2 fs-7 fw-bold">This rates is not approve</div>
 							</div>
 						</div>
+
+
 						<div class="pt-3">
 							<div class="row gy-3 gx-4">
 								<div class="col-12 col-lg-4">

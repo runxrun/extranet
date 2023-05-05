@@ -25,7 +25,8 @@
       include_once('includes/channel-empty.php'); 
     }
 
-    include_once('includes/channel-cancellation.php'); 
+    include_once('includes/channel-cancellation-2.php'); 
+    //include_once('includes/channel-cancellation.php'); 
 
     ?>
 

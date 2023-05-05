@@ -323,12 +323,12 @@ include_once('includes/promotion-filter.php');
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <div class="fs-6 fw-bold text-dark">Delete contact</div>
+                <div class="fs-6 fw-bold text-dark">Delete promotion</div>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
             	<div class="fs-6 text-secondary">
-            		Can you confirm that you wish to delete this promotion 
+            		Can you confirm that you wish to delete this promotion?
             	</div>
             </div>
             <div class="modal-footer">
