@@ -44,7 +44,7 @@
       </div>
       <div class="col-12 col-sm-4 col-lg-2 order-1 order-sm-2">
         <button class="btn btn-success rounded-0 py-2 fs-8 text-white w-100" data-bs-toggle="modal"
-          data-bs-target="#addCancelModal">
+          data-bs-target="#addeditCancelModal">
           <span class="pe-2"><i class="fas fa-plus-circle"></i></span>
           <span class="pe-2">Add cancellation</span>
         </button>
@@ -415,7 +415,8 @@ $cm_cancel = array(
             <td><div class="fs-7 text-secondary"><?php echo $value3['chargerate'];; ?></div></td>
             <td class="p-0">
               <button class="btn btn-outline-primary w-100 border-0 shadow-none rounded-0"
-                onclick="window.open('/channel-manager/?page=edit-cancellation','_self');">
+                data-bs-toggle="modal"
+                data-bs-target="#addeditCancelModal">
                 <span class="fs-8">
                   <i class="fas fa-search"></i>
                 </span>
@@ -443,32 +444,7 @@ $cm_cancel = array(
   </div>
 </div>
 
-
-
-
-<!-- Modal -->
-<div class="modal fade" id="deleteCancelModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="fs-6 fw-bold text-dark">Delete cancellation</div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="fs-7 fw-bold text-dark">
-          1 BED
-        </div>
-        <div class="fs-7 text-secondary">
-          1 Feb 2023 to 15 May 2023
-        </div>
-        <div class="fs-7 text-secondary">
-          Cancel 14 day will be Charge 20%
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary fs-8 rounded-0" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-danger fs-8 rounded-0 px-4">Delete</button>
-      </div>
-    </div>
-  </div>
-</div>
+<?php 
+include('modals/cancellation-addedit.php');
+include('modals/cancellation-delete.php');
+?>
