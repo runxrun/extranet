@@ -21,7 +21,40 @@
 		</div>
 		<div class="pt-3 pb-4 border-top">
 
+			<div class="row justify-content-between align-items-center">
+				<div class="col-6">
+					<div class="row g-2">
+						<div class="col-12 col-md-4">
+							<select class="form-select rounded-0 fs-8">
+								<option>Select by month</option>
+								<option>January</option>
+								<option>February</option>
+								<option>March</option>
+								<option>April</option>
+								<option>May</option>
+								<option selected>June</option>
+								<option>July</option>
+								<option>August</option>
+								<option>September</option>
+								<option>October</option>
+								<option>November</option>
+								<option>December</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-auto">
+					<div class="d-flex flex-wrap align-items-center" title="Rate update">
+						<div class="pe-2 fs-7 text-success"><i class="fas fa-check-circle"></i></div>
+						<div class="pe-2 fs-7 fw-bold text-success">This rate approve since</div>
+						<div class="pe-0 fs-7 text-secondary">1 Jan 2023 / 15:24:35</div>
+					</div>
+				</div>
+			</div>
 
+			<?php 
+			/*
+			
 			<div class="row justify-content-between align-items-center">
 				<div class="col-auto">
 					<div class="row g-2">
@@ -73,6 +106,9 @@
 				</div>
 			</div>
 
+
+			*/
+			?>
 
 
 
